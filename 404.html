@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lost in the Woods — Birken Lakeside Resort</title>
+<meta name="description" content="That page wandered off the trail. Let's get you back to the cabins.">
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,300;0,400;1,300&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" href="assets/logo.png">
+<style>
+  :root {
+    --forest: #1D3D2D;
+    --cream:  #F3EADC;
+    --cedar:  #C4743A;
+    --serif:  'Bebas Neue', sans-serif;
+    --ui:     'Montserrat', sans-serif;
+    --body:   'DM Sans', sans-serif;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body {
+    background: var(--forest);
+    color: var(--cream);
+    font-family: var(--body);
+    -webkit-font-smoothing: antialiased;
+    min-height: 100vh;
+  }
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 24px;
+    text-align: center;
+  }
+  .wrap { max-width: 760px; width: 100%; }
+  .logo {
+    width: 96px; height: auto; margin: 0 auto 40px;
+    opacity: 0.9; display: block;
+  }
+  .eyebrow {
+    font-family: var(--ui);
+    font-size: 13px; font-weight: 700;
+    letter-spacing: 0.22em; text-transform: uppercase;
+    color: var(--cedar);
+  }
+  h1 {
+    font-family: var(--serif);
+    font-size: clamp(72px, 10vw, 156px);
+    line-height: 0.92;
+    letter-spacing: 0.02em;
+    margin-top: 24px;
+  }
+  p {
+    color: rgba(243,234,220,0.82);
+    font-size: 21px;
+    line-height: 1.7;
+    margin: 28px auto 0;
+    max-width: 580px;
+  }
+  .actions {
+    display: flex; gap: 14px; justify-content: center; flex-wrap: wrap;
+    margin-top: 44px;
+  }
+  .btn {
+    display: inline-block;
+    padding: 16px 28px;
+    font-family: var(--ui);
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    border-radius: 999px;
+    transition: all 0.2s;
+    border: 1px solid transparent;
+  }
+  .btn-primary {
+    background: var(--cedar);
+    color: var(--forest);
+  }
+  .btn-primary:hover { background: #d68548; }
+  .btn-ghost {
+    border-color: rgba(243,234,220,0.45);
+    color: var(--cream);
+  }
+  .btn-ghost:hover { border-color: var(--cream); background: rgba(243,234,220,0.06); }
+  .meta {
+    margin-top: 48px;
+    font-size: 13px;
+    font-family: var(--ui);
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: rgba(243,234,220,0.45);
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <img class="logo" src="assets/logo.png" alt="Birken Lakeside Resort Logo">
+    <span class="eyebrow">— 404</span>
+    <h1>LOST IN<br>THE WOODS.</h1>
+    <p>That page wandered off the trail. Let's get you back to the cabins.</p>
+    <div class="actions">
+      <a class="btn btn-primary" href="/">Back to home →</a>
+      <a class="btn btn-ghost" href="/#/stay">See the cabins</a>
+    </div>
+    <div class="meta">Birken Lakeside Resort · Gates Lake, BC · Since 1906</div>
+  </div>
+</body>
+</html>
