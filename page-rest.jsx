@@ -552,5 +552,5 @@ function ContactField({ label, placeholder, textarea }) {
   );
 }
 
-Object.assign(window, { Gatherings, Weddings, Grille, Area, About, Book, Contact, MenuItem });
+Object.assign(window, { Gatherings, Weddings, Grille, Area, About, Book, Contact, MenuItem, NotFound });
 
