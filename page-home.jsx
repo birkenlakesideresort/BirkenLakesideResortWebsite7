@@ -51,7 +51,7 @@ function Home({ go }) {
           <SectionHead
             num="01 — Stay"
             title={<>Cabins with<br/>personalities.</>}
-            intro="Each cabin has its own thing going. Wild West has the wood stove and a porch on the lake. The Library has the books. The Love Shack has — well, a raised king bed and zero pretence. Pick your character." />
+            intro="Each cabin has its own thing going. Wild West has the wood stove and a porch by the lake. The Library has the books. The Love Shack has — well, a raised king bed and zero pretence. Pick your character." />
 
           <div className="cabin-grid">
             <CabinCard num="01" cabin={CABINS[0]} go={go} className="cabin-tall" />
@@ -82,13 +82,13 @@ function Home({ go }) {
           <SectionHead
             num="02 — What's Here"
             title={<>Less scroll.<br/>More soul.</>}
-            intro="No spas, no signature cocktails, no programming. The lake. The fire. The people in front of you. Mountain Wi-Fi — great for an email, terrible for streaming. That's by design." />
+            intro="No spas, no signature cocktails, no programming. The lake. The fire. The people in front of you. Mountain Wi-Fi — great for an email, great for streaming. That's by design." />
 
           <div className="threeup">
             <div className="threeup-col">
               <span className="threeup-num">01</span>
               <h3 className="threeup-title">The Lake</h3>
-              <p className="threeup-body">Jump off the dock. Paddle the canoe. Float on a noodle until your toes prune. The water is cold. That is also by design.</p>
+              <p className="threeup-body">Jump off the dock. Paddle the canoe. Float on a noodle until your toes prune. The water is pristine. That is also by design.</p>
             </div>
             <div className="threeup-col">
               <span className="threeup-num">02</span>
