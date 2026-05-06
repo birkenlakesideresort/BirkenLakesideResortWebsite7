@@ -1,5 +1,9 @@
 {
+  "scripts": {
+    "dev": "npx serve -l 3000"
+  },
   "devDependencies": {
-    "esbuild": "^0.28.0"
+    "esbuild": "^0.28.0",
+    "serve": "^14.2.1"
   }
 }
