@@ -1,7 +1,4 @@
 {
-  "scripts": {
-    "compile": "esbuild app.jsx layout.jsx page-home.jsx page-rest.jsx page-stay.jsx --jsx=transform --jsx-factory=React.createElement --jsx-fragment=React.Fragment --platform=browser --outdir=."
-  },
   "devDependencies": {
     "esbuild": "^0.28.0"
   }

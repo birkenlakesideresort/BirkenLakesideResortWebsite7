@@ -22,10 +22,10 @@ function Gatherings({ go }) {
           <div className="alt-text">
             <span className="eyebrow">— The Bunkhouse</span>
             <h3>The hub of any group booking.</h3>
-            <p>Foosball, a piano nobody can play, a record player, two couches deeper than they look. Sleeps 8 if you're flexible, hosts 30 if everyone's just there to hang.</p>
+            <p>Foosball, a piano nobody can play, a record player, two couches deeper than they look. Sleeps 12 if you're flexible, hosts 30 if everyone's just there to hang.</p>
             <ul>
-              <li>Sleeps 8</li><li>Foosball + piano</li>
-              <li>Wood stove + AC</li>
+              <li>Sleeps 12</li><li>Foosball + piano</li>
+              <li>Wood stove + AC</li><li>Full kitchen</li>
               <li>Record player</li><li>Group hub</li>
             </ul>
           </div>
@@ -187,7 +187,7 @@ function Grille({ go }) {
         <div className="section-inner">
           <span className="eyebrow">— 05 / The Grille</span>
           <h1 style={{ fontFamily: 'var(--serif)', fontSize: 'clamp(80px, 11vw, 184px)', lineHeight: 0.86, color: 'var(--forest)', letterSpacing: '0.01em', marginTop: 22 }}>
-            LAKE-FACING.<br/>HONEST FOOD.
+            WOOD-FIRED.<br/>LAKE-FACING.<br/>HONEST FOOD.
           </h1>
           <p className="italic-quote" style={{ fontSize: 20, marginTop: 28, maxWidth: 680 }}>
             On site, open to guests and walk-ins. Cedar deck, mismatched chairs, the chef shouting at the line through an open door. Eat with your hands. Don't dress up.
