@@ -47,8 +47,8 @@ html.loaded body { visibility: visible; }
   min-height: 100svh;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
 }
+.first-section > .section-inner { margin-top: auto; }
 .first-section h1 { text-align: left; }
 
 img { display:block; max-width:100%; }
