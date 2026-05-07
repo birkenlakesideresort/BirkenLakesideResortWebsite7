@@ -1,0 +1,204 @@
+function Gatherings({ go }) {
+  return /* @__PURE__ */ React.createElement("div", { className: "page-fade" }, /* @__PURE__ */ React.createElement("section", { className: "first-section", style: { padding: "80px 40px", background: "var(--cream)" } }, /* @__PURE__ */ React.createElement("div", { className: "section-inner" }, /* @__PURE__ */ React.createElement("span", { className: "eyebrow" }, "\u2014 03 / Gatherings"), /* @__PURE__ */ React.createElement("h1", { style: {
+    fontFamily: "var(--serif)",
+    fontSize: "clamp(80px, 10vw, 168px)",
+    lineHeight: 0.86,
+    color: "var(--forest)",
+    letterSpacing: "0.02em",
+    marginTop: 22
+  } }, "BRING THE", /* @__PURE__ */ React.createElement("br", null), "WHOLE CREW."), /* @__PURE__ */ React.createElement("p", { className: "italic-quote", style: { fontSize: 20, marginTop: 28, maxWidth: 680 } }, "Whole-resort buyouts. Family reunions. Founder offsites that won't feel like one. The bunkhouse, all the cabins, the dock, the firepit. Yours for as long as you book."))), /* @__PURE__ */ React.createElement("section", { style: { padding: "0 0 0", background: "var(--cream)" } }, /* @__PURE__ */ React.createElement("div", { className: "alt-block", style: { maxWidth: 1440, margin: "0 auto" } }, /* @__PURE__ */ React.createElement("div", { className: "alt-img", style: { backgroundImage: "url(assets/bunkhouse-int.jpeg)" } }), /* @__PURE__ */ React.createElement("div", { className: "alt-text" }, /* @__PURE__ */ React.createElement("span", { className: "eyebrow" }, "\u2014 The Bunkhouse"), /* @__PURE__ */ React.createElement("h3", null, "The hub of any group booking."), /* @__PURE__ */ React.createElement("p", null, "Foosball, a piano nobody can play, a record player, two couches deeper than they look. Sleeps 8 if you're flexible, hosts 30 if everyone's just there to hang."), /* @__PURE__ */ React.createElement("ul", null, /* @__PURE__ */ React.createElement("li", null, "Sleeps 8"), /* @__PURE__ */ React.createElement("li", null, "Foosball + piano"), /* @__PURE__ */ React.createElement("li", null, "Wood stove + AC"), /* @__PURE__ */ React.createElement("li", null, "Record player"), /* @__PURE__ */ React.createElement("li", null, "Group hub"))))), /* @__PURE__ */ React.createElement("section", { className: "dark-section" }, /* @__PURE__ */ React.createElement("div", { className: "section-inner" }, /* @__PURE__ */ React.createElement(
+    SectionHead,
+    {
+      num: "\u2014 Buyouts",
+      title: /* @__PURE__ */ React.createElement(React.Fragment, null, "Take the", /* @__PURE__ */ React.createElement("br", null), "whole place."),
+      intro: "The cabins, the bunkhouse, the meeting hall, the lake dock and the firepit. Your group, our property, no other guests. Three-night minimum on buyouts."
+    }
+  ), /* @__PURE__ */ React.createElement("div", { className: "threeup" }, /* @__PURE__ */ React.createElement("div", { className: "threeup-col" }, /* @__PURE__ */ React.createElement("span", { className: "threeup-num" }, "8\u201318"), /* @__PURE__ */ React.createElement("h3", { className: "threeup-title" }, "Small group"), /* @__PURE__ */ React.createElement("p", { className: "threeup-body" }, "A handful of cabins + the bunkhouse. Right-size for an offsite of 8 to 18 humans, with room for everyone to land somewhere quiet at night.")), /* @__PURE__ */ React.createElement("div", { className: "threeup-col" }, /* @__PURE__ */ React.createElement("span", { className: "threeup-num" }, "18\u201332"), /* @__PURE__ */ React.createElement("h3", { className: "threeup-title" }, "Full property"), /* @__PURE__ */ React.createElement("p", { className: "threeup-body" }, "Every cabin, every bed, every chair on the deck. We bring in extra cooks for The Grille if you want full meal service.")), /* @__PURE__ */ React.createElement("div", { className: "threeup-col" }, /* @__PURE__ */ React.createElement("span", { className: "threeup-num" }, "+"), /* @__PURE__ */ React.createElement("h3", { className: "threeup-title" }, "Day-only events"), /* @__PURE__ */ React.createElement("p", { className: "threeup-body" }, "Workshops, retreats, day-rate rentals of the meeting hall and the lakeside deck. Bring catering or use ours."))))), /* @__PURE__ */ React.createElement("section", { style: { padding: "120px 40px", background: "var(--cream)" } }, /* @__PURE__ */ React.createElement("div", { className: "section-inner" }, /* @__PURE__ */ React.createElement(
+    SectionHead,
+    {
+      num: "\u2014 What's Included",
+      title: /* @__PURE__ */ React.createElement(React.Fragment, null, "What's here", /* @__PURE__ */ React.createElement("br", null), "for your group."),
+      intro: "It comes with the place. We don't charge extra for what was already going to be on."
+    }
+  ), /* @__PURE__ */ React.createElement("div", { style: {
+    display: "grid",
+    gridTemplateColumns: "repeat(4, 1fr)",
+    borderTop: "0.5px solid rgba(29,61,45,0.18)"
+  } }, [
+    { l: "Lakeside firepit", d: "Stocked, swept, lit on request." },
+    { l: "Canoes + kayaks", d: "Three of each. PFDs in the boathouse." },
+    { l: "Sound system", d: "In the meeting hall. Bring the playlist." },
+    { l: "Coffee", d: "Local beans ground each morning." },
+    { l: "Linens + towels", d: "Crisp, white, fresh on arrival." },
+    { l: "Catered meals", d: "Optional. Add The Grille team to your booking." },
+    { l: "A/V for talks", d: "Projector, screen, mics in the meeting hall." },
+    { l: "A real human", d: "The crew is on site. Texts back fast." }
+  ].map((x, i) => /* @__PURE__ */ React.createElement("div", { key: i, style: {
+    padding: "28px 24px",
+    borderRight: i % 4 !== 3 ? "0.5px solid rgba(29,61,45,0.18)" : "none",
+    borderBottom: "0.5px solid rgba(29,61,45,0.18)"
+  } }, /* @__PURE__ */ React.createElement("div", { style: {
+    fontFamily: "var(--serif)",
+    fontSize: 26,
+    color: "var(--forest)",
+    letterSpacing: "0.02em",
+    marginBottom: 8
+  } }, x.l), /* @__PURE__ */ React.createElement("div", { style: { fontSize: 15, color: "var(--stone)", lineHeight: 1.6 } }, x.d)))), /* @__PURE__ */ React.createElement("div", { style: { textAlign: "center", marginTop: 56 } }, /* @__PURE__ */ React.createElement("button", { className: "btn btn-primary", onClick: () => go("book") }, "Enquire about a buyout \u2192")))));
+}
+function Weddings({ go }) {
+  return /* @__PURE__ */ React.createElement("div", { className: "page-fade" }, /* @__PURE__ */ React.createElement("section", { className: "weddings-hero", style: { position: "relative", height: "100vh", minHeight: 640, marginTop: "calc(-1 * var(--nav-h, 140px))", color: "var(--cream)", overflow: "hidden", padding: 0 } }, /* @__PURE__ */ React.createElement("div", { style: { position: "absolute", inset: 0, backgroundImage: "url(assets/wedding-tables-lakeview.jpeg)", backgroundSize: "cover", backgroundPosition: "center" } }), /* @__PURE__ */ React.createElement("div", { className: "hero-shade" }), /* @__PURE__ */ React.createElement("div", { style: { position: "absolute", inset: 0, display: "flex", flexDirection: "column", justifyContent: "flex-end", padding: "0 40px 80px", maxWidth: 1440, margin: "0 auto" } }, /* @__PURE__ */ React.createElement("span", { className: "eyebrow eyebrow-light", style: { color: "var(--cedar)" } }, "\u2014 04 / Weddings"), /* @__PURE__ */ React.createElement("h1", { style: { fontFamily: "var(--serif)", fontSize: "clamp(72px, 10vw, 168px)", lineHeight: 0.86, color: "var(--cream)", letterSpacing: "0.02em", marginTop: 18 } }, "GET MARRIED", /* @__PURE__ */ React.createElement("br", null), "IN THE WOODS."), /* @__PURE__ */ React.createElement("p", { className: "italic-quote", style: { color: "rgba(243,234,220,0.85)", fontSize: 20, marginTop: 18, maxWidth: 620 } }, "One wedding at a time. Your people, your playlist, your kind of vows."))), /* @__PURE__ */ React.createElement("section", { style: { padding: "120px 40px", background: "var(--cream)" } }, /* @__PURE__ */ React.createElement("div", { className: "section-inner" }, /* @__PURE__ */ React.createElement(
+    SectionHead,
+    {
+      num: "\u2014 The Day",
+      title: /* @__PURE__ */ React.createElement(React.Fragment, null, "How it goes."),
+      intro: "The lakeside deck for the ceremony. The meeting hall for dinner. The firepit for after. The cabins for the people who needed to lie down."
+    }
+  ), /* @__PURE__ */ React.createElement("div", { className: "threeup", style: { borderColor: "rgba(29,61,45,0.15)" } }, /* @__PURE__ */ React.createElement("div", { className: "threeup-col", style: { background: "var(--forest)" } }, /* @__PURE__ */ React.createElement("span", { className: "threeup-num" }, "04 PM"), /* @__PURE__ */ React.createElement("h3", { className: "threeup-title" }, "Ceremony"), /* @__PURE__ */ React.createElement("p", { className: "threeup-body" }, "Lakeside deck, 60 chairs, a wood arch the local carpenter built. Cedar smell, no roof, no fuss.")), /* @__PURE__ */ React.createElement("div", { className: "threeup-col", style: { background: "var(--forest)" } }, /* @__PURE__ */ React.createElement("span", { className: "threeup-num" }, "07 PM"), /* @__PURE__ */ React.createElement("h3", { className: "threeup-title" }, "Dinner"), /* @__PURE__ */ React.createElement("p", { className: "threeup-body" }, "Long tables in the hall. Family-style menu from The Grille. Speeches encouraged, kept short.")), /* @__PURE__ */ React.createElement("div", { className: "threeup-col", style: { background: "var(--forest)" } }, /* @__PURE__ */ React.createElement("span", { className: "threeup-num" }, "LATE"), /* @__PURE__ */ React.createElement("h3", { className: "threeup-title" }, "After"), /* @__PURE__ */ React.createElement("p", { className: "threeup-body" }, "Firepit. Acoustic guitars if anyone brought one. Stragglers welcome until the embers go out."))))), /* @__PURE__ */ React.createElement("section", { style: { padding: "0 40px 120px", background: "var(--cream)" } }, /* @__PURE__ */ React.createElement("div", { className: "section-inner" }, /* @__PURE__ */ React.createElement("div", { className: "wed-grid" }, /* @__PURE__ */ React.createElement("div", { style: { backgroundImage: "url(assets/wedding-ceremony-arch.jpeg)" } }), /* @__PURE__ */ React.createElement("div", { style: { backgroundImage: "url(assets/wedding-party-lakeshore.jpeg)" } }), /* @__PURE__ */ React.createElement("div", { style: { backgroundImage: "url(assets/wedding-love-bunting.jpeg)" } }), /* @__PURE__ */ React.createElement("div", { style: { backgroundImage: "url(assets/meeting-hall-int.jpeg)" } }), /* @__PURE__ */ React.createElement("div", { style: { backgroundImage: "url(assets/lake-dock-chairs.jpeg)" } }), /* @__PURE__ */ React.createElement("div", { style: { backgroundImage: "url(assets/meeting-hall-ext.jpeg)" } }), /* @__PURE__ */ React.createElement("div", { style: { backgroundImage: "url(assets/chapel-ext.jpeg)" } }), /* @__PURE__ */ React.createElement("div", { style: { backgroundImage: "url(assets/library-ext.jpeg)" } }), /* @__PURE__ */ React.createElement("div", { style: { backgroundImage: "url(assets/lake-mtn-sunset.jpeg)" } })))), /* @__PURE__ */ React.createElement("section", { className: "dark-section", style: { textAlign: "center" } }, /* @__PURE__ */ React.createElement("div", { className: "section-inner" }, /* @__PURE__ */ React.createElement("span", { className: "eyebrow eyebrow-light", style: { color: "var(--cedar)" } }, "\u2014 Buyouts start at"), /* @__PURE__ */ React.createElement("div", { style: { fontFamily: "var(--serif)", fontSize: "clamp(80px, 12vw, 200px)", color: "var(--cream)", letterSpacing: "0.02em", lineHeight: 0.95, margin: "20px 0" } }, "$16,000"), /* @__PURE__ */ React.createElement("p", { style: { color: "rgba(243,234,220,0.78)", fontSize: 18, maxWidth: 580, margin: "0 auto 12px", lineHeight: 1.6 } }, "For the run of the property \u2014 your people, your ceremony, your weekend."), /* @__PURE__ */ React.createElement("p", { style: { color: "rgba(243,234,220,0.66)", fontSize: 16, maxWidth: 580, margin: "0 auto 32px", lineHeight: 1.6, fontStyle: "italic" } }, "Custom options available \u2014 food, tents, full event management. Call for details."), /* @__PURE__ */ React.createElement("button", { className: "btn btn-primary", onClick: () => go("book") }, "Enquire \u2192"))));
+}
+function Grille({ go }) {
+  return /* @__PURE__ */ React.createElement("div", { className: "page-fade" }, /* @__PURE__ */ React.createElement("section", { className: "first-section", style: { padding: "80px 40px", background: "var(--cream)" } }, /* @__PURE__ */ React.createElement("div", { className: "section-inner" }, /* @__PURE__ */ React.createElement("span", { className: "eyebrow" }, "\u2014 05 / The Grille"), /* @__PURE__ */ React.createElement("h1", { style: { fontFamily: "var(--serif)", fontSize: "clamp(80px, 11vw, 184px)", lineHeight: 0.86, color: "var(--forest)", letterSpacing: "0.01em", marginTop: 22 } }, "LAKE-FACING.", /* @__PURE__ */ React.createElement("br", null), "HONEST FOOD."), /* @__PURE__ */ React.createElement("p", { className: "italic-quote", style: { fontSize: 20, marginTop: 28, maxWidth: 680 } }, "On site, open to guests and walk-ins. Cedar deck, mismatched chairs, the chef shouting at the line through an open door. Eat with your hands. Don't dress up."), /* @__PURE__ */ React.createElement("div", { style: { display: "flex", gap: 24, marginTop: 36, flexWrap: "wrap" } }, /* @__PURE__ */ React.createElement("span", { className: "pill" }, "Open Thu\u2013Sun"), /* @__PURE__ */ React.createElement("span", { className: "pill" }, "5 PM \u2013 10 PM"), /* @__PURE__ */ React.createElement("span", { className: "pill" }, "Walk-ins welcome"), /* @__PURE__ */ React.createElement("span", { className: "pill" }, "Kids welcome")))), /* @__PURE__ */ React.createElement("section", { style: { padding: "40px 40px 160px", background: "var(--cream)" } }, /* @__PURE__ */ React.createElement("div", { className: "section-inner" }, /* @__PURE__ */ React.createElement("div", { style: {
+    border: "0.5px solid rgba(29,61,45,0.18)",
+    padding: "120px 40px",
+    textAlign: "center",
+    background: "var(--cream-2)"
+  } }, /* @__PURE__ */ React.createElement("span", { className: "eyebrow" }, "\u2014 The Menu"), /* @__PURE__ */ React.createElement("h2", { style: {
+    fontFamily: "var(--serif)",
+    fontSize: "clamp(56px, 7vw, 104px)",
+    lineHeight: 0.95,
+    color: "var(--forest)",
+    letterSpacing: "0.02em",
+    marginTop: 18
+  } }, "MENU", /* @__PURE__ */ React.createElement("br", null), "COMING SOON."), /* @__PURE__ */ React.createElement("p", { className: "italic-quote", style: { fontSize: 19, marginTop: 22, maxWidth: 520, marginLeft: "auto", marginRight: "auto" } }, "We're still finalising it. Check back closer to opening \u2014 or ask the crew what's on the fire that night.")))));
+}
+function MenuItem({ name, price, desc }) {
+  return /* @__PURE__ */ React.createElement("div", { className: "menu-item" }, /* @__PURE__ */ React.createElement("div", { className: "row" }, /* @__PURE__ */ React.createElement("span", { className: "name" }, name), /* @__PURE__ */ React.createElement("span", { className: "price" }, "$", price)), /* @__PURE__ */ React.createElement("div", { className: "desc" }, desc));
+}
+function Area({ go }) {
+  return /* @__PURE__ */ React.createElement("div", { className: "page-fade" }, /* @__PURE__ */ React.createElement("section", { className: "first-section", style: { padding: "80px 40px", background: "var(--cream)" } }, /* @__PURE__ */ React.createElement("div", { className: "section-inner" }, /* @__PURE__ */ React.createElement("span", { className: "eyebrow" }, "\u2014 06 / The Area"), /* @__PURE__ */ React.createElement("h1", { style: { fontFamily: "var(--serif)", fontSize: "clamp(80px, 11vw, 184px)", lineHeight: 0.86, color: "var(--forest)", letterSpacing: "0.01em", marginTop: 22 } }, "55 MINUTES", /* @__PURE__ */ React.createElement("br", null), "FROM WHISTLER.", /* @__PURE__ */ React.createElement("br", null), "A DIFFERENT", /* @__PURE__ */ React.createElement("br", null), "PLANET."), /* @__PURE__ */ React.createElement("p", { className: "italic-quote", style: { fontSize: 20, marginTop: 28, maxWidth: 680 } }, "Old-growth cedar, swimming holes, a Saturday market, mountain country on the dry side. Here's what's near."))), /* @__PURE__ */ React.createElement("section", { style: { padding: "40px 40px 120px", background: "var(--cream)" } }, /* @__PURE__ */ React.createElement("div", { className: "section-inner" }, /* @__PURE__ */ React.createElement("div", { className: "area-grid", style: { gap: 64 } }, /* @__PURE__ */ React.createElement("div", { className: "area-list" }, AREA.map((a, i) => /* @__PURE__ */ React.createElement("article", { key: i, className: "area-item" }, /* @__PURE__ */ React.createElement("div", { className: "num" }, a.num), /* @__PURE__ */ React.createElement("div", null, /* @__PURE__ */ React.createElement("h4", null, a.name), /* @__PURE__ */ React.createElement("p", null, a.desc)), /* @__PURE__ */ React.createElement("div", { className: "dist" }, a.dist)))), /* @__PURE__ */ React.createElement("div", { className: "area-map" }, /* @__PURE__ */ React.createElement(AreaMap, null))))));
+}
+function AreaMap() {
+  return /* @__PURE__ */ React.createElement("svg", { viewBox: "0 0 400 500", style: { width: "100%", height: "100%", display: "block" } }, /* @__PURE__ */ React.createElement("defs", null, /* @__PURE__ */ React.createElement("pattern", { id: "dots", width: "6", height: "6", patternUnits: "userSpaceOnUse" }, /* @__PURE__ */ React.createElement("circle", { cx: "1", cy: "1", r: "0.5", fill: "rgba(143,168,158,0.2)" }))), /* @__PURE__ */ React.createElement("rect", { width: "400", height: "500", fill: "#1D3D2D" }), /* @__PURE__ */ React.createElement("rect", { width: "400", height: "500", fill: "url(#dots)" }), /* @__PURE__ */ React.createElement(
+    "path",
+    {
+      d: "M 60 220 Q 120 180 200 200 Q 280 220 340 200 Q 360 260 320 320 Q 240 360 160 340 Q 80 320 60 280 Z",
+      fill: "#0F2017",
+      stroke: "#8FA89E",
+      strokeWidth: "0.5"
+    }
+  ), /* @__PURE__ */ React.createElement(
+    "text",
+    {
+      x: "200",
+      y: "280",
+      textAnchor: "middle",
+      fontFamily: "Bebas Neue",
+      fontSize: "22",
+      fill: "#8FA89E",
+      letterSpacing: "3"
+    },
+    "GATES LAKE"
+  ), /* @__PURE__ */ React.createElement("path", { d: "M 0 100 Q 100 120 200 110 Q 300 100 400 130", stroke: "#C4743A", strokeWidth: "1", fill: "none", strokeDasharray: "3 3" }), /* @__PURE__ */ React.createElement("path", { d: "M 200 110 L 200 200", stroke: "#C4743A", strokeWidth: "1", fill: "none", strokeDasharray: "3 3" }), /* @__PURE__ */ React.createElement("path", { d: "M 60 220 Q 30 320 50 420", stroke: "#C4743A", strokeWidth: "1", fill: "none", strokeDasharray: "3 3" }), Array.from({ length: 28 }).map((_, i) => {
+    const x = (i * 47 + 13) % 400;
+    const y = (i * 73 + 31) % 500;
+    if (y > 180 && y < 360 && x > 60 && x < 340) return null;
+    return /* @__PURE__ */ React.createElement("g", { key: i, transform: `translate(${x},${y})` }, /* @__PURE__ */ React.createElement("path", { d: "M 0 0 L -4 8 L 4 8 Z", fill: "#8FA89E", opacity: "0.5" }), /* @__PURE__ */ React.createElement("line", { x1: "0", y1: "8", x2: "0", y2: "11", stroke: "#8FA89E", opacity: "0.5" }));
+  }), [
+    { x: 200, y: 270 },
+    { x: 130, y: 200 },
+    { x: 320, y: 110 },
+    { x: 360, y: 60 },
+    { x: 30, y: 80 },
+    { x: 60, y: 440 }
+  ].map((p, i) => /* @__PURE__ */ React.createElement("g", { key: i, transform: `translate(${p.x},${p.y})` }, /* @__PURE__ */ React.createElement("circle", { r: "5", fill: "#9B2B1F" }), /* @__PURE__ */ React.createElement("circle", { r: "9", fill: "none", stroke: "#9B2B1F", strokeWidth: "0.6", opacity: "0.55" }))), /* @__PURE__ */ React.createElement(
+    "text",
+    {
+      x: "20",
+      y: "30",
+      fontFamily: "Montserrat",
+      fontSize: "9",
+      fontWeight: "700",
+      fill: "#C4743A",
+      letterSpacing: "3"
+    },
+    "\u2014 THE AREA"
+  ), /* @__PURE__ */ React.createElement(
+    "text",
+    {
+      x: "380",
+      y: "490",
+      textAnchor: "end",
+      fontFamily: "Montserrat",
+      fontSize: "9",
+      fill: "#8FA89E",
+      letterSpacing: "2"
+    },
+    "N \u2191"
+  ));
+}
+function About({ go }) {
+  return /* @__PURE__ */ React.createElement("div", { className: "page-fade" }, /* @__PURE__ */ React.createElement("section", { className: "first-section", style: { padding: "80px 40px", background: "var(--cream)" } }, /* @__PURE__ */ React.createElement("div", { className: "section-inner" }, /* @__PURE__ */ React.createElement("span", { className: "eyebrow" }, "\u2014 07 / About"), /* @__PURE__ */ React.createElement("h1", { style: { fontFamily: "var(--serif)", fontSize: "clamp(80px, 11vw, 184px)", lineHeight: 0.86, color: "var(--forest)", letterSpacing: "0.01em", marginTop: 22 } }, "OLD ENOUGH", /* @__PURE__ */ React.createElement("br", null), "TO KNOW BETTER.", /* @__PURE__ */ React.createElement("br", null), "WILD ENOUGH", /* @__PURE__ */ React.createElement("br", null), "NOT TO CARE."))), /* @__PURE__ */ React.createElement("section", { className: "story-strip", style: { padding: "120px 40px" } }, /* @__PURE__ */ React.createElement("div", { className: "story-inner", style: { maxWidth: 1100 } }, /* @__PURE__ */ React.createElement("div", null, /* @__PURE__ */ React.createElement("span", { className: "eyebrow story-eyebrow" }, "\u2014 Since 1906")), /* @__PURE__ */ React.createElement("div", null, /* @__PURE__ */ React.createElement("p", { className: "story-quote" }, "The first cabin went up in 1906, the year that has been carved into the door frame ever since. It is still standing. So are we."), /* @__PURE__ */ React.createElement("p", { className: "story-body" }, "Birken Lakeside started as a fishing camp, became a family resort, then a hippie hideaway, then a wedding venue, then almost a parking lot, then this. We took it on in 2019 and have been slowly putting it back together \u2014 keeping the old wood, keeping the old soul, throwing out the bad furniture."), /* @__PURE__ */ React.createElement("p", { className: "story-body" }, "We aren't a luxury resort. We aren't a wellness retreat. We're a place where the kids can run barefoot, the dog gets its own treat at check-in, the screen door slams, and the kettle is always on the stove.")))), /* @__PURE__ */ React.createElement("section", { style: { padding: "120px 40px", background: "var(--cream)" } }, /* @__PURE__ */ React.createElement("div", { className: "section-inner" }, /* @__PURE__ */ React.createElement(
+    SectionHead,
+    {
+      num: "\u2014 Principles",
+      title: /* @__PURE__ */ React.createElement(React.Fragment, null, "How we think", /* @__PURE__ */ React.createElement("br", null), "about this place."),
+      intro: "Six things we keep coming back to whenever there's a decision to make. They aren't on signs. They live behind every choice we make about the resort."
+    }
+  ), /* @__PURE__ */ React.createElement("div", { style: { display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: 16 } }, [
+    { t: "Cosy, unpretentious fun", b: "If it feels forced, fancy, or stiff \u2014 it's not us." },
+    { t: "No streaming, just dreaming", b: "We replace the scroll with something better. The lake. The fire." },
+    { t: "Unplug. Go analogue.", b: "We don't tell guests to put their phones away \u2014 we give them something better to look at." },
+    { t: "Rustic elegance", b: "Weathered wood, crisp linens. Never one without the other." },
+    { t: "Not too chill", b: "We lean toward vibrancy and warmth over meditative silence." },
+    { t: "Bring the whole crew", b: "Kids belong here. Dogs belong here. The couple in Blundstones belongs here." }
+  ].map((p, i) => /* @__PURE__ */ React.createElement("div", { key: i, style: {
+    background: "var(--forest)",
+    color: "var(--cream)",
+    padding: 32
+  } }, /* @__PURE__ */ React.createElement("div", { className: "eyebrow", style: { color: "var(--cedar)" } }, "\u2014 0", i + 1), /* @__PURE__ */ React.createElement("h3", { style: { fontFamily: "var(--serif)", fontSize: 34, color: "var(--cream)", letterSpacing: "0.02em", margin: "14px 0 12px" } }, p.t), /* @__PURE__ */ React.createElement("p", { style: { fontSize: 16, lineHeight: 1.7, color: "rgba(243,234,220,0.72)" } }, p.b)))))), /* @__PURE__ */ React.createElement("section", { className: "dark-section", style: { textAlign: "center" } }, /* @__PURE__ */ React.createElement("div", { className: "section-inner" }, /* @__PURE__ */ React.createElement("span", { className: "eyebrow eyebrow-light", style: { color: "var(--cedar)" } }, "\u2014 Come find us"), /* @__PURE__ */ React.createElement("h2", { style: { fontFamily: "var(--serif)", fontSize: "clamp(72px, 9vw, 144px)", color: "var(--cream)", letterSpacing: "0.02em", lineHeight: 0.92, margin: "20px auto 32px", maxWidth: 1100 } }, "GATES LAKE, BC.", /* @__PURE__ */ React.createElement("br", null), "WE'LL LEAVE THE", /* @__PURE__ */ React.createElement("br", null), "PORCH LIGHT ON."), /* @__PURE__ */ React.createElement("button", { className: "btn btn-primary", onClick: () => go("book") }, "Book a Cabin \u2192"))));
+}
+function Book({ go }) {
+  return /* @__PURE__ */ React.createElement("div", { className: "page-fade" }, /* @__PURE__ */ React.createElement("section", { className: "first-section", style: { padding: "120px 40px", background: "var(--forest)", color: "var(--cream)", textAlign: "center", alignItems: "center" } }, /* @__PURE__ */ React.createElement("div", { className: "section-inner", style: { maxWidth: 760 } }, /* @__PURE__ */ React.createElement("span", { className: "eyebrow eyebrow-light", style: { color: "var(--cedar)" } }, "\u2014 Bookings"), /* @__PURE__ */ React.createElement("h1", { style: { fontFamily: "var(--serif)", fontSize: "clamp(72px, 10vw, 156px)", lineHeight: 0.92, color: "var(--cream)", letterSpacing: "0.02em", marginTop: 24 } }, "BOOKINGS", /* @__PURE__ */ React.createElement("br", null), "COMING SOON."), /* @__PURE__ */ React.createElement("p", { style: { color: "rgba(243,234,220,0.82)", fontSize: 21, lineHeight: 1.7, marginTop: 28, maxWidth: 580, marginLeft: "auto", marginRight: "auto" } }, "We're currently setting up our booking system. In the meantime, please contact us directly to make a booking and we'll get back to you as soon as possible."), /* @__PURE__ */ React.createElement("div", { style: { marginTop: 44 } }, /* @__PURE__ */ React.createElement("button", { className: "btn btn-primary", onClick: () => go("contact") }, "Contact Us \u2192")), /* @__PURE__ */ React.createElement("div", { style: { marginTop: 32, fontSize: 14, color: "rgba(243,234,220,0.55)", fontFamily: "var(--ui)", letterSpacing: "0.14em", textTransform: "uppercase" } }, "(604) 452-3255 \xB7 hello@birkenlakeside.ca"))));
+}
+function NotFound({ go }) {
+  return /* @__PURE__ */ React.createElement("div", { className: "page-fade" }, /* @__PURE__ */ React.createElement("section", { className: "first-section", style: { padding: "120px 40px", background: "var(--forest)", color: "var(--cream)", textAlign: "center", alignItems: "center" } }, /* @__PURE__ */ React.createElement("div", { className: "section-inner", style: { maxWidth: 760 } }, /* @__PURE__ */ React.createElement("span", { className: "eyebrow eyebrow-light", style: { color: "var(--cedar)" } }, "\u2014 404"), /* @__PURE__ */ React.createElement("h1", { style: { fontFamily: "var(--serif)", fontSize: "clamp(72px, 10vw, 156px)", lineHeight: 0.92, color: "var(--cream)", letterSpacing: "0.02em", marginTop: 24 } }, "LOST IN", /* @__PURE__ */ React.createElement("br", null), "THE WOODS."), /* @__PURE__ */ React.createElement("p", { style: { color: "rgba(243,234,220,0.82)", fontSize: 21, lineHeight: 1.7, marginTop: 28, maxWidth: 580, marginLeft: "auto", marginRight: "auto" } }, "That page wandered off the trail. Let's get you back to the cabins."), /* @__PURE__ */ React.createElement("div", { style: { marginTop: 44, display: "flex", gap: 14, justifyContent: "center", flexWrap: "wrap" } }, /* @__PURE__ */ React.createElement("button", { className: "btn btn-primary", onClick: () => go("home") }, "Back to home \u2192"), /* @__PURE__ */ React.createElement("button", { className: "btn btn-ghost-light", onClick: () => go("stay") }, "See the cabins")))));
+}
+function Contact({ go }) {
+  return /* @__PURE__ */ React.createElement("div", { className: "page-fade" }, /* @__PURE__ */ React.createElement("section", { className: "first-section", style: { padding: "100px 40px", background: "var(--cream)" } }, /* @__PURE__ */ React.createElement("div", { className: "section-inner", style: { maxWidth: 1100, width: "100%", marginLeft: "auto", marginRight: "auto" } }, /* @__PURE__ */ React.createElement("span", { className: "eyebrow" }, "\u2014 Contact"), /* @__PURE__ */ React.createElement("h1", { style: { fontFamily: "var(--serif)", fontSize: "clamp(72px, 10vw, 156px)", lineHeight: 0.92, color: "var(--forest)", letterSpacing: "0.02em", marginTop: 22 } }, "DROP US", /* @__PURE__ */ React.createElement("br", null), "A LINE."), /* @__PURE__ */ React.createElement("p", { className: "italic-quote", style: { fontSize: 21, marginTop: 22, maxWidth: 620 } }, "Bookings, buyouts, weddings, the dog rules \u2014 anything at all. The crew reads everything and gets back fast."), /* @__PURE__ */ React.createElement("div", { style: { display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: 40, marginTop: 64 } }, /* @__PURE__ */ React.createElement("div", null, /* @__PURE__ */ React.createElement("div", { className: "eyebrow", style: { marginBottom: 10 } }, "\u2014 Phone"), /* @__PURE__ */ React.createElement("a", { href: "tel:+16044523255", style: { fontFamily: "var(--serif)", fontSize: 38, color: "var(--forest)", letterSpacing: "0.02em", display: "block" } }, "(604) 452-3255"), /* @__PURE__ */ React.createElement("div", { style: { fontSize: 14, color: "var(--stone)", marginTop: 6 } }, "9 AM \u2013 7 PM, every day")), /* @__PURE__ */ React.createElement("div", null, /* @__PURE__ */ React.createElement("div", { className: "eyebrow", style: { marginBottom: 10 } }, "\u2014 Email"), /* @__PURE__ */ React.createElement("a", { href: "mailto:hello@birkenlakeside.ca", style: { fontFamily: "var(--serif)", fontSize: 38, color: "var(--forest)", letterSpacing: "0.02em", display: "block", wordBreak: "break-word" } }, "hello@birkenlakeside.ca"), /* @__PURE__ */ React.createElement("div", { style: { fontSize: 14, color: "var(--stone)", marginTop: 6 } }, "Replies usually within a day")), /* @__PURE__ */ React.createElement("div", null, /* @__PURE__ */ React.createElement("div", { className: "eyebrow", style: { marginBottom: 10 } }, "\u2014 Find Us"), /* @__PURE__ */ React.createElement("div", { style: { fontFamily: "var(--serif)", fontSize: 30, color: "var(--forest)", letterSpacing: "0.02em", lineHeight: 1.15 } }, "9179 Pemberton", /* @__PURE__ */ React.createElement("br", null), "Portage Rd", /* @__PURE__ */ React.createElement("br", null), "Birken, BC V0N 2L0"), /* @__PURE__ */ React.createElement("div", { style: { fontSize: 14, color: "var(--stone)", marginTop: 10, letterSpacing: "0.06em", textTransform: "uppercase", fontFamily: "var(--ui)", fontWeight: 700 } }, "55 min from Whistler \xB7 2.5 hrs from Vancouver"))), /* @__PURE__ */ React.createElement("div", { style: { marginTop: 72, paddingTop: 32, borderTop: "0.5px solid rgba(29,61,45,0.18)" } }, /* @__PURE__ */ React.createElement("span", { className: "eyebrow" }, "\u2014 Send a Message"), /* @__PURE__ */ React.createElement("div", { style: { display: "grid", gridTemplateColumns: "1fr 1fr", gap: 16, marginTop: 24 } }, /* @__PURE__ */ React.createElement(ContactField, { label: "First name" }), /* @__PURE__ */ React.createElement(ContactField, { label: "Last name" }), /* @__PURE__ */ React.createElement(ContactField, { label: "Email" }), /* @__PURE__ */ React.createElement(ContactField, { label: "Phone (optional)" })), /* @__PURE__ */ React.createElement("div", { style: { marginTop: 16 } }, /* @__PURE__ */ React.createElement(ContactField, { label: "What's this about?", placeholder: "Booking \xB7 Wedding \xB7 Buyout \xB7 Other" })), /* @__PURE__ */ React.createElement("div", { style: { marginTop: 16 } }, /* @__PURE__ */ React.createElement(ContactField, { label: "Message", placeholder: "Dates, group size, anything we should know...", textarea: true })), /* @__PURE__ */ React.createElement("div", { style: { marginTop: 24, textAlign: "right" } }, /* @__PURE__ */ React.createElement("button", { className: "btn btn-primary" }, "Send Message \u2192"))))));
+}
+function ContactField({ label, placeholder, textarea }) {
+  return /* @__PURE__ */ React.createElement("label", { style: { display: "block" } }, /* @__PURE__ */ React.createElement("div", { className: "eyebrow", style: { marginBottom: 8 } }, "\u2014 ", label), textarea ? /* @__PURE__ */ React.createElement(
+    "textarea",
+    {
+      rows: 5,
+      placeholder: placeholder || "",
+      style: {
+        width: "100%",
+        background: "transparent",
+        border: "0.5px solid rgba(29,61,45,0.25)",
+        padding: "14px 16px",
+        fontFamily: "var(--body)",
+        fontSize: 16,
+        color: "var(--forest)",
+        resize: "vertical",
+        outline: "none"
+      }
+    }
+  ) : /* @__PURE__ */ React.createElement(
+    "input",
+    {
+      type: "text",
+      placeholder: placeholder || "",
+      style: {
+        width: "100%",
+        background: "transparent",
+        border: "0.5px solid rgba(29,61,45,0.25)",
+        padding: "14px 16px",
+        fontFamily: "var(--body)",
+        fontSize: 16,
+        color: "var(--forest)",
+        outline: "none"
+      }
+    }
+  ));
+}
+Object.assign(window, { Gatherings, Weddings, Grille, Area, About, Book, Contact, MenuItem, NotFound });
