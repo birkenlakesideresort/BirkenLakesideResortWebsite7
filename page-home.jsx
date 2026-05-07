@@ -51,7 +51,7 @@ function Home({ go }) {
           <SectionHead
             num="01 — Stay"
             title={<>Cabins with<br/>personalities.</>}
-            intro="Each cabin has its own thing going. Wild West has the wood stove and a porch by the lake. The Library has the books. The Love Shack has — well, a raised king bed and zero pretence. Pick your character." />
+            intro="Each cabin has its own unique character. Wild West has the wood stove and a porch by the lake. The Library has the books. The Love Shack has — well, a raised king bed and zero pretence. Pick your character." />
 
           <div className="cabin-grid">
             <CabinCard num="01" cabin={CABINS[0]} go={go} className="cabin-tall" />
