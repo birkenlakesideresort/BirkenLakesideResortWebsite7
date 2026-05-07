@@ -1275,10 +1275,32 @@ h1, h2, h3 { text-align: left; }
   .nav-links { display: none !important; }
   .nav-right .btn-primary { display: none; }
   .nav-hamburger { display: flex; }
-  .nav-inner { grid-template-columns: 48px 1fr 48px; padding: 14px 20px; }
-  .nav-right { justify-content: flex-end; }
-  .nav-logo-img { height: 80px; justify-content: center; }
-  .nav-logo-img img { height: 80px; width: auto; max-width: none; }
+  .nav-inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 12px 20px;
+    gap: 0;
+  }
+  .nav-logo-img {
+    height: 80px;
+    justify-content: center;
+    max-width: calc(100% - 96px);
+  }
+  .nav-logo-img img {
+    height: 80px;
+    width: auto;
+    max-width: 100%;
+    object-fit: contain;
+  }
+  .nav-right {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    gap: 0;
+  }
 }
 @media (min-width: 981px) {
   .nav-hamburger { display: none !important; }
@@ -1288,17 +1310,6 @@ h1, h2, h3 { text-align: left; }
 /* ============================================================
    MOBILE LOGO FIX
    ============================================================ */
-.nav-logo-img {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  max-width: 100%;
-}
-.nav-logo-img img {
-  object-fit: contain;
-  width: auto;
-  max-width: 100%;
-}
 .footer-logo-img {
   object-fit: contain;
   width: auto;
