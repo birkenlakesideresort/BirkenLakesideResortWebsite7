@@ -19,7 +19,7 @@ function CabinRow({ cabin, num, go, reverse }) {
     gap: 0,
     border: "0.5px solid rgba(29,61,45,0.18)",
     background: "var(--cream)"
-  } }, /* @__PURE__ */ React.createElement("div", { style: {
+  } }, /* @__PURE__ */ React.createElement("div", { role: "img", "aria-label": `${cabin.name} cabin exterior`, style: {
     order: reverse ? 2 : 1,
     backgroundImage: `url(${cabin.ext})`,
     backgroundSize: "cover",
@@ -61,7 +61,7 @@ function CabinRow({ cabin, num, go, reverse }) {
 function CabinDetail({ cabinId, go }) {
   const cabin = CABINS.find((c) => c.id === cabinId) || CABINS[0];
   const others = CABINS.filter((c) => c.id !== cabin.id).slice(0, 3);
-  return /* @__PURE__ */ React.createElement("div", { className: "page-fade" }, /* @__PURE__ */ React.createElement("section", { className: "cabin-hero", style: { padding: 0 } }, /* @__PURE__ */ React.createElement("div", { className: "cabin-hero-img", style: { backgroundImage: `url(${cabin.ext})` } }), /* @__PURE__ */ React.createElement("div", { className: "cabin-hero-shade" }), /* @__PURE__ */ React.createElement("div", { className: "cabin-hero-content" }, /* @__PURE__ */ React.createElement("div", null, /* @__PURE__ */ React.createElement("span", { className: "eyebrow eyebrow-light", style: { color: "var(--cedar)" } }, "\u2014 Cabin \xB7 ", cabin.type), /* @__PURE__ */ React.createElement("h1", { style: { marginTop: 18 } }, cabin.name.toUpperCase()), /* @__PURE__ */ React.createElement("p", { className: "tagline" }, cabin.tag)), /* @__PURE__ */ React.createElement("div", { className: "price-card" }, /* @__PURE__ */ React.createElement("div", { className: "lbl" }, "From"), /* @__PURE__ */ React.createElement("div", { className: "pp" }, "$", cabin.price, /* @__PURE__ */ React.createElement("span", { style: { fontSize: 16, letterSpacing: "0.18em", color: "var(--mist)" } }, " / NIGHT")), /* @__PURE__ */ React.createElement("div", { className: "sub" }, "2-night minimum \xB7 taxes extra"), /* @__PURE__ */ React.createElement("button", { className: "btn btn-primary", style: { width: "100%" }, onClick: () => go("book") }, "Book ", cabin.name, " \u2192")))), /* @__PURE__ */ React.createElement("section", { style: { padding: "64px 40px", background: "var(--cream)" } }, /* @__PURE__ */ React.createElement("div", { className: "section-inner", style: {
+  return /* @__PURE__ */ React.createElement("div", { className: "page-fade" }, /* @__PURE__ */ React.createElement("section", { className: "cabin-hero", style: { padding: 0 } }, /* @__PURE__ */ React.createElement("div", { className: "cabin-hero-img", role: "img", "aria-label": `${cabin.name} \u2014 ${cabin.tag}`, style: { backgroundImage: `url(${cabin.ext})` } }), /* @__PURE__ */ React.createElement("div", { className: "cabin-hero-shade" }), /* @__PURE__ */ React.createElement("div", { className: "cabin-hero-content" }, /* @__PURE__ */ React.createElement("div", null, /* @__PURE__ */ React.createElement("span", { className: "eyebrow eyebrow-light", style: { color: "var(--cedar)" } }, "\u2014 Cabin \xB7 ", cabin.type), /* @__PURE__ */ React.createElement("h1", { style: { marginTop: 18 } }, cabin.name.toUpperCase()), /* @__PURE__ */ React.createElement("p", { className: "tagline" }, cabin.tag)), /* @__PURE__ */ React.createElement("div", { className: "price-card" }, /* @__PURE__ */ React.createElement("div", { className: "lbl" }, "From"), /* @__PURE__ */ React.createElement("div", { className: "pp" }, "$", cabin.price, /* @__PURE__ */ React.createElement("span", { style: { fontSize: 16, letterSpacing: "0.18em", color: "var(--mist)" } }, " / NIGHT")), /* @__PURE__ */ React.createElement("div", { className: "sub" }, "2-night minimum \xB7 taxes extra"), /* @__PURE__ */ React.createElement("button", { className: "btn btn-primary", style: { width: "100%" }, onClick: () => go("book") }, "Book ", cabin.name, " \u2192")))), /* @__PURE__ */ React.createElement("section", { style: { padding: "64px 40px", background: "var(--cream)" } }, /* @__PURE__ */ React.createElement("div", { className: "section-inner", style: {
     display: "grid",
     gridTemplateColumns: "repeat(4, 1fr)",
     gap: 0,
@@ -106,7 +106,7 @@ function CabinDetail({ cabinId, go }) {
     display: "flex",
     alignItems: "center",
     gap: 10
-  } }, /* @__PURE__ */ React.createElement("span", { style: { width: 4, height: 4, background: "var(--cedar)", borderRadius: "50%" } }), f)))), /* @__PURE__ */ React.createElement("div", { style: {
+  } }, /* @__PURE__ */ React.createElement("span", { style: { width: 4, height: 4, background: "var(--cedar)", borderRadius: "50%" } }), f)))), /* @__PURE__ */ React.createElement("div", { role: "img", "aria-label": `Interior of ${cabin.name}`, style: {
     backgroundImage: `url(${cabin.int})`,
     backgroundSize: "cover",
     backgroundPosition: "center",

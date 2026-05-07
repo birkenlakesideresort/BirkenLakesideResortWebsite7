@@ -60,7 +60,7 @@ function CabinRow({ cabin, num, go, reverse }) {
       border: '0.5px solid rgba(29,61,45,0.18)',
       background: 'var(--cream)',
     }}>
-      <div style={{
+      <div role="img" aria-label={`${cabin.name} cabin exterior`} style={{
         order: reverse ? 2 : 1,
         backgroundImage: `url(${cabin.ext})`,
         backgroundSize: 'cover',
@@ -114,7 +114,7 @@ function CabinDetail({ cabinId, go }) {
   return (
     <div className="page-fade">
       <section className="cabin-hero" style={{ padding: 0 }}>
-        <div className="cabin-hero-img" style={{ backgroundImage: `url(${cabin.ext})` }} />
+        <div className="cabin-hero-img" role="img" aria-label={`${cabin.name} — ${cabin.tag}`} style={{ backgroundImage: `url(${cabin.ext})` }} />
         <div className="cabin-hero-shade" />
         <div className="cabin-hero-content">
           <div>
@@ -190,7 +190,7 @@ function CabinDetail({ cabinId, go }) {
               ))}
             </ul>
           </div>
-          <div style={{
+          <div role="img" aria-label={`Interior of ${cabin.name}`} style={{
             backgroundImage: `url(${cabin.int})`,
             backgroundSize: 'cover', backgroundPosition: 'center',
             minHeight: 640,

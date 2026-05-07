@@ -15,7 +15,7 @@ function Gatherings({ go }) {
 
       <section style={{ padding: '0 0 0', background: 'var(--cream)' }}>
         <div className="alt-block" style={{ maxWidth: 1440, margin: '0 auto' }}>
-          <div className="alt-img" style={{ backgroundImage: 'url(assets/meeting-hall-int.jpeg)' }} />
+          <div className="alt-img" role="img" aria-label="Interior of the resort meeting hall — wood-panelled room with round tables, a piano, foosball table, and fairy lights" style={{ backgroundImage: 'url(assets/meeting-hall-int.jpeg)' }} />
           <div className="alt-text">
             <span className="eyebrow">— The Meeting Hall</span>
             <h3>The hub of any group booking.</h3>
@@ -104,7 +104,7 @@ function Weddings({ go }) {
   return (
     <div className="page-fade">
       <section className="weddings-hero" style={{ position: 'relative', height: '100vh', minHeight: 640, marginTop: 'calc(-1 * var(--nav-h, 140px))', color: 'var(--cream)', overflow: 'hidden', padding: 0 }}>
-        <div style={{ position: 'absolute', inset: 0, backgroundImage: 'url(assets/wedding-tables-lakeview.jpeg)', backgroundSize: 'cover', backgroundPosition: 'center' }} />
+        <div role="img" aria-label="Wedding reception tables laid out on an open lakeside deck surrounded by cedar trees, with Gates Lake and mountains visible" style={{ position: 'absolute', inset: 0, backgroundImage: 'url(assets/wedding-tables-lakeview.jpeg)', backgroundSize: 'cover', backgroundPosition: 'center' }} />
         <div className="hero-shade" />
         <div style={{ position: 'absolute', inset: 0, display: 'flex', flexDirection: 'column', justifyContent: 'flex-end', padding: '0 40px 80px', maxWidth: 1440, margin: '0 auto' }}>
           <span className="eyebrow eyebrow-light" style={{ color: 'var(--cedar)' }}>— 04 / Weddings</span>
@@ -147,15 +147,15 @@ function Weddings({ go }) {
       <section style={{ padding: '0 40px 120px', background: 'var(--cream)' }}>
         <div className="section-inner">
           <div className="wed-grid">
-            <div style={{ backgroundImage: 'url(assets/wedding-ceremony-arch.jpeg)' }} />
-            <div style={{ backgroundImage: 'url(assets/wedding-party-lakeshore.jpeg)' }} />
-            <div style={{ backgroundImage: 'url(assets/wedding-love-bunting.jpeg)' }} />
-            <div style={{ backgroundImage: 'url(assets/meeting-hall-int.jpeg)' }} />
-            <div style={{ backgroundImage: 'url(assets/lake-dock-chairs.jpeg)' }} />
-            <div style={{ backgroundImage: 'url(assets/meeting-hall-ext.jpeg)' }} />
-            <div style={{ backgroundImage: 'url(assets/chapel-ext.jpeg)' }} />
-            <div style={{ backgroundImage: 'url(assets/library-ext.jpeg)' }} />
-            <div style={{ backgroundImage: 'url(assets/lake-mtn-sunset.jpeg)' }} />
+            <div role="img" aria-label="Outdoor wedding ceremony chairs arranged on grass, facing a fabric-draped wooden arch backed by cedar trees" style={{ backgroundImage: 'url(assets/wedding-ceremony-arch.jpeg)' }} />
+            <div role="img" aria-label="Wedding party silhouetted against the sparkling surface of Gates Lake with mountain peaks behind them" style={{ backgroundImage: 'url(assets/wedding-party-lakeshore.jpeg)' }} />
+            <div role="img" aria-label="Wedding reception tables set on the lakeside deck with a red 'Love' bunting banner, wine glasses, and Gates Lake through the trees" style={{ backgroundImage: 'url(assets/wedding-love-bunting.jpeg)' }} />
+            <div role="img" aria-label="Interior of the resort meeting hall with dining tables, chairs, a piano, and wood-panelled walls" style={{ backgroundImage: 'url(assets/meeting-hall-int.jpeg)' }} />
+            <div role="img" aria-label="Two Adirondack chairs on a small dock at the edge of Gates Lake, framed by trees and mountain peaks" style={{ backgroundImage: 'url(assets/lake-dock-chairs.jpeg)' }} />
+            <div role="img" aria-label="Exterior of the resort meeting hall with a wide wooden deck, outdoor tables, and surrounding cedar trees" style={{ backgroundImage: 'url(assets/meeting-hall-ext.jpeg)' }} />
+            <div role="img" aria-label="The Chapel cabin with timber-framed open doors revealing a queen bed inside, set between tall trees" style={{ backgroundImage: 'url(assets/chapel-ext.jpeg)' }} />
+            <div role="img" aria-label="The Library cabin — a red-painted cedar building with a wooden deck and red Adirondack chairs among tall conifers" style={{ backgroundImage: 'url(assets/library-ext.jpeg)' }} />
+            <div role="img" aria-label="Sunset over Gates Lake with snow-capped peaks silhouetted against a pink and purple sky" style={{ backgroundImage: 'url(assets/lake-mtn-sunset.jpeg)' }} />
           </div>
         </div>
       </section>

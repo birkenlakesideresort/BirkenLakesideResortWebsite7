@@ -5,7 +5,7 @@ function Home({ go }) {
     <div className="page-fade">
       {/* HERO */}
       <section className="hero" style={{ padding: 0 }}>
-        <div className="hero-img" style={{ backgroundImage: 'url(assets/red-cabins-grove.jpeg)' }} />
+        <div className="hero-img" role="img" aria-label="Two warm red-painted cabins connected by a wooden walkway, seen through tall conifers at Birken Lakeside Resort" style={{ backgroundImage: 'url(assets/red-cabins-grove.jpeg)' }} />
         <div className="hero-shade" />
         <div className="hero-grain" />
         <div className="hero-content">
@@ -114,7 +114,7 @@ function Home({ go }) {
       <section style={{ padding: 0, background: 'var(--cream-2)' }}>
         <div style={{ maxWidth: 1440, margin: '0 auto', padding: '0 0' }}>
           <div className="alt-block">
-            <div className="alt-img" style={{ backgroundImage: 'url(assets/campfire-jenga-night.jpeg)' }} />
+            <div className="alt-img" role="img" aria-label="Guests playing giant Jenga on a lakeside deck at twilight, with string lights overhead and Gates Lake in the background" style={{ backgroundImage: 'url(assets/campfire-jenga-night.jpeg)' }} />
             <div className="alt-text">
               <span className="eyebrow">— Gatherings</span>
               <h3>Bring the<br/>whole crew.</h3>
@@ -123,7 +123,7 @@ function Home({ go }) {
             </div>
           </div>
           <div className="alt-block reverse">
-            <div className="alt-img" style={{ backgroundImage: 'url(assets/weddings-hero.png)' }} />
+            <div className="alt-img" role="img" aria-label="Outdoor forest wedding ceremony setup — rows of wooden chairs facing a fabric-draped arch, with a glimpse of the lake beyond" style={{ backgroundImage: 'url(assets/weddings-hero.png)' }} />
             <div className="alt-text">
               <span className="eyebrow">— Weddings</span>
               <h3>Get married<br/>in the woods.</h3>
@@ -185,7 +185,7 @@ function Home({ go }) {
 function CabinCard({ cabin, num, className, go }) {
   return (
     <article className={`cabin-card ${className || ''}`} onClick={() => go('cabin', cabin.id)}>
-      <div className="cc-img" style={{ backgroundImage: `url(${cabin.ext})` }} />
+      <div className="cc-img" role="img" aria-label={`Exterior of ${cabin.name} cabin at Birken Lakeside Resort`} style={{ backgroundImage: `url(${cabin.ext})` }} />
       <div className="cc-shade" />
       <div className="cc-body">
         <span className="cc-num">— Cabin {num}</span>
