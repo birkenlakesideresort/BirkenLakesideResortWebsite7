@@ -478,7 +478,7 @@ function Contact({ go }) {
             </div>
             <div>
               <div className="eyebrow" style={{ marginBottom: 10 }}>— Email</div>
-              <a href="mailto:hello@birkenlakeside.ca" style={{ fontFamily: 'var(--serif)', fontSize: 38, color: 'var(--forest)', letterSpacing: '0.02em', display: 'block', wordBreak: 'break-word' }}>
+              <a href="mailto:hello@birkenlakeside.ca" style={{ fontFamily: 'var(--serif)', fontSize: 26, color: 'var(--forest)', letterSpacing: '0.02em', display: 'block' }}>
                 hello@birkenlakeside.ca
               </a>
               <div style={{ fontSize: 14, color: 'var(--stone)', marginTop: 6 }}>Replies usually within a day</div>
@@ -494,60 +494,12 @@ function Contact({ go }) {
             </div>
           </div>
 
-          <div style={{ marginTop: 72, paddingTop: 32, borderTop: '0.5px solid rgba(29,61,45,0.18)' }}>
-            <span className="eyebrow">— Send a Message</span>
-            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 16, marginTop: 24 }}>
-              <ContactField label="First name" />
-              <ContactField label="Last name" />
-              <ContactField label="Email" />
-              <ContactField label="Phone (optional)" />
-            </div>
-            <div style={{ marginTop: 16 }}>
-              <ContactField label="What's this about?" placeholder="Booking · Wedding · Buyout · Other" />
-            </div>
-            <div style={{ marginTop: 16 }}>
-              <ContactField label="Message" placeholder="Dates, group size, anything we should know..." textarea />
-            </div>
-            <div style={{ marginTop: 24, textAlign: 'right' }}>
-              <button className="btn btn-primary">Send Message →</button>
-            </div>
-          </div>
         </div>
       </section>
     </div>
   );
 }
 
-function ContactField({ label, placeholder, textarea }) {
-  return (
-    <label style={{ display: 'block' }}>
-      <div className="eyebrow" style={{ marginBottom: 8 }}>— {label}</div>
-      {textarea ? (
-        <textarea
-          rows={5}
-          placeholder={placeholder || ''}
-          style={{
-            width: '100%', background: 'transparent',
-            border: '0.5px solid rgba(29,61,45,0.25)',
-            padding: '14px 16px', fontFamily: 'var(--body)', fontSize: 16,
-            color: 'var(--forest)', resize: 'vertical', outline: 'none',
-          }}
-        />
-      ) : (
-        <input
-          type="text"
-          placeholder={placeholder || ''}
-          style={{
-            width: '100%', background: 'transparent',
-            border: '0.5px solid rgba(29,61,45,0.25)',
-            padding: '14px 16px', fontFamily: 'var(--body)', fontSize: 16,
-            color: 'var(--forest)', outline: 'none',
-          }}
-        />
-      )}
-    </label>
-  );
-}
 
 Object.assign(window, { Gatherings, Weddings, Grille, Area, About, Book, Contact, MenuItem, NotFound });
 
