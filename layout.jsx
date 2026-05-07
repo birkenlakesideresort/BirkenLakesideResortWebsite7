@@ -178,7 +178,7 @@ function Footer({ go }) {
                 color: 'var(--cream)', fontSize: 15, padding: '10px 0', fontFamily: 'var(--body)',
               }}
             />
-            <button style={{
+            <button className="footer-send-btn" style={{
               fontFamily: 'var(--ui)', fontSize: 12, fontWeight: 700,
               letterSpacing: '0.18em', textTransform: 'uppercase',
               color: 'var(--cedar)', padding: '10px 0',

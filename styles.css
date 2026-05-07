@@ -763,6 +763,8 @@ section { padding: 120px 40px; }
   transition: color 0.2s;
 }
 .footer-col ul li:hover { color: var(--cedar); }
+.footer-send-btn { transition: color 0.2s; }
+.footer-send-btn:hover { color: var(--cream); }
 .footer-bottom {
   max-width: 1360px;
   margin: 24px auto 0;
@@ -889,7 +891,7 @@ section { padding: 120px 40px; }
   border-radius: 999px;
   transition: background 0.2s, color 0.2s, border-color 0.2s;
 }
-.cabin-filters button:hover { border-color: var(--forest); }
+.cabin-filters button:hover { border-color: var(--forest); background: rgba(29,61,45,0.07); color: var(--forest); }
 .cabin-filters button.active {
   background: var(--forest);
   color: var(--cream);

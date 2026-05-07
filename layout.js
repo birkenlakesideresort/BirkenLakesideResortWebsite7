@@ -101,7 +101,7 @@ function Footer({ go }) {
         fontFamily: "var(--body)"
       }
     }
-  ), /* @__PURE__ */ React.createElement("button", { style: {
+  ), /* @__PURE__ */ React.createElement("button", { className: "footer-send-btn", style: {
     fontFamily: "var(--ui)",
     fontSize: 12,
     fontWeight: 700,
