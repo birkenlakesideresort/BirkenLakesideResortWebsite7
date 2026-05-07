@@ -1101,6 +1101,9 @@ section { padding: 120px 40px; }
   .hero-content { padding: 0 20px 80px; }
   .hero-meta { display: none; }
   .hero-scroll { display: none; }
+  .cabin-row-article  { grid-template-columns: 1fr !important; }
+  .cabin-row-text     { padding: 32px 0 !important; }
+  .cabin-row-actions  { flex-wrap: wrap; }
 }
 
 
@@ -1172,7 +1175,7 @@ section { padding: 120px 40px; }
    ============================================================ */
 html { zoom: 0.85; }
 @supports not (zoom: 1) {
-  html { zoom: normal; font-size: 13.6px; }
+  html { zoom: normal; font-size: 13.6px; overflow-x: hidden; }
   body { transform: scale(0.85); transform-origin: 0 0; width: 117.647%; min-height: 117.647vh; }
 }
 
@@ -1322,3 +1325,8 @@ h1, h2, h3 { text-align: left; }
   .nav-logo-img { height: 60px; }
   .nav-logo-img img { height: 60px; max-width: none; }
 }
+
+/* ============================================================
+   HORIZONTAL OVERFLOW BACKSTOP
+   ============================================================ */
+html { overflow-x: hidden; }

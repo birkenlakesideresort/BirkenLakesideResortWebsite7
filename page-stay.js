@@ -13,7 +13,7 @@ function Stay({ go }) {
   ))))), /* @__PURE__ */ React.createElement("section", { style: { padding: "0 40px 120px", background: "var(--cream)" } }, /* @__PURE__ */ React.createElement("div", { className: "section-inner" }, /* @__PURE__ */ React.createElement("div", { style: { display: "flex", flexDirection: "column", gap: 24 } }, list.map((c, i) => /* @__PURE__ */ React.createElement(CabinRow, { key: c.id, cabin: c, num: String(i + 1).padStart(2, "0"), go, reverse: i % 2 === 1 }))))), /* @__PURE__ */ React.createElement(Marquee, { items: ["Pet friendly", "Wood stoves", "Real beds", "No streaming, just dreaming", "Open seasonally"] }));
 }
 function CabinRow({ cabin, num, go, reverse }) {
-  return /* @__PURE__ */ React.createElement("article", { style: {
+  return /* @__PURE__ */ React.createElement("article", { className: "cabin-row-article", style: {
     display: "grid",
     gridTemplateColumns: reverse ? "1fr 1.4fr" : "1.4fr 1fr",
     gap: 0,
@@ -25,7 +25,7 @@ function CabinRow({ cabin, num, go, reverse }) {
     backgroundSize: "cover",
     backgroundPosition: "center",
     minHeight: 460
-  } }), /* @__PURE__ */ React.createElement("div", { style: {
+  } }), /* @__PURE__ */ React.createElement("div", { className: "cabin-row-text", style: {
     order: reverse ? 1 : 2,
     padding: "56px 56px 48px",
     display: "flex",
@@ -56,7 +56,7 @@ function CabinRow({ cabin, num, go, reverse }) {
     display: "flex",
     alignItems: "center",
     gap: 10
-  } }, /* @__PURE__ */ React.createElement("span", { style: { width: 4, height: 4, background: "var(--cedar)", borderRadius: "50%" } }), f))), /* @__PURE__ */ React.createElement("div", { style: { display: "flex", gap: 12, marginTop: 18 } }, /* @__PURE__ */ React.createElement("button", { className: "btn btn-primary", onClick: () => go("book") }, "Book ", cabin.name, " \u2192"), /* @__PURE__ */ React.createElement("button", { className: "btn btn-ghost", onClick: () => go("cabin", cabin.id) }, "See more"))));
+  } }, /* @__PURE__ */ React.createElement("span", { style: { width: 4, height: 4, background: "var(--cedar)", borderRadius: "50%" } }), f))), /* @__PURE__ */ React.createElement("div", { className: "cabin-row-actions", style: { display: "flex", gap: 12, marginTop: 18 } }, /* @__PURE__ */ React.createElement("button", { className: "btn btn-primary", onClick: () => go("book") }, "Book ", cabin.name, " \u2192"), /* @__PURE__ */ React.createElement("button", { className: "btn btn-ghost", onClick: () => go("cabin", cabin.id) }, "See more"))));
 }
 function CabinDetail({ cabinId, go }) {
   const cabin = CABINS.find((c) => c.id === cabinId) || CABINS[0];

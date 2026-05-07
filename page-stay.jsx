@@ -53,7 +53,7 @@ function Stay({ go }) {
 
 function CabinRow({ cabin, num, go, reverse }) {
   return (
-    <article style={{
+    <article className="cabin-row-article" style={{
       display: 'grid',
       gridTemplateColumns: reverse ? '1fr 1.4fr' : '1.4fr 1fr',
       gap: 0,
@@ -67,7 +67,7 @@ function CabinRow({ cabin, num, go, reverse }) {
         backgroundPosition: 'center',
         minHeight: 460,
       }} />
-      <div style={{
+      <div className="cabin-row-text" style={{
         order: reverse ? 1 : 2,
         padding: '56px 56px 48px',
         display: 'flex', flexDirection: 'column', gap: 16, justifyContent: 'center',
@@ -98,7 +98,7 @@ function CabinRow({ cabin, num, go, reverse }) {
             </li>
           ))}
         </ul>
-        <div style={{ display: 'flex', gap: 12, marginTop: 18 }}>
+        <div className="cabin-row-actions" style={{ display: 'flex', gap: 12, marginTop: 18 }}>
           <button className="btn btn-primary" onClick={() => go('book')}>Book {cabin.name} →</button>
           <button className="btn btn-ghost" onClick={() => go('cabin', cabin.id)}>See more</button>
         </div>
