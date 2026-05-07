@@ -359,7 +359,7 @@ function About({ go }) {
               The first cabin went up in 1906, the year that has been carved into the door frame ever since. It is still standing. So are we.
             </p>
             <p className="story-body">
-              Birken Lakeside started as a fishing camp, became a family resort, then a hippie hideaway, then a wedding venue, then almost a parking lot, then this. We took it on in 2019 and have been slowly putting it back together — keeping the old wood, keeping the old soul, throwing out the bad furniture.
+              Birken Lakeside started as a lodge for the railway foreman, became a family resort, then a hippie hideaway, then a wedding venue, then this. We took it on and have been slowly putting it back together — keeping the old wood, keeping the old soul, throwing out the bad furniture.
             </p>
             <p className="story-body">
               We aren't a luxury resort. We aren't a wellness retreat. We're a place where the kids can run barefoot, the dog gets its own treat at check-in, the screen door slams, and the kettle is always on the stove.
