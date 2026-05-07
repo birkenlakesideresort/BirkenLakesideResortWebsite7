@@ -132,8 +132,8 @@ function CabinDetail({ cabinId, go }) {
       </section>
 
       {/* Specs row */}
-      <section style={{ padding: '64px 40px', background: 'var(--cream)' }}>
-        <div className="section-inner" style={{
+      <section className="cabin-detail-section" style={{ padding: '64px 40px', background: 'var(--cream)' }}>
+        <div className="section-inner cabin-detail-specs" style={{
           display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: 0,
           borderTop: '0.5px solid rgba(29,61,45,0.18)',
           borderBottom: '0.5px solid rgba(29,61,45,0.18)',
@@ -159,8 +159,8 @@ function CabinDetail({ cabinId, go }) {
       </section>
 
       {/* Story + interior */}
-      <section style={{ padding: '40px 40px 120px', background: 'var(--cream)' }}>
-        <div className="section-inner" style={{ display: 'grid', gridTemplateColumns: '1fr 1.2fr', gap: 64, alignItems: 'start' }}>
+      <section className="cabin-detail-section" style={{ padding: '40px 40px 120px', background: 'var(--cream)' }}>
+        <div className="section-inner cabin-detail-story" style={{ display: 'grid', gridTemplateColumns: '1fr 1.2fr', gap: 64, alignItems: 'start' }}>
           <div>
             <span className="eyebrow">— The Cabin</span>
             <h2 style={{
@@ -173,7 +173,7 @@ function CabinDetail({ cabinId, go }) {
             <p style={{ fontSize: 19, lineHeight: 1.85, color: 'var(--stone)', marginTop: 16 }}>
               You'll find fresh linens, a stocked kitchen kit, the kettle on the stove. The cabin sleeps {cabin.sleeps} in a {cabin.beds.toLowerCase()} configuration.
             </p>
-            <ul style={{
+            <ul className="cabin-detail-features" style={{
               listStyle: 'none', display: 'grid', gridTemplateColumns: '1fr 1fr',
               gap: '4px 24px', marginTop: 28,
             }}>
