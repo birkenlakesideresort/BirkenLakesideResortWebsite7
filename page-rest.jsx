@@ -439,7 +439,7 @@ function NotFound({ go }) {
       <section className="first-section" style={{ padding: '120px 40px', background: 'var(--forest)', color: 'var(--cream)', textAlign: 'center' }}>
         <div className="section-inner" style={{ maxWidth: 760 }}>
           <span className="eyebrow eyebrow-light" style={{ color: 'var(--cedar)' }}>— 404</span>
-          <h1 style={{ color: 'var(--cream)', textAlign: 'left' }}>
+          <h1 style={{ color: 'var(--cream)' }}>
             LOST IN<br/>THE WOODS.
           </h1>
           <p style={{ color: 'rgba(243,234,220,0.82)', fontSize: 21, lineHeight: 1.7, marginTop: 28, maxWidth: 580, marginLeft: 'auto', marginRight: 'auto' }}>
