@@ -65,7 +65,7 @@ function Nav({ route, go, transparent }) {
             </ul>
             <button
               className="btn btn-primary"
-              style={{ padding: '12px 22px' }}
+              style={{ padding: '12px 28px' }}
               onClick={() => go('book')}>
               Bookings →
             </button>

@@ -846,7 +846,7 @@ section { padding: 120px 40px; }
   background: rgba(15,32,23,0.55);
   border: 0.5px solid rgba(243,234,220,0.3);
   padding: 24px 28px;
-  min-width: 240px;
+  min-width: 290px;
   backdrop-filter: blur(8px);
 }
 .cabin-hero .price-card .lbl {
@@ -1120,7 +1120,7 @@ section { padding: 120px 40px; }
 .btn,
 .btn-text,
 .bb-btn             { font-size: 15px; letter-spacing: 0.14em; }
-.btn                { padding-top: 16px; padding-bottom: 16px; }
+.btn                { padding: 16px 28px; }
 
 .hero-eyebrow       { font-size: 19px; letter-spacing: 0.26em; }
 .hero-tagline       { font-size: 22px; }
