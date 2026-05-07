@@ -11,10 +11,7 @@ function Stay({ go }) {
       <section className="first-section" style={{ padding: '80px 40px', background: 'var(--cream)' }}>
         <div className="section-inner">
           <span className="eyebrow">— 02 / Stay</span>
-          <h1 style={{
-            fontFamily: 'var(--serif)', fontSize: 'clamp(80px, 11vw, 184px)',
-            lineHeight: 0.86, color: 'var(--forest)', letterSpacing: '0.01em', marginTop: 22,
-          }}>
+          <h1 style={{ color: 'var(--forest)' }}>
             CABINS.<br/>ONE LAKE.<br/>NO TWO ALIKE.
           </h1>
           <p className="italic-quote" style={{ fontSize: 20, marginTop: 28, maxWidth: 640 }}>

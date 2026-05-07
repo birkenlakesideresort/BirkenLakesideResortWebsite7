@@ -6,10 +6,7 @@ function Gatherings({ go }) {
       <section className="first-section" style={{ padding: '80px 40px', background: 'var(--cream)' }}>
         <div className="section-inner">
           <span className="eyebrow">— 03 / Gatherings</span>
-          <h1 style={{
-            fontFamily: 'var(--serif)', fontSize: 'clamp(80px, 10vw, 168px)',
-            lineHeight: 0.86, color: 'var(--forest)', letterSpacing: '0.02em', marginTop: 22,
-          }}>BRING THE<br/>WHOLE CREW.</h1>
+          <h1 style={{ color: 'var(--forest)' }}>BRING THE<br/>WHOLE CREW.</h1>
           <p className="italic-quote" style={{ fontSize: 20, marginTop: 28, maxWidth: 680 }}>
             Whole-resort buyouts. Family reunions. Founder offsites that won't feel like one. The meeting hall, all the cabins, the dock, the firepit. Yours for as long as you book.
           </p>
@@ -186,7 +183,7 @@ function Grille({ go }) {
       <section className="first-section" style={{ padding: '80px 40px', background: 'var(--cream)' }}>
         <div className="section-inner">
           <span className="eyebrow">— 05 / The Grille</span>
-          <h1 style={{ fontFamily: 'var(--serif)', fontSize: 'clamp(80px, 11vw, 184px)', lineHeight: 0.86, color: 'var(--forest)', letterSpacing: '0.01em', marginTop: 22 }}>
+          <h1 style={{ color: 'var(--forest)' }}>
             LAKE-FACING.<br/>HONEST FOOD.
           </h1>
           <p className="italic-quote" style={{ fontSize: 20, marginTop: 28, maxWidth: 680 }}>
@@ -248,7 +245,7 @@ function Area({ go }) {
       <section className="first-section" style={{ padding: '80px 40px', background: 'var(--cream)' }}>
         <div className="section-inner">
           <span className="eyebrow">— 06 / The Area</span>
-          <h1 style={{ fontFamily: 'var(--serif)', fontSize: 'clamp(80px, 11vw, 184px)', lineHeight: 0.86, color: 'var(--forest)', letterSpacing: '0.01em', marginTop: 22 }}>
+          <h1 style={{ color: 'var(--forest)' }}>
             55 MINUTES<br/>FROM WHISTLER.<br/>A DIFFERENT<br/>PLANET.
           </h1>
           <p className="italic-quote" style={{ fontSize: 20, marginTop: 28, maxWidth: 680 }}>
@@ -346,7 +343,7 @@ function About({ go }) {
       <section className="first-section" style={{ padding: '80px 40px', background: 'var(--cream)' }}>
         <div className="section-inner">
           <span className="eyebrow">— 07 / About</span>
-          <h1 style={{ fontFamily: 'var(--serif)', fontSize: 'clamp(80px, 11vw, 184px)', lineHeight: 0.86, color: 'var(--forest)', letterSpacing: '0.01em', marginTop: 22 }}>
+          <h1 style={{ color: 'var(--forest)' }}>
             OLD ENOUGH<br/>TO KNOW BETTER.<br/>WILD ENOUGH<br/>NOT TO CARE.
           </h1>
         </div>
@@ -415,10 +412,10 @@ function About({ go }) {
 function Book({ go }) {
   return (
     <div className="page-fade">
-      <section className="first-section" style={{ padding: '120px 40px', background: 'var(--forest)', color: 'var(--cream)', textAlign: 'center', alignItems: 'center' }}>
+      <section className="first-section" style={{ padding: '120px 40px', background: 'var(--forest)', color: 'var(--cream)', textAlign: 'center' }}>
         <div className="section-inner" style={{ maxWidth: 760 }}>
           <span className="eyebrow eyebrow-light" style={{ color: 'var(--cedar)' }}>— Bookings</span>
-          <h1 style={{ fontFamily: 'var(--serif)', fontSize: 'clamp(72px, 10vw, 156px)', lineHeight: 0.92, color: 'var(--cream)', letterSpacing: '0.02em', marginTop: 24 }}>
+          <h1 style={{ color: 'var(--cream)', textAlign: 'left' }}>
             BOOKINGS<br/>COMING SOON.
           </h1>
           <p style={{ color: 'rgba(243,234,220,0.82)', fontSize: 21, lineHeight: 1.7, marginTop: 28, maxWidth: 580, marginLeft: 'auto', marginRight: 'auto' }}>
@@ -439,10 +436,10 @@ function Book({ go }) {
 function NotFound({ go }) {
   return (
     <div className="page-fade">
-      <section className="first-section" style={{ padding: '120px 40px', background: 'var(--forest)', color: 'var(--cream)', textAlign: 'center', alignItems: 'center' }}>
+      <section className="first-section" style={{ padding: '120px 40px', background: 'var(--forest)', color: 'var(--cream)', textAlign: 'center' }}>
         <div className="section-inner" style={{ maxWidth: 760 }}>
           <span className="eyebrow eyebrow-light" style={{ color: 'var(--cedar)' }}>— 404</span>
-          <h1 style={{ fontFamily: 'var(--serif)', fontSize: 'clamp(72px, 10vw, 156px)', lineHeight: 0.92, color: 'var(--cream)', letterSpacing: '0.02em', marginTop: 24 }}>
+          <h1 style={{ color: 'var(--cream)', textAlign: 'left' }}>
             LOST IN<br/>THE WOODS.
           </h1>
           <p style={{ color: 'rgba(243,234,220,0.82)', fontSize: 21, lineHeight: 1.7, marginTop: 28, maxWidth: 580, marginLeft: 'auto', marginRight: 'auto' }}>
@@ -464,7 +461,7 @@ function Contact({ go }) {
       <section className="first-section" style={{ padding: '100px 40px', background: 'var(--cream)' }}>
         <div className="section-inner" style={{ maxWidth: 1100, width: '100%', marginLeft: 'auto', marginRight: 'auto' }}>
           <span className="eyebrow">— Contact</span>
-          <h1 style={{ fontFamily: 'var(--serif)', fontSize: 'clamp(72px, 10vw, 156px)', lineHeight: 0.92, color: 'var(--forest)', letterSpacing: '0.02em', marginTop: 22 }}>
+          <h1 style={{ color: 'var(--forest)' }}>
             DROP US<br/>A LINE.
           </h1>
           <p className="italic-quote" style={{ fontSize: 21, marginTop: 22, maxWidth: 620 }}>

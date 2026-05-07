@@ -49,7 +49,14 @@ html.loaded body { visibility: visible; }
   flex-direction: column;
 }
 .first-section > .section-inner { margin-top: auto; }
-.first-section h1 { text-align: left; }
+.first-section h1 {
+  text-align: left;
+  font-family: var(--serif);
+  font-size: clamp(72px, 11vw, 184px);
+  line-height: 0.86;
+  letter-spacing: 0.01em;
+  margin-top: 22px;
+}
 
 img { display:block; max-width:100%; }
 

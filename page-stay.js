@@ -2,14 +2,7 @@ function Stay({ go }) {
   const [filter, setFilter] = useState("All");
   const types = ["All", "Cabin", "Glamping", "Couples", "Group"];
   const list = filter === "All" ? CABINS : CABINS.filter((c) => c.type === filter);
-  return /* @__PURE__ */ React.createElement("div", { className: "page-fade" }, /* @__PURE__ */ React.createElement("section", { className: "first-section", style: { padding: "80px 40px", background: "var(--cream)" } }, /* @__PURE__ */ React.createElement("div", { className: "section-inner" }, /* @__PURE__ */ React.createElement("span", { className: "eyebrow" }, "\u2014 02 / Stay"), /* @__PURE__ */ React.createElement("h1", { style: {
-    fontFamily: "var(--serif)",
-    fontSize: "clamp(80px, 11vw, 184px)",
-    lineHeight: 0.86,
-    color: "var(--forest)",
-    letterSpacing: "0.01em",
-    marginTop: 22
-  } }, "CABINS.", /* @__PURE__ */ React.createElement("br", null), "ONE LAKE.", /* @__PURE__ */ React.createElement("br", null), "NO TWO ALIKE."), /* @__PURE__ */ React.createElement("p", { className: "italic-quote", style: { fontSize: 20, marginTop: 28, maxWidth: 640 } }, "Each one was named for a feeling, then built around it. Pick the one that sounds like the kind of week you've been needing."))), /* @__PURE__ */ React.createElement("section", { style: { padding: "0 40px 40px", background: "var(--cream)" } }, /* @__PURE__ */ React.createElement("div", { className: "section-inner" }, /* @__PURE__ */ React.createElement("div", { className: "cabin-filters" }, types.map((t) => /* @__PURE__ */ React.createElement(
+  return /* @__PURE__ */ React.createElement("div", { className: "page-fade" }, /* @__PURE__ */ React.createElement("section", { className: "first-section", style: { padding: "80px 40px", background: "var(--cream)" } }, /* @__PURE__ */ React.createElement("div", { className: "section-inner" }, /* @__PURE__ */ React.createElement("span", { className: "eyebrow" }, "\u2014 02 / Stay"), /* @__PURE__ */ React.createElement("h1", { style: { color: "var(--forest)" } }, "CABINS.", /* @__PURE__ */ React.createElement("br", null), "ONE LAKE.", /* @__PURE__ */ React.createElement("br", null), "NO TWO ALIKE."), /* @__PURE__ */ React.createElement("p", { className: "italic-quote", style: { fontSize: 20, marginTop: 28, maxWidth: 640 } }, "Each one was named for a feeling, then built around it. Pick the one that sounds like the kind of week you've been needing."))), /* @__PURE__ */ React.createElement("section", { style: { padding: "0 40px 40px", background: "var(--cream)" } }, /* @__PURE__ */ React.createElement("div", { className: "section-inner" }, /* @__PURE__ */ React.createElement("div", { className: "cabin-filters" }, types.map((t) => /* @__PURE__ */ React.createElement(
     "button",
     {
       key: t,
