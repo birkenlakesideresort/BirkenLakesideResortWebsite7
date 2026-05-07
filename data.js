@@ -59,8 +59,8 @@ window.CABINS = [
   {
     id: 'library',
     name: 'The Library',
-    tag: 'Hundreds of spines. One armchair. Pages turning.',
-    blurb: 'A whole cabin built around the books. Real shelves, real pages, real silence except for the wood stove and your own breathing.',
+    tag: 'Hundreds of lines. One armchair. Pages turning.',
+    blurb: 'A whole cabin built around the books. Real shelves, real pages, real silence except for the wood stove and your own breathing. Sleeps two: one queen, one small single pullout.',
     type: 'Cabin',
     sleeps: 2,
     beds: '1 Queen + 1 Small Single Pullout',
