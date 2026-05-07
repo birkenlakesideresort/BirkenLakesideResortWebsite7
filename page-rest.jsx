@@ -108,7 +108,7 @@ function Weddings({ go }) {
         <div className="hero-shade" />
         <div style={{ position: 'absolute', inset: 0, display: 'flex', flexDirection: 'column', justifyContent: 'flex-end', padding: '0 40px 80px', maxWidth: 1440, margin: '0 auto' }}>
           <span className="eyebrow eyebrow-light" style={{ color: 'var(--cedar)' }}>— 04 / Weddings</span>
-          <h1 style={{ fontFamily: 'var(--serif)', fontSize: 'clamp(72px, 10vw, 168px)', lineHeight: 0.86, color: 'var(--cream)', letterSpacing: '0.02em', marginTop: 18 }}>
+          <h1 style={{ fontFamily: 'var(--serif)', fontSize: 'clamp(28px, min(10vw, 11svh), 160px)', lineHeight: 0.86, color: 'var(--cream)', letterSpacing: '0.02em', marginTop: 18 }}>
             GET MARRIED<br/>IN THE WOODS.
           </h1>
           <p className="italic-quote" style={{ color: 'rgba(243,234,220,0.85)', fontSize: 20, marginTop: 18, maxWidth: 620 }}>

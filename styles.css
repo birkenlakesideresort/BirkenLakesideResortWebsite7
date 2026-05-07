@@ -41,18 +41,15 @@ html.loaded body { visibility: visible; }
 /* ---------- Weddings hero override ---------- */
 .weddings-hero { height: 100svh !important; }
 
-/* ---------- First-section full viewport ---------- */
+/* ---------- First-section page header ---------- */
 .first-section {
-  min-height: 100vh;
-  min-height: 100svh;
   display: flex;
   flex-direction: column;
 }
-.first-section > .section-inner { margin-top: auto; }
 .first-section h1 {
   text-align: left;
   font-family: var(--serif);
-  font-size: clamp(36px, 11vw, 184px);
+  font-size: clamp(28px, min(11vw, 11svh), 160px);
   line-height: 0.86;
   letter-spacing: 0.01em;
   margin-top: 22px;
