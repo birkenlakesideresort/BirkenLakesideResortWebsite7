@@ -108,8 +108,8 @@ window.CABINS = [
     beds: '2 Twins',
     bath: 'Shared bathhouse',
     price: 175,
-    ext: 'assets/glamping-tent-1.jpeg',
-    int: 'assets/glamping-tent-3.jpeg',
+    ext: 'assets/glamping-tent-3.jpeg',
+    int: 'assets/glamping-1.jpeg',
     features: ['Bell tent', 'Real beds', 'Solar lights', 'Bathhouse 30s away'],
   },
   {
@@ -122,8 +122,8 @@ window.CABINS = [
     beds: '2 Twins',
     bath: 'Shared bathhouse',
     price: 175,
-    ext: 'assets/glamping-tent-2.jpeg',
-    int: 'assets/glamping-tent-4.jpeg',
+    ext: 'assets/glamping-tent-4.jpeg',
+    int: 'assets/glamping-2.jpeg',
     features: ['Bell tent', 'Real beds', 'Solar lights', 'Bathhouse 30s away'],
   },];
 
