@@ -11,22 +11,22 @@ function Gatherings({ go }) {
             lineHeight: 0.86, color: 'var(--forest)', letterSpacing: '0.02em', marginTop: 22,
           }}>BRING THE<br/>WHOLE CREW.</h1>
           <p className="italic-quote" style={{ fontSize: 20, marginTop: 28, maxWidth: 680 }}>
-            Whole-resort buyouts. Family reunions. Founder offsites that won't feel like one. The bunkhouse, all the cabins, the dock, the firepit. Yours for as long as you book.
+            Whole-resort buyouts. Family reunions. Founder offsites that won't feel like one. The meeting hall, all the cabins, the dock, the firepit. Yours for as long as you book.
           </p>
         </div>
       </section>
 
       <section style={{ padding: '0 0 0', background: 'var(--cream)' }}>
         <div className="alt-block" style={{ maxWidth: 1440, margin: '0 auto' }}>
-          <div className="alt-img" style={{ backgroundImage: 'url(assets/bunkhouse-int.jpeg)' }} />
+          <div className="alt-img" style={{ backgroundImage: 'url(assets/meeting-hall-int.jpeg)' }} />
           <div className="alt-text">
-            <span className="eyebrow">— The Bunkhouse</span>
+            <span className="eyebrow">— The Meeting Hall</span>
             <h3>The hub of any group booking.</h3>
-            <p>Foosball, a piano nobody can play, a record player, two couches deeper than they look. Sleeps 8 if you're flexible, hosts 30 if everyone's just there to hang.</p>
+            <p>Projector, sound system, a screen that actually works. Space for 30 to sit, present, and argue the afternoon away. Included in site buyout.</p>
             <ul>
-              <li>Sleeps 8</li><li>Foosball + piano</li>
+              <li>Projector + screen</li><li>Sound system</li>
               <li>Wood stove + AC</li>
-              <li>Record player</li><li>Group hub</li>
+              <li>A/V ready</li><li>Group hub</li>
             </ul>
           </div>
         </div>
@@ -43,7 +43,7 @@ function Gatherings({ go }) {
             <div className="threeup-col">
               <span className="threeup-num">8–18</span>
               <h3 className="threeup-title">Small group</h3>
-              <p className="threeup-body">A handful of cabins + the bunkhouse. Right-size for an offsite of 8 to 18 humans, with room for everyone to land somewhere quiet at night.</p>
+              <p className="threeup-body">A handful of cabins + the bunkhouse. Right-size for an offsite of 8 to 18 humans. Sleeping included in site buyout.</p>
             </div>
             <div className="threeup-col">
               <span className="threeup-num">18–32</span>
