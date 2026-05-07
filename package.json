@@ -4,6 +4,7 @@
   },
   "devDependencies": {
     "esbuild": "^0.28.0",
-    "serve": "^14.2.1"
+    "serve": "^14.2.1",
+    "sharp": "^0.34.5"
   }
 }
