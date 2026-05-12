@@ -107,7 +107,7 @@ function Weddings({ go }) {
       <section className="hero" style={{ padding: 0 }}>
         <div className="hero-img" role="img" aria-label="Outdoor wedding ceremony set in a cedar forest clearing at Birken Lakeside Resort, with wooden chairs and a fabric-draped arch overlooking Gates Lake" style={{ backgroundImage: 'url(assets/Wedding-outdoor-ceremony.jpeg)', backgroundPosition: 'center 85%' }} />
         <div className="hero-shade" />
-        <div className="hero-grain" />
+        <div className="hero-grain" style={{ opacity: 0.09 }} />
         <div className="hero-content">
           <div className="hero-eyebrow">Gates Lake, BC · Since 1906</div>
           <h1 className="hero-headline">GET MARRIED<br/>IN THE WOODS.</h1>
