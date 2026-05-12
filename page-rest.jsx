@@ -114,7 +114,7 @@ function Weddings({ go }) {
           <p className="hero-tagline">One wedding at a time. Your people, your playlist, your kind of vows.</p>
           <div className="hero-actions">
             <a className="btn btn-primary" href="mailto:hello@birkenlakesideresort.ca?subject=Wedding%20Enquiry%20-%20Birken%20Lakeside%20Resort">Enquire Now →</a>
-            <a className="btn btn-ghost-light" href="assets/BLR_Wedding_Inquiry_Pack_v3.pdf" target="_blank" rel="noopener">See the Options</a>
+            <a className="btn btn-ghost-light" href="/assets/BLR_Wedding_Inquiry_Pack_v3.pdf" target="_blank" rel="noopener">See the Options</a>
           </div>
         </div>
         <div className="hero-meta">
