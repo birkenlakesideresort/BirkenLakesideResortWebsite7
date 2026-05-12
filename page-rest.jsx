@@ -103,17 +103,28 @@ function Gatherings({ go }) {
 function Weddings({ go }) {
   return (
     <div className="page-fade">
-      <section className="weddings-hero" style={{ position: 'relative', height: '100vh', minHeight: 640, marginTop: 'calc(-1 * var(--nav-h, 140px))', color: 'var(--cream)', overflow: 'hidden', padding: 0 }}>
-        <div role="img" aria-label="Wedding reception tables laid out on an open lakeside deck surrounded by cedar trees, with Gates Lake and mountains visible" style={{ position: 'absolute', inset: 0, backgroundImage: 'url(assets/wedding-tables-lakeview.jpeg)', backgroundSize: 'cover', backgroundPosition: 'center' }} />
+      {/* HERO */}
+      <section className="hero" style={{ padding: 0 }}>
+        <div className="hero-img" role="img" aria-label="Outdoor wedding ceremony set in a cedar forest clearing at Birken Lakeside Resort, with wooden chairs and a fabric-draped arch overlooking Gates Lake" style={{ backgroundImage: 'url(assets/Wedding-outdoor-ceremony-hero.jpg)' }} />
         <div className="hero-shade" />
-        <div style={{ position: 'absolute', inset: 0, display: 'flex', flexDirection: 'column', justifyContent: 'flex-end', padding: '0 40px 80px', maxWidth: 1440, margin: '0 auto' }}>
-          <span className="eyebrow eyebrow-light" style={{ color: 'var(--cedar)' }}>— 04 / Weddings</span>
-          <h1 style={{ fontFamily: 'var(--serif)', fontSize: 'clamp(28px, min(10vw, 11svh), 160px)', lineHeight: 0.86, color: 'var(--cream)', letterSpacing: '0.02em', marginTop: 18 }}>
-            GET MARRIED<br/>IN THE WOODS.
-          </h1>
-          <p className="italic-quote" style={{ color: 'rgba(243,234,220,0.85)', fontSize: 20, marginTop: 18, maxWidth: 620 }}>
-            One wedding at a time. Your people, your playlist, your kind of vows.
-          </p>
+        <div className="hero-grain" />
+        <div className="hero-content">
+          <div className="hero-eyebrow">Gates Lake, BC · Since 1906</div>
+          <h1 className="hero-headline">GET MARRIED<br/>IN THE WOODS.</h1>
+          <p className="hero-tagline">One wedding at a time. Your people, your playlist, your kind of vows.</p>
+          <div className="hero-actions">
+            <a className="btn btn-primary" href="mailto:hello@birkenlakesideresort.ca?subject=Wedding%20Enquiry%20-%20Birken%20Lakeside%20Resort">Enquire Now →</a>
+            <a className="btn btn-ghost-light" href="assets/BLR_Wedding_Inquiry_Pack_v3.pdf" target="_blank" rel="noopener">See the Options</a>
+          </div>
+        </div>
+        <div className="hero-meta">
+          <span className="hero-meta-item">55 min from Whistler</span>
+          <span className="hero-meta-item">On Gates Lake</span>
+          <span className="hero-meta-item">Open seasonally</span>
+        </div>
+        <div className="hero-scroll">
+          <span>Scroll</span>
+          <div className="hero-scroll-line"></div>
         </div>
       </section>
 
