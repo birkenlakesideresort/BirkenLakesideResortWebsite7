@@ -105,7 +105,7 @@ function Weddings({ go }) {
     <div className="page-fade">
       {/* HERO */}
       <section className="hero" style={{ padding: 0 }}>
-        <div className="hero-img" role="img" aria-label="Outdoor wedding ceremony set in a cedar forest clearing at Birken Lakeside Resort, with wooden chairs and a fabric-draped arch overlooking Gates Lake" style={{ backgroundImage: 'url(assets/Wedding-outdoor-ceremony.jpeg)', backgroundPosition: 'center 70%' }} />
+        <div className="hero-img" role="img" aria-label="Outdoor wedding ceremony set in a cedar forest clearing at Birken Lakeside Resort, with wooden chairs and a fabric-draped arch overlooking Gates Lake" style={{ backgroundImage: 'url(assets/Wedding-outdoor-ceremony.jpeg)', backgroundPosition: 'center 85%' }} />
         <div className="hero-shade" />
         <div className="hero-grain" />
         <div className="hero-content">
