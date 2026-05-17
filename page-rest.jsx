@@ -392,8 +392,8 @@ function About({ go }) {
               { t: 'No streaming, just dreaming', b: 'We replace the scroll with something better. The lake. The fire.' },
               { t: 'Unplug. Go analogue.', b: 'We don\'t tell guests to put their phones away — we give them something better to look at.' },
               { t: 'Rustic elegance', b: 'Weathered wood, crisp linens. Never one without the other.' },
-              { t: 'Not too chill', b: 'We lean toward vibrancy and warmth over meditative silence.' },
-              { t: 'Bring the whole crew', b: 'Kids belong here. Dogs belong here. The couple in Blundstones belongs here.' },
+              { t: 'Not too chill', b: 'We lean toward vibrancy and warmth.' },
+              { t: 'Bring the whole crew', b: 'Kids belong here. Dogs belong here. The couple in Birkenstocks belongs here.' },
             ].map((p, i) => (
               <div key={i} style={{
                 background: 'var(--forest)', color: 'var(--cream)', padding: 32,
