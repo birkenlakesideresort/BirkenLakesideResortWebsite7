@@ -98,7 +98,7 @@ function Home({ go }) {
             <div className="threeup-col">
               <span className="threeup-num">03</span>
               <h3 className="threeup-title">The Grille</h3>
-              <p className="threeup-body">The on-site spot. Cedar-plank salmon, wood-fired pizza, cold beer. Eat on the deck. Don't dress up.</p>
+              <p className="threeup-body">The on-site spot. Burgers, milkshakes, pizza. Eat on the deck. Don't dress up.</p>
             </div>
           </div>
 
