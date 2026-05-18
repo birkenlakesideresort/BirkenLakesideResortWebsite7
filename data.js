@@ -129,7 +129,7 @@ window.CABINS = [
 
 window.AREA = [
   { num: '01', name: 'Gates Lake Dock', dist: 'On site',  desc: 'Jump off it. Read on it. Watch a heron miss a fish from it.' },
-  { num: '02', name: 'Birkenhead Provincial Park', dist: '6 min drive', desc: 'Old-growth cedar, swimming holes, a beach that\'s never crowded.' },
+  { num: '02', name: 'Birkenhead Provincial Park', dist: '6 min drive', desc: 'Old-growth fir, swimming holes, a beach that\'s never crowded.' },
   { num: '03', name: 'Pemberton Farmer\'s Market', dist: '22 min drive', desc: 'Saturday mornings. Cheese, jam, sourdough, the dog comes too.' },
   { num: '04', name: 'Joffre Lakes', dist: '40 min drive', desc: 'The famous turquoise three. Yes, it\'s as cold as it looks.' },
   { num: '05', name: 'Whistler Village', dist: '55 min drive', desc: 'When you want a chairlift, a brewery and a different planet for an afternoon.' },
