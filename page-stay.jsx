@@ -73,7 +73,7 @@ function CabinRow({ cabin, num, go, reverse }) {
         display: 'flex', flexDirection: 'column', gap: 16, justifyContent: 'center',
       }}>
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline' }}>
-          <span className="eyebrow">— Cabin {num} · {cabin.type}</span>
+          <span className="eyebrow">— {cabin.type}</span>
           <span className="pill">From ${cabin.price}/nt</span>
         </div>
         <h2 style={{
@@ -118,7 +118,7 @@ function CabinDetail({ cabinId, go }) {
         <div className="cabin-hero-shade" />
         <div className="cabin-hero-content">
           <div>
-            <span className="eyebrow eyebrow-light" style={{ color: 'var(--cedar)' }}>— Cabin · {cabin.type}</span>
+            <span className="eyebrow eyebrow-light" style={{ color: 'var(--cedar)' }}>— {cabin.type}</span>
             <h1 style={{ marginTop: 18 }}>{cabin.name.toUpperCase()}</h1>
             <p className="tagline">{cabin.tag}</p>
           </div>
@@ -203,7 +203,7 @@ function CabinDetail({ cabinId, go }) {
         <div className="section-inner">
           <SectionHead
             num="— More Cabins"
-            title={<>The other six.</>}
+            title={<>The others.</>}
             intro="Each one different. Pick the one that sounds like the kind of week you need." />
           <div className="cabin-grid">
             {others.map((c, i) => (
