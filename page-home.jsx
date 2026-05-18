@@ -188,7 +188,7 @@ function CabinCard({ cabin, num, className, go }) {
       <div className="cc-img" role="img" aria-label={`Exterior of ${cabin.name} cabin at Birken Lakeside Resort`} style={{ backgroundImage: `url(${cabin.ext})` }} />
       <div className="cc-shade" />
       <div className="cc-body">
-        <span className="cc-num">— Cabin {num}</span>
+        <span className="cc-num">— {cabin.type}</span>
         <h3 className="cc-title">{cabin.name}</h3>
         <p className="cc-sub">{cabin.tag}</p>
         <div className="cc-meta">
