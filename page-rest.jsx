@@ -260,7 +260,7 @@ function Area({ go }) {
             55 MINUTES<br/>FROM WHISTLER.<br/>A DIFFERENT<br/>PLANET.
           </h1>
           <p className="italic-quote" style={{ fontSize: 20, marginTop: 28, maxWidth: 680 }}>
-            Old-growth cedar, swimming holes, a Saturday market, mountain country on the dry side. Here's what's near.
+            The Sea-to-Sky doesn't end at Whistler. Push another fifty-five minutes north and the road climbs into Birken — old-growth fir, granite peaks, a turquoise lake the locals don't talk about much. This is the corridor's quiet side.
           </p>
         </div>
       </section>
