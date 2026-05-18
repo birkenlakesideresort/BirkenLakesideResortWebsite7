@@ -82,7 +82,7 @@ function Home({ go }) {
           <SectionHead
             num="02 — What's Here"
             title={<>Less scroll.<br/>More soul.</>}
-            intro="No spas, no signature cocktails, no programming. The lake. The fire. The people in front of you. Mountain Wi-Fi — great for an email, great for streaming. That's by design." />
+            intro="No spas, no signature cocktails, no programming. The lake. The fire. The people in front of you. Mountain Wi-Fi. Solid across all the cabins and common spaces. Use it sparingly." />
 
           <div className="threeup">
             <div className="threeup-col">
