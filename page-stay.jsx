@@ -203,7 +203,7 @@ function CabinDetail({ cabinId, go }) {
         <div className="section-inner">
           <SectionHead
             num="— More Cabins"
-            title={<>The other six.</>}
+            title={<>The others.</>}
             intro="Each one different. Pick the one that sounds like the kind of week you need." />
           <div className="cabin-grid">
             {others.map((c, i) => (

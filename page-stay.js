@@ -115,7 +115,7 @@ function CabinDetail({ cabinId, go }) {
     SectionHead,
     {
       num: "\u2014 More Cabins",
-      title: /* @__PURE__ */ React.createElement(React.Fragment, null, "The other six."),
+      title: /* @__PURE__ */ React.createElement(React.Fragment, null, "The others."),
       intro: "Each one different. Pick the one that sounds like the kind of week you need."
     }
   ), /* @__PURE__ */ React.createElement("div", { className: "cabin-grid" }, others.map((c, i) => /* @__PURE__ */ React.createElement(
