@@ -17,6 +17,7 @@ window.CABINS = [
   {
     id: 'morocco',
     name: 'Morocco',
+    eyebrow: 'The Cosy Gem',
     tag: 'Our smallest, our most rustic, our highest on charm.',
     blurb: 'Brass lanterns, woven headboard. The smallest cabin with the loudest personality.',
     type: 'Cabin',
