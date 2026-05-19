@@ -125,7 +125,7 @@ function Gatherings({ go }) {
             Ready to talk? We don't run buyouts through a checkout. Email us with your dates and your numbers, and we'll send a full inquiry pack within twenty-four hours.
           </p>
           <div style={{ display: 'flex', gap: 14, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-primary" href="mailto:hello@birkenlakesideresort.ca">Enquire — hello@birkenlakesideresort.ca →</a>
+            <a className="btn btn-primary" href="mailto:hello@birkenlakesideresort.ca">Enquire now →</a>
             {/* PDF placeholder — awaiting upload, href to be updated when file is available */}
             <a className="btn btn-ghost" href="#options-pdf-pending">See options →</a>
           </div>
