@@ -147,7 +147,7 @@ a { color: inherit; text-decoration: none; }
   display: flex;
   align-items: center;
   cursor: pointer;
-  height: 110px;
+  height: 88px;
 }
 .nav-logo-img img {
   height: 100%;
