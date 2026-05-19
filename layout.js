@@ -73,7 +73,7 @@ function Nav({ route, go, transparent }) {
       onClick: () => setMobileOpen(false)
     },
     /* @__PURE__ */ React.createElement("svg", { viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round" }, /* @__PURE__ */ React.createElement("line", { x1: "18", y1: "6", x2: "6", y2: "18" }), /* @__PURE__ */ React.createElement("line", { x1: "6", y1: "6", x2: "18", y2: "18" }))
-  )), /* @__PURE__ */ React.createElement("ul", { className: "mobile-menu-list" }, links.map((l) => /* @__PURE__ */ React.createElement("li", { key: l.id }, l.id === "book" ? /* @__PURE__ */ React.createElement("a", { href: BOOKING_URL, target: "_blank", rel: "noopener noreferrer" }, l.label) : /* @__PURE__ */ React.createElement(
+  )), /* @__PURE__ */ React.createElement("ul", { className: "mobile-menu-list" }, links.filter((l) => l.id !== "book").map((l) => /* @__PURE__ */ React.createElement("li", { key: l.id }, /* @__PURE__ */ React.createElement(
     "button",
     {
       className: route === l.id || l.id === "stay" && route === "cabin" ? "active" : "",
