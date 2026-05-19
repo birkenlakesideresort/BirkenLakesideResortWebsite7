@@ -1122,9 +1122,9 @@ section { padding: 120px 40px; }
    READABILITY OVERRIDES — bigger small/secondary fonts +
    bump 15px heading-style text to 19px.
    ============================================================ */
-.eyebrow            { font-size: 15px; letter-spacing: 0.18em; }
-.label-ui           { font-size: 16px; letter-spacing: 0.12em; }
-.section-num        { font-size: 15px; letter-spacing: 0.26em; }
+.eyebrow            { font-size: 17px; letter-spacing: 0.18em; }
+.label-ui           { font-size: 18px; letter-spacing: 0.12em; }
+.section-num        { font-size: 17px; letter-spacing: 0.26em; }
 
 .nav-links button   { font-size: 15px; letter-spacing: 0.14em; }
 .nav-logo .mark-top { font-size: 14px; letter-spacing: 0.26em; }
@@ -1136,7 +1136,7 @@ section { padding: 120px 40px; }
 .bb-btn             { font-size: 15px; letter-spacing: 0.14em; }
 .btn                { padding: 16px 28px; }
 
-.hero-eyebrow       { font-size: 19px; letter-spacing: 0.26em; }
+.hero-eyebrow       { font-size: 21px; letter-spacing: 0.26em; }
 .hero-tagline       { font-size: 22px; }
 .hero-meta          { font-size: 16px; letter-spacing: 0.18em; }
 .hero-scroll        { font-size: 14px; letter-spacing: 0.26em; }
