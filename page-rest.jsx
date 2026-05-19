@@ -76,6 +76,11 @@ function Gatherings({ go }) {
               <h3 className="threeup-title">Larger groups</h3>
               <p className="threeup-body">We can accommodate larger groups with additional glamping and accommodation options. Get in touch and we'll work out what's possible.</p>
             </div>
+            <div className="threeup-col">
+              <span className="threeup-num">Retreats</span>
+              <h3 className="threeup-title">Birken hosts your weekend, not your itinerary.</h3>
+              <p className="threeup-body">Corporate offsites that don't feel like work. Milestone birthdays. Anniversaries with the people who were there. Wellness weekends that include the wine. Whatever you're planning — if it needs the whole place, this is the place.</p>
+            </div>
           </div>
         </div>
       </section>
