@@ -50,7 +50,7 @@ function Nav({ route, go, transparent }) {
           </ul>
 
           <div className="nav-logo nav-logo-img" onClick={() => go('home')}>
-            <img src="assets/logo.png" alt="Birken Lakeside Resort Logo — Since 1906" />
+            <img src="assets/Birken_Submark_Original.png" alt="Birken Lakeside Resort Logo — Since 1906" />
           </div>
 
           <div className="nav-right">
@@ -89,7 +89,7 @@ function Nav({ route, go, transparent }) {
         <div className="mobile-menu" role="dialog" aria-label="Site navigation">
           <div className="mobile-menu-top">
             <div className="mobile-menu-logo">
-              <img src="assets/logo.png" alt="Birken Lakeside Resort Logo — Since 1906" />
+              <img src="assets/Birken_Submark_Cream.png" alt="Birken Lakeside Resort Logo — Since 1906" />
             </div>
             <button
               className="mobile-menu-close"
@@ -143,7 +143,7 @@ function Footer({ go }) {
     <footer className="footer">
       <div className="footer-inner">
         <div>
-          <img src="assets/logo.png" alt="Birken Lakeside Resort Logo — Since 1906" className="footer-logo-img" />
+          <img src="assets/Birken_Submark_Cream.png" alt="Birken Lakeside Resort Logo — Since 1906" className="footer-logo-img" />
           <p className="footer-tag italic-quote">Woodsmoke. Pristine Water. Good People. Cabins with personalities, on a lake that's been here longer than any of us.</p>
         </div>
         <div className="footer-col">
