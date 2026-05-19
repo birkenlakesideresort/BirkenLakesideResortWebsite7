@@ -198,6 +198,19 @@ function CabinDetail({ cabinId, go }) {
         </div>
       </section>
 
+      {/* Accessibility note */}
+      <section style={{ padding: '0 40px 80px', background: 'var(--cream)' }}>
+        <div className="section-inner">
+          <div style={{ borderLeft: '2px solid rgba(29,61,45,0.22)', paddingLeft: 24, maxWidth: 620 }}>
+            <span className="eyebrow">— Good to Know</span>
+            <p style={{ fontSize: 16, lineHeight: 1.85, color: 'var(--stone)', marginTop: 10 }}>
+              Birken's stone steps, forest paths, and century-old structures make parts of the property difficult to navigate for some guests. If mobility is a consideration, please get in touch before booking.
+            </p>
+            <button className="btn-text" style={{ marginTop: 14 }} onClick={() => go('accessibility')}>Full accessibility information →</button>
+          </div>
+        </div>
+      </section>
+
       {/* Other cabins */}
       <section className="dark-section">
         <div className="section-inner">
