@@ -42,6 +42,7 @@ function Stay({ go }) {
             {list.map((c, i) => (
               <CabinRow key={c.id} cabin={c} num={String(i+1).padStart(2, '0')} go={go} reverse={i % 2 === 1} />
             ))}
+            {filter === 'All' && <WashroomRow go={go} />}
           </div>
         </div>
       </section>
@@ -220,4 +221,111 @@ function CabinDetail({ cabinId, go }) {
   );
 }
 
-Object.assign(window, { Stay, CabinDetail, CabinRow });
+function WashroomRow({ go }) {
+  return (
+    <article className="cabin-row-article" style={{
+      display: 'grid', gridTemplateColumns: '1.4fr 1fr', gap: 0,
+      border: '0.5px solid rgba(29,61,45,0.18)', background: 'var(--cream)',
+    }}>
+      <div role="img" aria-label="Exterior of the shared washroom facility at Birken Lakeside Resort" style={{
+        order: 1,
+        backgroundImage: 'url(assets/shared_washroom_exterior.jpeg)',
+        backgroundSize: 'cover', backgroundPosition: 'center', minHeight: 460,
+      }} />
+      <div className="cabin-row-text" style={{
+        order: 2, padding: '56px 56px 48px',
+        display: 'flex', flexDirection: 'column', gap: 16, justifyContent: 'center',
+      }}>
+        <span className="eyebrow">— What's Here</span>
+        <h2 style={{
+          fontFamily: 'var(--serif)', fontSize: 'clamp(48px, 5vw, 80px)',
+          lineHeight: 0.95, color: 'var(--forest)', letterSpacing: '0.02em',
+        }}>Shared Washroom Facility</h2>
+        <p className="italic-quote" style={{ fontSize: 19 }}>Hot showers, good light, always clean.</p>
+        <p style={{ fontSize: 17, lineHeight: 1.8, color: 'var(--stone)', maxWidth: 480 }}>
+          Six of seven cabins share a central washroom block — bright, clean, always stocked. The walk from any cabin is about thirty seconds.
+        </p>
+        <div className="cabin-row-actions" style={{ display: 'flex', gap: 12, marginTop: 18 }}>
+          <button className="btn btn-ghost" onClick={() => go('washroom')}>See facility details →</button>
+        </div>
+      </div>
+    </article>
+  );
+}
+
+function WashroomDetail({ go }) {
+  return (
+    <div className="page-fade">
+      <section className="cabin-hero" style={{ padding: 0 }}>
+        <div className="cabin-hero-img" role="img" aria-label="Exterior of the shared washroom facility at Birken Lakeside Resort" style={{ backgroundImage: 'url(assets/shared_washroom_exterior.jpeg)' }} />
+        <div className="cabin-hero-shade" />
+        <div className="cabin-hero-content">
+          <div>
+            <span className="eyebrow eyebrow-light" style={{ color: 'var(--cedar)' }}>— What's Here</span>
+            <h1 style={{ marginTop: 18 }}>SHARED WASHROOM FACILITY</h1>
+            <p className="tagline">Hot showers, good light, always clean.</p>
+          </div>
+          <div className="price-card">
+            <div className="lbl">Shared by</div>
+            <div className="pp" style={{ fontSize: 28, letterSpacing: '0.04em' }}>6 of 7 cabins</div>
+            <div className="sub">The Chapel has its own private washroom</div>
+            <button className="btn btn-ghost-light" style={{ width: '100%', marginTop: 8 }} onClick={() => go('stay')}>← Back to all cabins</button>
+          </div>
+        </div>
+      </section>
+
+      {/* Body copy + interior photo */}
+      <section className="cabin-detail-section" style={{ padding: '64px 40px 80px', background: 'var(--cream)' }}>
+        <div className="section-inner cabin-detail-story" style={{ display: 'grid', gridTemplateColumns: '1fr 1.2fr', gap: 64, alignItems: 'start' }}>
+          <div>
+            <span className="eyebrow">— The Facility</span>
+            <h2 style={{
+              fontFamily: 'var(--serif)', fontSize: 'clamp(40px, 4.5vw, 72px)',
+              lineHeight: 0.95, color: 'var(--forest)', letterSpacing: '0.02em', marginTop: 14,
+            }}>Bright. Clean. Always on.</h2>
+            <p style={{ fontSize: 19, lineHeight: 1.85, color: 'var(--stone)', marginTop: 24 }}>
+              One of the rules of staying at a hundred-year-old resort: the cabins are character, not infrastructure. Six of seven share a central washroom block — bright, clean, hot showers always on, set apart in its own building close to the cabins. It's not a flaw to apologise for. It's how the property was built, and how it still works. Spotless every morning. Stocked through the day. The Chapel is the only cabin with its own private washroom — if a private bathroom is a deal-breaker for you, that's the one to book. For everyone else, the walk's about thirty seconds, and the lake's right there.
+            </p>
+          </div>
+          <div role="img" aria-label="Interior of the shared washroom — decorative bowl sinks, warm wood walls" style={{
+            backgroundImage: 'url(assets/shared_washroom_interior.jpeg)',
+            backgroundSize: 'cover', backgroundPosition: 'center', minHeight: 640,
+          }} />
+        </div>
+      </section>
+
+      {/* Photo grid */}
+      <section className="cabin-detail-section" style={{ padding: '0 40px 120px', background: 'var(--cream)' }}>
+        <div className="section-inner">
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 16 }}>
+            {[
+              { src: 'assets/shared_washroom_mirror.jpeg',   alt: 'Mirror and vanity area in the shared washroom' },
+              { src: 'assets/shared_washtoom_shower.jpeg',   alt: 'Hot shower in the shared washroom facility' },
+              { src: 'assets/shared_washroom_interior.jpeg', alt: 'Interior of the shared washroom — tiled floor, warm lighting' },
+              { src: 'assets/shared_washroom_exterior.jpeg', alt: 'Exterior of the washroom building among the trees' },
+            ].map((img, i) => (
+              <div key={i} role="img" aria-label={img.alt} style={{
+                backgroundImage: `url(${img.src})`,
+                backgroundSize: 'cover', backgroundPosition: 'center', minHeight: 320,
+              }} />
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="dark-section">
+        <div className="section-inner" style={{ textAlign: 'center' }}>
+          <SectionHead
+            num="— Stay"
+            title={<>Find your cabin.</>}
+            intro="Each one different. The Chapel is the only one with its own private washroom — book it if that matters to you." />
+          <div style={{ marginTop: 24 }}>
+            <button className="btn btn-ghost-light" onClick={() => go('stay')}>See all cabins →</button>
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+}
+
+Object.assign(window, { Stay, CabinDetail, CabinRow, WashroomRow, WashroomDetail });
