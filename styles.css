@@ -1098,6 +1098,8 @@ section { padding: 120px 40px; }
   .cabin-grid { grid-template-columns: 1fr; }
   .cabin-grid > * { grid-column: 1 / -1 !important; aspect-ratio: 4/5; }
   .threeup, .alt-block, .reviews, .menu-cols, .area-grid, .footer-inner { grid-template-columns: 1fr; }
+  .story-inner { grid-template-columns: 1fr; gap: 32px; }
+  .about-principles { grid-template-columns: 1fr 1fr; }
   .alt-text { padding: 40px 28px; }
   .stats { grid-template-columns: 1fr 1fr; }
   section { padding: 72px 20px; }
@@ -1346,6 +1348,3 @@ html { overflow-x: hidden; }
    ABOUT — PRINCIPLES GRID
    ============================================================ */
 .about-principles { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 16px; }
-@media (max-width: 768px) {
-  .about-principles { grid-template-columns: 1fr 1fr; }
-}
