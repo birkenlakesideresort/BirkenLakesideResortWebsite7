@@ -102,11 +102,6 @@ function Home({ go }) {
             </div>
           </div>
 
-          <div className="stats" style={{ marginTop: 8 }}>
-            <div className="stat"><div className="n">1906</div><div className="l">— Established</div></div>
-            <div className="stat"><div className="n">120</div><div className="l">— Years on the lake</div></div>
-            <div className="stat"><div className="n">∞</div><div className="l">— Loon calls per night</div></div>
-          </div>
         </div>
       </section>
 
