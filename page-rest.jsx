@@ -332,19 +332,20 @@ function Area({ go }) {
 }
 
 function AreaMap() {
-  const q = '9179+Pemberton+Portage+Rd,+Birken,+BC+V0N+2L0';
+  const embedQ = 'Birken+Lakeside+Resort,+Birken,+BC';
+  const linkQ  = 'Birken+Lakeside+Resort';
   return (
     <React.Fragment>
       <iframe
-        title="Birken Lakeside Resort — 9179 Pemberton Portage Rd, Gates Lake, BC"
-        src={`https://maps.google.com/maps?q=${q}&z=13&output=embed`}
+        title="Birken Lakeside Resort on Gates Lake, BC"
+        src={`https://maps.google.com/maps?q=${embedQ}&z=15&output=embed`}
         style={{ width: '100%', height: '100%', border: 'none', display: 'block' }}
         loading="lazy"
         referrerPolicy="no-referrer-when-downgrade"
         allowFullScreen
       />
       <a
-        href={`https://maps.google.com/maps?q=${q}`}
+        href={`https://maps.google.com/maps?q=${linkQ}`}
         target="_blank"
         rel="noopener noreferrer"
         style={{
