@@ -15,31 +15,6 @@ function Gatherings({ go }) {
         </div>
       </section>
 
-      {/* Policy fact block */}
-      <section style={{ padding: '0 40px 80px', background: 'var(--cream)' }}>
-        <div className="section-inner">
-          <ul style={{ listStyle: 'none', padding: 0, margin: 0, borderTop: '0.5px solid rgba(29,61,45,0.18)' }}>
-            {[
-              'Full property exclusive use. All seven cabins, three glamping tents, Meeting Hall, grounds, dock.',
-              'From $6,000. Final pricing depends on dates, numbers, and add-ons.',
-              '2-night minimum. 3-night minimum on long weekends.',
-              '16–32 guests. Online booking is capped at 3 cabins per booking entity.',
-              'The calendar typically books up by April 15. Early enquiry encouraged.',
-            ].map((item, i) => (
-              <li key={i} style={{
-                fontFamily: 'var(--ui)', fontSize: 15, letterSpacing: '0.04em',
-                color: 'var(--forest)', fontWeight: 500,
-                padding: '18px 0', borderBottom: '0.5px solid rgba(29,61,45,0.18)',
-                display: 'flex', alignItems: 'center', gap: 14,
-              }}>
-                <span style={{ width: 4, height: 4, background: 'var(--cedar)', borderRadius: '50%', flexShrink: 0 }} />
-                {item}
-              </li>
-            ))}
-          </ul>
-        </div>
-      </section>
-
       {/* Meeting Hall */}
       <section style={{ padding: '0 0 0', background: 'var(--cream)' }}>
         <div className="alt-block" style={{ maxWidth: 1440, margin: '0 auto' }}>
@@ -124,7 +99,7 @@ function Gatherings({ go }) {
       </section>
 
       {/* CTA */}
-      <section style={{ padding: '0 40px 120px', background: 'var(--cream)', textAlign: 'center' }}>
+      <section style={{ padding: '0 40px 80px', background: 'var(--cream)', textAlign: 'center' }}>
         <div className="section-inner">
           <p style={{ fontSize: 19, lineHeight: 1.8, color: 'var(--stone)', maxWidth: 600, margin: '0 auto 32px' }}>
             Ready to talk? We don't run buyouts through a checkout. Email us with your dates and your numbers, and we'll send a full inquiry pack within twenty-four hours.
@@ -134,6 +109,31 @@ function Gatherings({ go }) {
             {/* PDF placeholder — awaiting upload, href to be updated when file is available */}
             <a className="btn btn-ghost" href="#options-pdf-pending">See options →</a>
           </div>
+        </div>
+      </section>
+
+      {/* Policy fact block */}
+      <section style={{ padding: '0 40px 120px', background: 'var(--cream)' }}>
+        <div className="section-inner">
+          <ul style={{ listStyle: 'none', padding: 0, margin: 0, borderTop: '0.5px solid rgba(29,61,45,0.18)' }}>
+            {[
+              'Full property exclusive use. All seven cabins, three glamping tents, Meeting Hall, grounds, dock.',
+              'From $6,000. Final pricing depends on dates, numbers, and add-ons.',
+              '2-night minimum. 3-night minimum on long weekends.',
+              '16–32 guests. Online booking is capped at 3 cabins per booking entity.',
+              'The calendar typically books up by April 15. Early enquiry encouraged.',
+            ].map((item, i) => (
+              <li key={i} style={{
+                fontFamily: 'var(--ui)', fontSize: 15, letterSpacing: '0.04em',
+                color: 'var(--forest)', fontWeight: 500,
+                padding: '18px 0', borderBottom: '0.5px solid rgba(29,61,45,0.18)',
+                display: 'flex', alignItems: 'center', gap: 14,
+              }}>
+                <span style={{ width: 4, height: 4, background: 'var(--cedar)', borderRadius: '50%', flexShrink: 0 }} />
+                {item}
+              </li>
+            ))}
+          </ul>
         </div>
       </section>
 
