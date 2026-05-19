@@ -8,7 +8,7 @@ function Gatherings({ go }) {
       <section className="first-section" style={{ padding: '80px 40px', background: 'var(--cream)' }}>
         <div className="section-inner">
           <span className="eyebrow">GATHERINGS</span>
-          <h1 style={{ color: 'var(--forest)' }}>Bring twenty.<br/>Take over the whole place.</h1>
+          <h1 style={{ color: 'var(--forest)' }}>Take over the<br/>whole place.</h1>
           <p className="italic-quote" style={{ fontSize: 20, marginTop: 28, maxWidth: 680 }}>
             Birken was built for gatherings. For groups of sixteen to thirty-two, the whole property is yours — seven cabins, three glamping tents, the Meeting Hall, the dock, the Grille on Saturday night. Full property exclusive use. No other guests. No surprises. Most weekends through peak season hold first for full-site book-outs and open second — so early enquiry matters. We send full details by email and walk you through the rest on a call.
           </p>
