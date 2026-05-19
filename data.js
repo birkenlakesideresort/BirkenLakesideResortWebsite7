@@ -101,7 +101,7 @@ window.CABINS = [
     price: 325,
     ext: 'assets/bunkhouse-ext.jpeg',
     int: 'assets/bunkhouse-int.jpeg',
-    features: ['Full kitchen + bar area', 'Electric / propane heating', 'Foosball + piano', 'TV / record player', 'Sleeps 8'],
+    features: ['Full kitchen + bar area', 'Electric / propane heating', 'Sleeps 8'],
   },
   {
     id: 'glamping-1',
