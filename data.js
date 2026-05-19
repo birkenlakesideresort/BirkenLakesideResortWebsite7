@@ -8,7 +8,7 @@ window.CABINS = [
     blurb: 'Our original cabin, built in 1906 as home to the BC Rail Foreman. A true piece of Canadian history — log walls, a stone patio, a deck positioned for the late-afternoon light hitting the lake.',
     type: 'Cabin',
     sleeps: 6,
-    beds: '1 king, 1 queen, 1 double pull-out sofa, sleeps 6',
+    beds: '1 king, 1 queen, 1 double pull-out sofa',
     bath: 'Shared',
     price: 350,
     ext: 'assets/wildwest-ext.jpeg',
