@@ -2,8 +2,8 @@
 
 function Stay({ go }) {
   const [filter, setFilter] = useState('All');
-  const types = ['All', 'Cabin', 'Glamping', 'Couples', 'Group'];
-  const list = filter === 'All' ? CABINS : CABINS.filter(c => c.type === filter);
+  const types = ['All', 'Cabin', 'Glamping', 'Couples', 'Group', 'Washroom'];
+  const list = (filter === 'All' || filter === 'Washroom') ? CABINS : CABINS.filter(c => c.type === filter);
 
   return (
     <div className="page-fade">
@@ -39,10 +39,10 @@ function Stay({ go }) {
       <section style={{ padding: '0 40px 120px', background: 'var(--cream)' }}>
         <div className="section-inner">
           <div style={{ display: 'flex', flexDirection: 'column', gap: 24 }}>
-            {list.map((c, i) => (
+            {filter !== 'Washroom' && list.map((c, i) => (
               <CabinRow key={c.id} cabin={c} num={String(i+1).padStart(2, '0')} go={go} reverse={i % 2 === 1} />
             ))}
-            {filter === 'All' && <WashroomRow go={go} />}
+            {(filter === 'All' || filter === 'Washroom') && <WashroomRow go={go} />}
           </div>
         </div>
       </section>

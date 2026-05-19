@@ -1,7 +1,7 @@
 function Stay({ go }) {
   const [filter, setFilter] = useState("All");
-  const types = ["All", "Cabin", "Glamping", "Couples", "Group"];
-  const list = filter === "All" ? CABINS : CABINS.filter((c) => c.type === filter);
+  const types = ["All", "Cabin", "Glamping", "Couples", "Group", "Washroom"];
+  const list = filter === "All" || filter === "Washroom" ? CABINS : CABINS.filter((c) => c.type === filter);
   return /* @__PURE__ */ React.createElement("div", { className: "page-fade" }, /* @__PURE__ */ React.createElement("section", { className: "first-section", style: { padding: "80px 40px", background: "var(--cream)" } }, /* @__PURE__ */ React.createElement("div", { className: "section-inner" }, /* @__PURE__ */ React.createElement("span", { className: "eyebrow" }, "\u2014 02 / Stay"), /* @__PURE__ */ React.createElement("h1", { style: { color: "var(--forest)" } }, "CABINS.", /* @__PURE__ */ React.createElement("br", null), "ONE LAKE.", /* @__PURE__ */ React.createElement("br", null), "NO TWO ALIKE."), /* @__PURE__ */ React.createElement("p", { className: "italic-quote", style: { fontSize: 20, marginTop: 28, maxWidth: 640 } }, "Each one was named for a feeling, then built around it. Pick the one that sounds like the kind of week you've been needing."))), /* @__PURE__ */ React.createElement("section", { style: { padding: "0 40px 40px", background: "var(--cream)" } }, /* @__PURE__ */ React.createElement("div", { className: "section-inner" }, /* @__PURE__ */ React.createElement("div", { className: "cabin-filters" }, types.map((t) => /* @__PURE__ */ React.createElement(
     "button",
     {
@@ -10,7 +10,7 @@ function Stay({ go }) {
       onClick: () => setFilter(t)
     },
     t === "All" ? "All cabins" : t
-  ))))), /* @__PURE__ */ React.createElement("section", { style: { padding: "0 40px 120px", background: "var(--cream)" } }, /* @__PURE__ */ React.createElement("div", { className: "section-inner" }, /* @__PURE__ */ React.createElement("div", { style: { display: "flex", flexDirection: "column", gap: 24 } }, list.map((c, i) => /* @__PURE__ */ React.createElement(CabinRow, { key: c.id, cabin: c, num: String(i + 1).padStart(2, "0"), go, reverse: i % 2 === 1 })), filter === "All" && /* @__PURE__ */ React.createElement(WashroomRow, { go })))), /* @__PURE__ */ React.createElement(Marquee, { items: ["Pet friendly", "Wood stoves", "Real beds", "No streaming, just dreaming", "Open seasonally"] }));
+  ))))), /* @__PURE__ */ React.createElement("section", { style: { padding: "0 40px 120px", background: "var(--cream)" } }, /* @__PURE__ */ React.createElement("div", { className: "section-inner" }, /* @__PURE__ */ React.createElement("div", { style: { display: "flex", flexDirection: "column", gap: 24 } }, filter !== "Washroom" && list.map((c, i) => /* @__PURE__ */ React.createElement(CabinRow, { key: c.id, cabin: c, num: String(i + 1).padStart(2, "0"), go, reverse: i % 2 === 1 })), (filter === "All" || filter === "Washroom") && /* @__PURE__ */ React.createElement(WashroomRow, { go })))), /* @__PURE__ */ React.createElement(Marquee, { items: ["Pet friendly", "Wood stoves", "Real beds", "No streaming, just dreaming", "Open seasonally"] }));
 }
 function CabinRow({ cabin, num, go, reverse }) {
   return /* @__PURE__ */ React.createElement("article", { className: "cabin-row-article", style: {
