@@ -134,7 +134,7 @@ function About({ go }) {
       title: /* @__PURE__ */ React.createElement(React.Fragment, null, "How we think", /* @__PURE__ */ React.createElement("br", null), "about this place."),
       intro: "Six things we keep coming back to whenever there's a decision to make. They aren't on signs. They live behind every choice we make about the resort."
     }
-  ), /* @__PURE__ */ React.createElement("div", { style: { display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: 16 } }, [
+  ), /* @__PURE__ */ React.createElement("div", { className: "about-principles" }, [
     { t: "Cosy, unpretentious fun", b: "If it feels forced, fancy, or stiff \u2014 it's not us." },
     { t: "No streaming, just dreaming", b: "We replace the scroll with something better. The lake. The fire." },
     { t: "Unplug. Go analogue.", b: "We don't tell guests to put their phones away \u2014 we give them something better to look at." },

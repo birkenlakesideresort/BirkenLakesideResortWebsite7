@@ -1341,3 +1341,11 @@ h1, h2, h3 { text-align: left; }
    HORIZONTAL OVERFLOW BACKSTOP
    ============================================================ */
 html { overflow-x: hidden; }
+
+/* ============================================================
+   ABOUT — PRINCIPLES GRID
+   ============================================================ */
+.about-principles { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 16px; }
+@media (max-width: 768px) {
+  .about-principles { grid-template-columns: 1fr 1fr; }
+}

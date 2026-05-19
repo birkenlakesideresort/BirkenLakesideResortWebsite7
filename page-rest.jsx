@@ -407,7 +407,7 @@ function About({ go }) {
             title={<>How we think<br/>about this place.</>}
             intro="Six things we keep coming back to whenever there's a decision to make. They aren't on signs. They live behind every choice we make about the resort." />
 
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: 16 }}>
+          <div className="about-principles">
             {[
               { t: 'Cosy, unpretentious fun', b: 'If it feels forced, fancy, or stiff — it\'s not us.' },
               { t: 'No streaming, just dreaming', b: 'We replace the scroll with something better. The lake. The fire.' },
