@@ -87,12 +87,13 @@ function Area({ go }) {
   return /* @__PURE__ */ React.createElement("div", { className: "page-fade" }, /* @__PURE__ */ React.createElement("section", { className: "first-section", style: { padding: "80px 40px", background: "var(--cream)" } }, /* @__PURE__ */ React.createElement("div", { className: "section-inner" }, /* @__PURE__ */ React.createElement("span", { className: "eyebrow" }, "\u2014 06 / The Area"), /* @__PURE__ */ React.createElement("h1", { style: { color: "var(--forest)" } }, "55 MINUTES", /* @__PURE__ */ React.createElement("br", null), "FROM WHISTLER.", /* @__PURE__ */ React.createElement("br", null), "A DIFFERENT", /* @__PURE__ */ React.createElement("br", null), "PLANET."), /* @__PURE__ */ React.createElement("p", { className: "italic-quote", style: { fontSize: 20, marginTop: 28, maxWidth: 680 } }, "The Sea-to-Sky doesn't end at Whistler. Push another fifty-five minutes north and the road climbs into Birken \u2014 old-growth fir, granite peaks, a turquoise lake the locals don't talk about much. This is the corridor's quiet side."))), /* @__PURE__ */ React.createElement("section", { style: { padding: "40px 40px 120px", background: "var(--cream)" } }, /* @__PURE__ */ React.createElement("div", { className: "section-inner" }, /* @__PURE__ */ React.createElement("div", { className: "area-grid", style: { gap: 64 } }, /* @__PURE__ */ React.createElement("div", { className: "area-list" }, AREA.map((a, i) => /* @__PURE__ */ React.createElement("article", { key: i, className: "area-item" }, /* @__PURE__ */ React.createElement("div", { className: "num" }, a.num), /* @__PURE__ */ React.createElement("div", null, /* @__PURE__ */ React.createElement("h4", null, a.name), /* @__PURE__ */ React.createElement("p", null, a.desc)), /* @__PURE__ */ React.createElement("div", { className: "dist" }, a.dist)))), /* @__PURE__ */ React.createElement("div", { className: "area-map" }, /* @__PURE__ */ React.createElement(AreaMap, null))))));
 }
 function AreaMap() {
-  const q = "9179+Pemberton+Portage+Rd,+Birken,+BC+V0N+2L0";
+  const embedQ = "Birken+Lakeside+Resort,+Birken,+BC";
+  const linkQ = "Birken+Lakeside+Resort";
   return /* @__PURE__ */ React.createElement(React.Fragment, null, /* @__PURE__ */ React.createElement(
     "iframe",
     {
-      title: "Birken Lakeside Resort \u2014 9179 Pemberton Portage Rd, Gates Lake, BC",
-      src: `https://maps.google.com/maps?q=${q}&z=13&output=embed`,
+      title: "Birken Lakeside Resort on Gates Lake, BC",
+      src: `https://maps.google.com/maps?q=${embedQ}&z=15&output=embed`,
       style: { width: "100%", height: "100%", border: "none", display: "block" },
       loading: "lazy",
       referrerPolicy: "no-referrer-when-downgrade",
@@ -101,7 +102,7 @@ function AreaMap() {
   ), /* @__PURE__ */ React.createElement(
     "a",
     {
-      href: `https://maps.google.com/maps?q=${q}`,
+      href: `https://maps.google.com/maps?q=${linkQ}`,
       target: "_blank",
       rel: "noopener noreferrer",
       style: {
