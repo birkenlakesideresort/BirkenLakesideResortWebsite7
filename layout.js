@@ -48,11 +48,13 @@ function Nav({ route, go, transparent }) {
     },
     l.label
   )))), /* @__PURE__ */ React.createElement(
-    "button",
+    "a",
     {
       className: "btn btn-primary",
-      style: { padding: "12px 28px" },
-      onClick: () => go("book")
+      href: BOOKING_URL,
+      target: "_blank",
+      rel: "noopener noreferrer",
+      style: { padding: "12px 28px" }
     },
     "Bookings \u2192"
   ), /* @__PURE__ */ React.createElement(
@@ -78,7 +80,7 @@ function Nav({ route, go, transparent }) {
       onClick: () => handleNav(l.id)
     },
     l.label
-  )))), /* @__PURE__ */ React.createElement("div", { className: "mobile-menu-cta" }, /* @__PURE__ */ React.createElement("button", { className: "btn btn-primary", onClick: () => handleNav("book") }, "Bookings \u2192")), /* @__PURE__ */ React.createElement("div", { className: "mobile-menu-meta" }, "(604) 452-3255", /* @__PURE__ */ React.createElement("br", null), "hello@birkenlakeside.ca", /* @__PURE__ */ React.createElement("br", null), "9179 Pemberton Portage Rd", /* @__PURE__ */ React.createElement("br", null), "Birken, BC V0N 2L0")));
+  )))), /* @__PURE__ */ React.createElement("div", { className: "mobile-menu-cta" }, /* @__PURE__ */ React.createElement("a", { className: "btn btn-primary", href: BOOKING_URL, target: "_blank", rel: "noopener noreferrer" }, "Bookings \u2192")), /* @__PURE__ */ React.createElement("div", { className: "mobile-menu-meta" }, "(604) 452-3255", /* @__PURE__ */ React.createElement("br", null), "hello@birkenlakeside.ca", /* @__PURE__ */ React.createElement("br", null), "9179 Pemberton Portage Rd", /* @__PURE__ */ React.createElement("br", null), "Birken, BC V0N 2L0")));
 }
 function Marquee({ items }) {
   const list = items.concat(items);
@@ -115,7 +117,7 @@ function BookingBar({ onBook }) {
   const [stay, setStay] = useState({ in: "Fri, Jul 24", out: "Mon, Jul 27" });
   const [guests, setGuests] = useState(2);
   const [cabin, setCabin] = useState("Any cabin");
-  return /* @__PURE__ */ React.createElement("div", { className: "booking-bar" }, /* @__PURE__ */ React.createElement("div", { className: "bb-field" }, /* @__PURE__ */ React.createElement("span", { className: "bb-label" }, "Check In"), /* @__PURE__ */ React.createElement("span", { className: "bb-value" }, stay.in), /* @__PURE__ */ React.createElement("span", { className: "bb-sub" }, "3 PM onwards")), /* @__PURE__ */ React.createElement("div", { className: "bb-field" }, /* @__PURE__ */ React.createElement("span", { className: "bb-label" }, "Check Out"), /* @__PURE__ */ React.createElement("span", { className: "bb-value" }, stay.out), /* @__PURE__ */ React.createElement("span", { className: "bb-sub" }, "11 AM")), /* @__PURE__ */ React.createElement("div", { className: "bb-field" }, /* @__PURE__ */ React.createElement("span", { className: "bb-label" }, "Guests"), /* @__PURE__ */ React.createElement("span", { className: "bb-value" }, guests, " ", guests === 1 ? "Guest" : "Guests"), /* @__PURE__ */ React.createElement("span", { className: "bb-sub", style: { display: "flex", gap: 10 } }, /* @__PURE__ */ React.createElement("button", { onClick: () => setGuests((g) => Math.max(1, g - 1)), style: { color: "var(--cabin)" } }, "\u2212 Less"), /* @__PURE__ */ React.createElement("button", { onClick: () => setGuests((g) => g + 1), style: { color: "var(--cabin)" } }, "More +"))), /* @__PURE__ */ React.createElement("div", { className: "bb-field" }, /* @__PURE__ */ React.createElement("span", { className: "bb-label" }, "Cabin"), /* @__PURE__ */ React.createElement("span", { className: "bb-value" }, cabin), /* @__PURE__ */ React.createElement("span", { className: "bb-sub" }, "All cabins available")), /* @__PURE__ */ React.createElement("button", { className: "bb-btn", onClick: onBook }, "Check Availability \u2192"));
+  return /* @__PURE__ */ React.createElement("div", { className: "booking-bar" }, /* @__PURE__ */ React.createElement("div", { className: "bb-field" }, /* @__PURE__ */ React.createElement("span", { className: "bb-label" }, "Check In"), /* @__PURE__ */ React.createElement("span", { className: "bb-value" }, stay.in), /* @__PURE__ */ React.createElement("span", { className: "bb-sub" }, "3 PM onwards")), /* @__PURE__ */ React.createElement("div", { className: "bb-field" }, /* @__PURE__ */ React.createElement("span", { className: "bb-label" }, "Check Out"), /* @__PURE__ */ React.createElement("span", { className: "bb-value" }, stay.out), /* @__PURE__ */ React.createElement("span", { className: "bb-sub" }, "11 AM")), /* @__PURE__ */ React.createElement("div", { className: "bb-field" }, /* @__PURE__ */ React.createElement("span", { className: "bb-label" }, "Guests"), /* @__PURE__ */ React.createElement("span", { className: "bb-value" }, guests, " ", guests === 1 ? "Guest" : "Guests"), /* @__PURE__ */ React.createElement("span", { className: "bb-sub", style: { display: "flex", gap: 10 } }, /* @__PURE__ */ React.createElement("button", { onClick: () => setGuests((g) => Math.max(1, g - 1)), style: { color: "var(--cabin)" } }, "\u2212 Less"), /* @__PURE__ */ React.createElement("button", { onClick: () => setGuests((g) => g + 1), style: { color: "var(--cabin)" } }, "More +"))), /* @__PURE__ */ React.createElement("div", { className: "bb-field" }, /* @__PURE__ */ React.createElement("span", { className: "bb-label" }, "Cabin"), /* @__PURE__ */ React.createElement("span", { className: "bb-value" }, cabin), /* @__PURE__ */ React.createElement("span", { className: "bb-sub" }, "All cabins available")), /* @__PURE__ */ React.createElement("a", { className: "bb-btn", href: BOOKING_URL, target: "_blank", rel: "noopener noreferrer" }, "Check Availability \u2192"));
 }
 function SectionHead({ num, title, intro }) {
   return /* @__PURE__ */ React.createElement("div", { className: "section-head" }, /* @__PURE__ */ React.createElement("div", { className: "left" }, /* @__PURE__ */ React.createElement("span", { className: "section-num" }, num), /* @__PURE__ */ React.createElement("h2", { className: "section-title" }, title)), /* @__PURE__ */ React.createElement("div", { className: "right" }, intro));

@@ -13,7 +13,7 @@ function Home({ go }) {
           <h1 className="hero-headline">CABINS<br/>WITH<br/>PERSONALITIES.</h1>
           <p className="hero-tagline">Woodsmoke. Pristine Water. Good People.</p>
           <div className="hero-actions">
-            <button className="btn btn-primary" onClick={() => go('book')}>Book Now →</button>
+            <a className="btn btn-primary" href={BOOKING_URL} target="_blank" rel="noopener noreferrer">Book Now →</a>
             <button className="btn btn-ghost-light" onClick={() => go('stay')}>See the Cabins</button>
           </div>
         </div>
@@ -168,7 +168,7 @@ function Home({ go }) {
             WHOLE CREW.
           </h2>
           <div style={{ display: 'flex', gap: 14, justifyContent: 'center', marginTop: 40, flexWrap: 'wrap' }}>
-            <button className="btn btn-primary" onClick={() => go('book')}>Book a Cabin →</button>
+            <a className="btn btn-primary" href={BOOKING_URL} target="_blank" rel="noopener noreferrer">Book a Cabin →</a>
             <button className="btn btn-ghost-light" onClick={() => go('about')}>Read Our Story</button>
           </div>
         </div>

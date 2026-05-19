@@ -99,7 +99,7 @@ function CabinRow({ cabin, num, go, reverse }) {
           ))}
         </ul>
         <div className="cabin-row-actions" style={{ display: 'flex', gap: 12, marginTop: 18 }}>
-          <button className="btn btn-primary" onClick={() => go('book')}>Book {cabin.name} →</button>
+          <a className="btn btn-primary" href={BOOKING_URL} target="_blank" rel="noopener noreferrer">Book {cabin.name} →</a>
           <button className="btn btn-ghost" onClick={() => go('cabin', cabin.id)}>See more</button>
         </div>
       </div>
@@ -126,7 +126,7 @@ function CabinDetail({ cabinId, go }) {
             <div className="lbl">From</div>
             <div className="pp">${cabin.price}<span style={{ fontSize: 16, letterSpacing: '0.18em', color: 'var(--mist)' }}> / NIGHT</span></div>
             <div className="sub">2-night minimum · taxes extra</div>
-            <button className="btn btn-primary" style={{ width: '100%' }} onClick={() => go('book')}>Book {cabin.name} →</button>
+            <a className="btn btn-primary" href={BOOKING_URL} target="_blank" rel="noopener noreferrer" style={{ width: '100%', display: 'block', textAlign: 'center' }}>Book {cabin.name} →</a>
           </div>
         </div>
       </section>

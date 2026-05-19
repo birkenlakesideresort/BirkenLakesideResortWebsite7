@@ -227,7 +227,7 @@ function Weddings({ go }) {
           <p style={{ color: 'rgba(243,234,220,0.66)', fontSize: 16, maxWidth: 580, margin: '0 auto 32px', lineHeight: 1.6, fontStyle: 'italic' }}>
             Custom options available — food, tents, full event management. Call for details.
           </p>
-          <button className="btn btn-primary" onClick={() => go('book')}>Enquire →</button>
+          <a className="btn btn-primary" href={BOOKING_URL} target="_blank" rel="noopener noreferrer">Enquire →</a>
         </div>
       </section>
     </div>
@@ -434,7 +434,7 @@ function About({ go }) {
           <h2 style={{ fontFamily: 'var(--serif)', fontSize: 'clamp(72px, 9vw, 144px)', color: 'var(--cream)', letterSpacing: '0.02em', lineHeight: 0.92, margin: '20px auto 32px', maxWidth: 1100 }}>
             GATES LAKE, BC.<br/>WE'LL LEAVE THE<br/>PORCH LIGHT ON.
           </h2>
-          <button className="btn btn-primary" onClick={() => go('book')}>Book a Cabin →</button>
+          <a className="btn btn-primary" href={BOOKING_URL} target="_blank" rel="noopener noreferrer">Book a Cabin →</a>
         </div>
       </section>
     </div>
