@@ -171,7 +171,7 @@ function Weddings({ go }) {
             title={<>How it goes.</>}
             intro="The lakeside deck for the ceremony. The meeting hall for dinner. The firepit for after. The cabins for the people who needed to lie down." />
 
-          <div className="threeup" style={{ borderColor: 'rgba(29,61,45,0.15)' }}>
+          <div className="threeup" style={{ borderColor: 'rgba(29,61,45,0.15)', gridTemplateColumns: 'repeat(4, 1fr)' }}>
             <div className="threeup-col" style={{ background: 'var(--forest)' }}>
               <span className="threeup-num">04 PM</span>
               <h3 className="threeup-title">Ceremony</h3>
@@ -181,6 +181,11 @@ function Weddings({ go }) {
               <span className="threeup-num">07 PM</span>
               <h3 className="threeup-title">Dinner</h3>
               <p className="threeup-body">Long tables in the hall. Family-style menu from The Grille. Speeches encouraged, kept short.</p>
+            </div>
+            <div className="threeup-col" style={{ background: 'var(--forest)' }}>
+              <span className="threeup-num">9PM – 11PM</span>
+              <h3 className="threeup-title">The Party</h3>
+              <p className="threeup-body">Band on. Bar open. Lake out there somewhere, waiting for the brave ones.</p>
             </div>
             <div className="threeup-col" style={{ background: 'var(--forest)' }}>
               <span className="threeup-num">LATE</span>
