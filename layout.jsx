@@ -63,12 +63,14 @@ function Nav({ route, go, transparent }) {
                 </li>
               ))}
             </ul>
-            <button
+            <a
               className="btn btn-primary"
-              style={{ padding: '12px 28px' }}
-              onClick={() => go('book')}>
+              href={BOOKING_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ padding: '12px 28px' }}>
               Bookings →
-            </button>
+            </a>
             <button
               className="nav-hamburger"
               aria-label="Open menu"
@@ -109,9 +111,9 @@ function Nav({ route, go, transparent }) {
             ))}
           </ul>
           <div className="mobile-menu-cta">
-            <button className="btn btn-primary" onClick={() => handleNav('book')}>
+            <a className="btn btn-primary" href={BOOKING_URL} target="_blank" rel="noopener noreferrer">
               Bookings →
-            </button>
+            </a>
           </div>
           <div className="mobile-menu-meta">
             (604) 452-3255<br/>
@@ -224,9 +226,9 @@ function BookingBar({ onBook }) {
         <span className="bb-value">{cabin}</span>
         <span className="bb-sub">All cabins available</span>
       </div>
-      <button className="bb-btn" onClick={onBook}>
+      <a className="bb-btn" href={BOOKING_URL} target="_blank" rel="noopener noreferrer">
         Check Availability →
-      </button>
+      </a>
     </div>
   );
 }
