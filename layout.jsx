@@ -104,9 +104,13 @@ function Nav({ route, go, transparent }) {
           <ul className="mobile-menu-list">
             {links.map(l => (
               <li key={l.id}>
-                <button
-                  className={route === l.id || (l.id === 'stay' && route === 'cabin') ? 'active' : ''}
-                  onClick={() => handleNav(l.id)}>{l.label}</button>
+                {l.id === 'book' ? (
+                  <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer">{l.label}</a>
+                ) : (
+                  <button
+                    className={route === l.id || (l.id === 'stay' && route === 'cabin') ? 'active' : ''}
+                    onClick={() => handleNav(l.id)}>{l.label}</button>
+                )}
               </li>
             ))}
           </ul>
