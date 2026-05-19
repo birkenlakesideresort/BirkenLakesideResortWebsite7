@@ -87,62 +87,42 @@ function Area({ go }) {
   return /* @__PURE__ */ React.createElement("div", { className: "page-fade" }, /* @__PURE__ */ React.createElement("section", { className: "first-section", style: { padding: "80px 40px", background: "var(--cream)" } }, /* @__PURE__ */ React.createElement("div", { className: "section-inner" }, /* @__PURE__ */ React.createElement("span", { className: "eyebrow" }, "\u2014 06 / The Area"), /* @__PURE__ */ React.createElement("h1", { style: { color: "var(--forest)" } }, "55 MINUTES", /* @__PURE__ */ React.createElement("br", null), "FROM WHISTLER.", /* @__PURE__ */ React.createElement("br", null), "A DIFFERENT", /* @__PURE__ */ React.createElement("br", null), "PLANET."), /* @__PURE__ */ React.createElement("p", { className: "italic-quote", style: { fontSize: 20, marginTop: 28, maxWidth: 680 } }, "The Sea-to-Sky doesn't end at Whistler. Push another fifty-five minutes north and the road climbs into Birken \u2014 old-growth fir, granite peaks, a turquoise lake the locals don't talk about much. This is the corridor's quiet side."))), /* @__PURE__ */ React.createElement("section", { style: { padding: "40px 40px 120px", background: "var(--cream)" } }, /* @__PURE__ */ React.createElement("div", { className: "section-inner" }, /* @__PURE__ */ React.createElement("div", { className: "area-grid", style: { gap: 64 } }, /* @__PURE__ */ React.createElement("div", { className: "area-list" }, AREA.map((a, i) => /* @__PURE__ */ React.createElement("article", { key: i, className: "area-item" }, /* @__PURE__ */ React.createElement("div", { className: "num" }, a.num), /* @__PURE__ */ React.createElement("div", null, /* @__PURE__ */ React.createElement("h4", null, a.name), /* @__PURE__ */ React.createElement("p", null, a.desc)), /* @__PURE__ */ React.createElement("div", { className: "dist" }, a.dist)))), /* @__PURE__ */ React.createElement("div", { className: "area-map" }, /* @__PURE__ */ React.createElement(AreaMap, null))))));
 }
 function AreaMap() {
-  return /* @__PURE__ */ React.createElement("svg", { viewBox: "0 0 400 500", style: { width: "100%", height: "100%", display: "block" } }, /* @__PURE__ */ React.createElement("defs", null, /* @__PURE__ */ React.createElement("pattern", { id: "dots", width: "6", height: "6", patternUnits: "userSpaceOnUse" }, /* @__PURE__ */ React.createElement("circle", { cx: "1", cy: "1", r: "0.5", fill: "rgba(143,168,158,0.2)" }))), /* @__PURE__ */ React.createElement("rect", { width: "400", height: "500", fill: "#1D3D2D" }), /* @__PURE__ */ React.createElement("rect", { width: "400", height: "500", fill: "url(#dots)" }), /* @__PURE__ */ React.createElement(
-    "path",
+  const q = "9179+Pemberton+Portage+Rd,+Birken,+BC+V0N+2L0";
+  return /* @__PURE__ */ React.createElement(React.Fragment, null, /* @__PURE__ */ React.createElement(
+    "iframe",
     {
-      d: "M 60 220 Q 120 180 200 200 Q 280 220 340 200 Q 360 260 320 320 Q 240 360 160 340 Q 80 320 60 280 Z",
-      fill: "#0F2017",
-      stroke: "#8FA89E",
-      strokeWidth: "0.5"
+      title: "Birken Lakeside Resort \u2014 9179 Pemberton Portage Rd, Gates Lake, BC",
+      src: `https://maps.google.com/maps?q=${q}&z=13&output=embed`,
+      style: { width: "100%", height: "100%", border: "none", display: "block" },
+      loading: "lazy",
+      referrerPolicy: "no-referrer-when-downgrade",
+      allowFullScreen: true
     }
   ), /* @__PURE__ */ React.createElement(
-    "text",
+    "a",
     {
-      x: "200",
-      y: "280",
-      textAnchor: "middle",
-      fontFamily: "Bebas Neue",
-      fontSize: "22",
-      fill: "#8FA89E",
-      letterSpacing: "3"
+      href: `https://maps.google.com/maps?q=${q}`,
+      target: "_blank",
+      rel: "noopener noreferrer",
+      style: {
+        position: "absolute",
+        bottom: 0,
+        left: 0,
+        right: 0,
+        background: "rgba(29,61,45,0.90)",
+        color: "var(--cream)",
+        fontFamily: "var(--ui)",
+        fontSize: 12,
+        fontWeight: 700,
+        letterSpacing: "0.18em",
+        textTransform: "uppercase",
+        padding: "14px 20px",
+        textAlign: "center",
+        textDecoration: "none",
+        display: "block"
+      }
     },
-    "GATES LAKE"
-  ), /* @__PURE__ */ React.createElement("path", { d: "M 0 100 Q 100 120 200 110 Q 300 100 400 130", stroke: "#C4743A", strokeWidth: "1", fill: "none", strokeDasharray: "3 3" }), /* @__PURE__ */ React.createElement("path", { d: "M 200 110 L 200 200", stroke: "#C4743A", strokeWidth: "1", fill: "none", strokeDasharray: "3 3" }), /* @__PURE__ */ React.createElement("path", { d: "M 60 220 Q 30 320 50 420", stroke: "#C4743A", strokeWidth: "1", fill: "none", strokeDasharray: "3 3" }), Array.from({ length: 28 }).map((_, i) => {
-    const x = (i * 47 + 13) % 400;
-    const y = (i * 73 + 31) % 500;
-    if (y > 180 && y < 360 && x > 60 && x < 340) return null;
-    return /* @__PURE__ */ React.createElement("g", { key: i, transform: `translate(${x},${y})` }, /* @__PURE__ */ React.createElement("path", { d: "M 0 0 L -4 8 L 4 8 Z", fill: "#8FA89E", opacity: "0.5" }), /* @__PURE__ */ React.createElement("line", { x1: "0", y1: "8", x2: "0", y2: "11", stroke: "#8FA89E", opacity: "0.5" }));
-  }), [
-    { x: 200, y: 270 },
-    { x: 130, y: 200 },
-    { x: 320, y: 110 },
-    { x: 360, y: 60 },
-    { x: 30, y: 80 },
-    { x: 60, y: 440 }
-  ].map((p, i) => /* @__PURE__ */ React.createElement("g", { key: i, transform: `translate(${p.x},${p.y})` }, /* @__PURE__ */ React.createElement("circle", { r: "5", fill: "#9B2B1F" }), /* @__PURE__ */ React.createElement("circle", { r: "9", fill: "none", stroke: "#9B2B1F", strokeWidth: "0.6", opacity: "0.55" }))), /* @__PURE__ */ React.createElement(
-    "text",
-    {
-      x: "20",
-      y: "30",
-      fontFamily: "Montserrat",
-      fontSize: "9",
-      fontWeight: "700",
-      fill: "#C4743A",
-      letterSpacing: "3"
-    },
-    "\u2014 THE AREA"
-  ), /* @__PURE__ */ React.createElement(
-    "text",
-    {
-      x: "380",
-      y: "490",
-      textAnchor: "end",
-      fontFamily: "Montserrat",
-      fontSize: "9",
-      fill: "#8FA89E",
-      letterSpacing: "2"
-    },
-    "N \u2191"
+    "Open in Google Maps \u2192"
   ));
 }
 function About({ go }) {
