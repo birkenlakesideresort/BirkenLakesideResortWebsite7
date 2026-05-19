@@ -400,31 +400,30 @@ function About({ go }) {
         </div>
       </section>
 
-      {/* Owner photo */}
-      <section style={{ padding: '0 40px 80px', background: 'var(--cream)' }}>
-        <div className="section-inner">
-          <figure style={{ margin: 0 }}>
-            <img
-              src="assets/biken_dock_party.png"
-              alt="The owners and friends celebrating on the dock at Birken Lakeside Resort"
-              style={{
-                width: '100%',
-                maxHeight: 600,
-                objectFit: 'cover',
-                objectPosition: 'center 30%',
-                display: 'block',
-              }}
-            />
-            <figcaption style={{
-              fontFamily: 'var(--ui)', fontSize: 13, letterSpacing: '0.1em',
-              textTransform: 'uppercase', color: 'var(--stone)',
-              marginTop: 14, textAlign: 'right',
-            }}>
-              The crew — Gates Lake, BC
-            </figcaption>
-          </figure>
+      {/* Owner photo — full bleed */}
+      <section style={{ padding: 0, background: 'var(--cream)' }}>
+        <div
+          role="img"
+          aria-label="The owners and friends celebrating on the dock at Birken Lakeside Resort"
+          style={{
+            width: '100%',
+            height: 520,
+            backgroundImage: 'url(assets/biken_dock_party.png)',
+            backgroundSize: 'cover',
+            backgroundPosition: 'center 25%',
+          }}
+        />
+        <div style={{
+          display: 'flex', justifyContent: 'space-between', alignItems: 'baseline',
+          padding: '14px 40px 80px',
+          borderBottom: '0.5px solid rgba(29,61,45,0.18)',
+          maxWidth: '100%',
+        }}>
+          <span style={{ fontFamily: 'var(--ui)', fontSize: 12, letterSpacing: '0.16em', textTransform: 'uppercase', color: 'var(--stone)' }}>The crew</span>
+          <span style={{ fontFamily: 'var(--ui)', fontSize: 12, letterSpacing: '0.16em', textTransform: 'uppercase', color: 'var(--stone)' }}>Gates Lake, BC</span>
         </div>
       </section>
+
 
       <section style={{ padding: '120px 40px', background: 'var(--cream)' }}>
         <div className="section-inner">

@@ -127,28 +127,27 @@ function AreaMap() {
   ));
 }
 function About({ go }) {
-  return /* @__PURE__ */ React.createElement("div", { className: "page-fade" }, /* @__PURE__ */ React.createElement("section", { className: "first-section", style: { padding: "80px 40px", background: "var(--cream)" } }, /* @__PURE__ */ React.createElement("div", { className: "section-inner" }, /* @__PURE__ */ React.createElement("span", { className: "eyebrow" }, "\u2014 07 / About"), /* @__PURE__ */ React.createElement("h1", { style: { color: "var(--forest)" } }, "OLD ENOUGH", /* @__PURE__ */ React.createElement("br", null), "TO KNOW BETTER.", /* @__PURE__ */ React.createElement("br", null), "WILD ENOUGH", /* @__PURE__ */ React.createElement("br", null), "NOT TO CARE."))), /* @__PURE__ */ React.createElement("section", { className: "story-strip", style: { padding: "120px 40px" } }, /* @__PURE__ */ React.createElement("div", { className: "story-inner", style: { maxWidth: 1100 } }, /* @__PURE__ */ React.createElement("div", null, /* @__PURE__ */ React.createElement("span", { className: "eyebrow story-eyebrow" }, "\u2014 Since 1906")), /* @__PURE__ */ React.createElement("div", null, /* @__PURE__ */ React.createElement("p", { className: "story-quote" }, "The first cabin went up in 1906, the year that has been carved into the door frame ever since. It is still standing. So are we."), /* @__PURE__ */ React.createElement("p", { className: "story-body" }, "Birken Lakeside started as a lodge for the railway foreman, became a family resort, then a hippie hideaway, then a wedding venue, then this. We took it on and have been slowly putting it back together \u2014 keeping the old wood, keeping the old soul, throwing out the bad furniture."), /* @__PURE__ */ React.createElement("p", { className: "story-body" }, "We aren't a luxury resort. We aren't a wellness retreat. We're a place where the kids can run barefoot, the dog gets its own treat at check-in, the screen door slams, and the kettle is always on the stove.")))), /* @__PURE__ */ React.createElement("section", { style: { padding: "0 40px 80px", background: "var(--cream)" } }, /* @__PURE__ */ React.createElement("div", { className: "section-inner" }, /* @__PURE__ */ React.createElement("figure", { style: { margin: 0 } }, /* @__PURE__ */ React.createElement(
-    "img",
+  return /* @__PURE__ */ React.createElement("div", { className: "page-fade" }, /* @__PURE__ */ React.createElement("section", { className: "first-section", style: { padding: "80px 40px", background: "var(--cream)" } }, /* @__PURE__ */ React.createElement("div", { className: "section-inner" }, /* @__PURE__ */ React.createElement("span", { className: "eyebrow" }, "\u2014 07 / About"), /* @__PURE__ */ React.createElement("h1", { style: { color: "var(--forest)" } }, "OLD ENOUGH", /* @__PURE__ */ React.createElement("br", null), "TO KNOW BETTER.", /* @__PURE__ */ React.createElement("br", null), "WILD ENOUGH", /* @__PURE__ */ React.createElement("br", null), "NOT TO CARE."))), /* @__PURE__ */ React.createElement("section", { className: "story-strip", style: { padding: "120px 40px" } }, /* @__PURE__ */ React.createElement("div", { className: "story-inner", style: { maxWidth: 1100 } }, /* @__PURE__ */ React.createElement("div", null, /* @__PURE__ */ React.createElement("span", { className: "eyebrow story-eyebrow" }, "\u2014 Since 1906")), /* @__PURE__ */ React.createElement("div", null, /* @__PURE__ */ React.createElement("p", { className: "story-quote" }, "The first cabin went up in 1906, the year that has been carved into the door frame ever since. It is still standing. So are we."), /* @__PURE__ */ React.createElement("p", { className: "story-body" }, "Birken Lakeside started as a lodge for the railway foreman, became a family resort, then a hippie hideaway, then a wedding venue, then this. We took it on and have been slowly putting it back together \u2014 keeping the old wood, keeping the old soul, throwing out the bad furniture."), /* @__PURE__ */ React.createElement("p", { className: "story-body" }, "We aren't a luxury resort. We aren't a wellness retreat. We're a place where the kids can run barefoot, the dog gets its own treat at check-in, the screen door slams, and the kettle is always on the stove.")))), /* @__PURE__ */ React.createElement("section", { style: { padding: 0, background: "var(--cream)" } }, /* @__PURE__ */ React.createElement(
+    "div",
     {
-      src: "assets/biken_dock_party.png",
-      alt: "The owners and friends celebrating on the dock at Birken Lakeside Resort",
+      role: "img",
+      "aria-label": "The owners and friends celebrating on the dock at Birken Lakeside Resort",
       style: {
         width: "100%",
-        maxHeight: 600,
-        objectFit: "cover",
-        objectPosition: "center 30%",
-        display: "block"
+        height: 520,
+        backgroundImage: "url(assets/biken_dock_party.png)",
+        backgroundSize: "cover",
+        backgroundPosition: "center 25%"
       }
     }
-  ), /* @__PURE__ */ React.createElement("figcaption", { style: {
-    fontFamily: "var(--ui)",
-    fontSize: 13,
-    letterSpacing: "0.1em",
-    textTransform: "uppercase",
-    color: "var(--stone)",
-    marginTop: 14,
-    textAlign: "right"
-  } }, "The crew \u2014 Gates Lake, BC")))), /* @__PURE__ */ React.createElement("section", { style: { padding: "120px 40px", background: "var(--cream)" } }, /* @__PURE__ */ React.createElement("div", { className: "section-inner" }, /* @__PURE__ */ React.createElement(
+  ), /* @__PURE__ */ React.createElement("div", { style: {
+    display: "flex",
+    justifyContent: "space-between",
+    alignItems: "baseline",
+    padding: "14px 40px 80px",
+    borderBottom: "0.5px solid rgba(29,61,45,0.18)",
+    maxWidth: "100%"
+  } }, /* @__PURE__ */ React.createElement("span", { style: { fontFamily: "var(--ui)", fontSize: 12, letterSpacing: "0.16em", textTransform: "uppercase", color: "var(--stone)" } }, "The crew"), /* @__PURE__ */ React.createElement("span", { style: { fontFamily: "var(--ui)", fontSize: 12, letterSpacing: "0.16em", textTransform: "uppercase", color: "var(--stone)" } }, "Gates Lake, BC"))), /* @__PURE__ */ React.createElement("section", { style: { padding: "120px 40px", background: "var(--cream)" } }, /* @__PURE__ */ React.createElement("div", { className: "section-inner" }, /* @__PURE__ */ React.createElement(
     SectionHead,
     {
       num: "\u2014 Principles",
