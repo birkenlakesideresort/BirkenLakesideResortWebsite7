@@ -4,7 +4,7 @@ function Home({ go }) {
     {
       num: "01 \u2014 Stay",
       title: /* @__PURE__ */ React.createElement(React.Fragment, null, "Cabins with", /* @__PURE__ */ React.createElement("br", null), "personalities."),
-      intro: "Each cabin has its own unique character. Wild West has the wood stove and a porch by the lake. The Library has the books. The Love Shack has \u2014 well, a raised king bed and zero pretence. Pick your character."
+      intro: "Each cabin has its own unique character. Wild West has the wood-burning stove and a stone patio and deck. The Library has the books. The Love Shack has \u2014 well, a raised king bed and zero pretence. Pick your character."
     }
   ), /* @__PURE__ */ React.createElement("div", { className: "cabin-grid" }, /* @__PURE__ */ React.createElement(CabinCard, { num: "01", cabin: CABINS[0], go, className: "cabin-tall" }), /* @__PURE__ */ React.createElement(CabinCard, { num: "02", cabin: CABINS[3], go, className: "cabin-wide" }), /* @__PURE__ */ React.createElement(CabinCard, { num: "03", cabin: CABINS[1], go, className: "cabin-third" }), /* @__PURE__ */ React.createElement(CabinCard, { num: "04", cabin: CABINS[5], go, className: "cabin-third" }), /* @__PURE__ */ React.createElement(CabinCard, { num: "05", cabin: CABINS[4], go, className: "cabin-third" })), /* @__PURE__ */ React.createElement("div", { style: { textAlign: "center", marginTop: 56 } }, /* @__PURE__ */ React.createElement("button", { className: "btn btn-ghost", onClick: () => go("stay") }, "See all the cabins \u2192")))), /* @__PURE__ */ React.createElement(Marquee, { items: [
     "Cosy, unpretentious fun",
