@@ -166,7 +166,7 @@ function Home({ go }) {
           <h2 style={{
             fontFamily: 'var(--serif)', fontSize: 'clamp(72px, 10vw, 160px)',
             lineHeight: 0.9, color: 'var(--cream)', letterSpacing: '0.02em',
-            margin: '24px auto', maxWidth: 1200,
+            margin: '24px auto', maxWidth: 1200, textAlign: 'center',
           }}>
             COME AS YOU ARE.<br/>
             BRING THE<br/>

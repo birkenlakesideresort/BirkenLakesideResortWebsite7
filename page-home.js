@@ -54,7 +54,8 @@ function Home({ go }) {
     color: "var(--cream)",
     letterSpacing: "0.02em",
     margin: "24px auto",
-    maxWidth: 1200
+    maxWidth: 1200,
+    textAlign: "center"
   } }, "COME AS YOU ARE.", /* @__PURE__ */ React.createElement("br", null), "BRING THE", /* @__PURE__ */ React.createElement("br", null), "WHOLE CREW."), /* @__PURE__ */ React.createElement("div", { style: { display: "flex", gap: 14, justifyContent: "center", marginTop: 40, flexWrap: "wrap" } }, /* @__PURE__ */ React.createElement("button", { className: "btn btn-primary", onClick: () => go("book") }, "Book a Cabin \u2192"), /* @__PURE__ */ React.createElement("button", { className: "btn btn-ghost-light", onClick: () => go("about") }, "Read Our Story")))));
 }
 function CabinCard({ cabin, num, className, go }) {
