@@ -10,7 +10,7 @@ function Stay({ go }) {
       onClick: () => setFilter(t)
     },
     t === "All" ? "All cabins" : t
-  ))))), /* @__PURE__ */ React.createElement("section", { style: { padding: "0 40px 120px", background: "var(--cream)" } }, /* @__PURE__ */ React.createElement("div", { className: "section-inner" }, /* @__PURE__ */ React.createElement("div", { style: { display: "flex", flexDirection: "column", gap: 24 } }, list.map((c, i) => /* @__PURE__ */ React.createElement(CabinRow, { key: c.id, cabin: c, num: String(i + 1).padStart(2, "0"), go, reverse: i % 2 === 1 })), filter === "All" && /* @__PURE__ */ React.createElement(WashroomRow, { go })))), /* @__PURE__ */ React.createElement(Marquee, { items: ["Pet friendly", "Wood stoves", "Real beds", "No streaming, just dreaming", "Open seasonally"] }));
+  ))))), /* @__PURE__ */ React.createElement("section", { style: { padding: "0 40px 120px", background: "var(--cream)" } }, /* @__PURE__ */ React.createElement("div", { className: "section-inner" }, /* @__PURE__ */ React.createElement("div", { style: { display: "flex", flexDirection: "column", gap: 24 } }, list.map((c, i) => /* @__PURE__ */ React.createElement(CabinRow, { key: c.id, cabin: c, num: String(i + 1).padStart(2, "0"), go, reverse: i % 2 === 1 }))))), /* @__PURE__ */ React.createElement(Marquee, { items: ["Pet friendly", "Wood stoves", "Real beds", "No streaming, just dreaming", "Open seasonally"] }));
 }
 function CabinRow({ cabin, num, go, reverse }) {
   return /* @__PURE__ */ React.createElement("article", { className: "cabin-row-article", style: {
@@ -129,64 +129,4 @@ function CabinDetail({ cabinId, go }) {
     }
   ))), /* @__PURE__ */ React.createElement("div", { style: { textAlign: "center", marginTop: 40 } }, /* @__PURE__ */ React.createElement("button", { className: "btn btn-ghost-light", onClick: () => go("stay") }, "See all cabins \u2192")))));
 }
-function WashroomRow({ go }) {
-  return /* @__PURE__ */ React.createElement("article", { className: "cabin-row-article", style: {
-    display: "grid",
-    gridTemplateColumns: "1.4fr 1fr",
-    gap: 0,
-    border: "0.5px solid rgba(29,61,45,0.18)",
-    background: "var(--cream)"
-  } }, /* @__PURE__ */ React.createElement("div", { role: "img", "aria-label": "Exterior of the shared washroom facility at Birken Lakeside Resort", style: {
-    order: 1,
-    backgroundImage: "url(assets/shared_washroom_exterior.jpeg)",
-    backgroundSize: "cover",
-    backgroundPosition: "center",
-    minHeight: 460
-  } }), /* @__PURE__ */ React.createElement("div", { className: "cabin-row-text", style: {
-    order: 2,
-    padding: "56px 56px 48px",
-    display: "flex",
-    flexDirection: "column",
-    gap: 16,
-    justifyContent: "center"
-  } }, /* @__PURE__ */ React.createElement("span", { className: "eyebrow" }, "\u2014 What's Here"), /* @__PURE__ */ React.createElement("h2", { style: {
-    fontFamily: "var(--serif)",
-    fontSize: "clamp(48px, 5vw, 80px)",
-    lineHeight: 0.95,
-    color: "var(--forest)",
-    letterSpacing: "0.02em"
-  } }, "Shared Washroom Facility"), /* @__PURE__ */ React.createElement("p", { className: "italic-quote", style: { fontSize: 19 } }, "Hot showers, good light, always clean."), /* @__PURE__ */ React.createElement("p", { style: { fontSize: 17, lineHeight: 1.8, color: "var(--stone)", maxWidth: 480 } }, "Six of seven cabins share a central washroom block \u2014 bright, clean, always stocked. The walk from any cabin is about thirty seconds."), /* @__PURE__ */ React.createElement("div", { className: "cabin-row-actions", style: { display: "flex", gap: 12, marginTop: 18 } }, /* @__PURE__ */ React.createElement("button", { className: "btn btn-ghost", onClick: () => go("washroom") }, "See facility details \u2192"))));
-}
-function WashroomDetail({ go }) {
-  return /* @__PURE__ */ React.createElement("div", { className: "page-fade" }, /* @__PURE__ */ React.createElement("section", { className: "cabin-hero", style: { padding: 0 } }, /* @__PURE__ */ React.createElement("div", { className: "cabin-hero-img", role: "img", "aria-label": "Exterior of the shared washroom facility at Birken Lakeside Resort", style: { backgroundImage: "url(assets/shared_washroom_exterior.jpeg)" } }), /* @__PURE__ */ React.createElement("div", { className: "cabin-hero-shade" }), /* @__PURE__ */ React.createElement("div", { className: "cabin-hero-content" }, /* @__PURE__ */ React.createElement("div", null, /* @__PURE__ */ React.createElement("span", { className: "eyebrow eyebrow-light", style: { color: "var(--cedar)" } }, "\u2014 What's Here"), /* @__PURE__ */ React.createElement("h1", { style: { marginTop: 18 } }, "SHARED WASHROOM FACILITY"), /* @__PURE__ */ React.createElement("p", { className: "tagline" }, "Hot showers, good light, always clean.")), /* @__PURE__ */ React.createElement("div", { className: "price-card" }, /* @__PURE__ */ React.createElement("div", { className: "lbl" }, "Shared by"), /* @__PURE__ */ React.createElement("div", { className: "pp", style: { fontSize: 28, letterSpacing: "0.04em" } }, "6 of 7 cabins"), /* @__PURE__ */ React.createElement("div", { className: "sub" }, "The Chapel has its own private washroom"), /* @__PURE__ */ React.createElement("button", { className: "btn btn-ghost-light", style: { width: "100%", marginTop: 8 }, onClick: () => go("stay") }, "\u2190 Back to all cabins")))), /* @__PURE__ */ React.createElement("section", { className: "cabin-detail-section", style: { padding: "64px 40px 80px", background: "var(--cream)" } }, /* @__PURE__ */ React.createElement("div", { className: "section-inner cabin-detail-story", style: { display: "grid", gridTemplateColumns: "1fr 1.2fr", gap: 64, alignItems: "start" } }, /* @__PURE__ */ React.createElement("div", null, /* @__PURE__ */ React.createElement("span", { className: "eyebrow" }, "\u2014 The Facility"), /* @__PURE__ */ React.createElement("h2", { style: {
-    fontFamily: "var(--serif)",
-    fontSize: "clamp(40px, 4.5vw, 72px)",
-    lineHeight: 0.95,
-    color: "var(--forest)",
-    letterSpacing: "0.02em",
-    marginTop: 14
-  } }, "Bright. Clean. Always on."), /* @__PURE__ */ React.createElement("p", { style: { fontSize: 19, lineHeight: 1.85, color: "var(--stone)", marginTop: 24 } }, "One of the rules of staying at a hundred-year-old resort: the cabins are character, not infrastructure. Six of seven share a central washroom block \u2014 bright, clean, hot showers always on, set apart in its own building close to the cabins. It's not a flaw to apologise for. It's how the property was built, and how it still works. Spotless every morning. Stocked through the day. The Chapel is the only cabin with its own private washroom \u2014 if a private bathroom is a deal-breaker for you, that's the one to book. For everyone else, the walk's about thirty seconds, and the lake's right there.")), /* @__PURE__ */ React.createElement("div", { role: "img", "aria-label": "Interior of the shared washroom \u2014 decorative bowl sinks, warm wood walls", style: {
-    backgroundImage: "url(assets/shared_washroom_interior.jpeg)",
-    backgroundSize: "cover",
-    backgroundPosition: "center",
-    minHeight: 640
-  } }))), /* @__PURE__ */ React.createElement("section", { className: "cabin-detail-section", style: { padding: "0 40px 120px", background: "var(--cream)" } }, /* @__PURE__ */ React.createElement("div", { className: "section-inner" }, /* @__PURE__ */ React.createElement("div", { style: { display: "grid", gridTemplateColumns: "1fr 1fr", gap: 16 } }, [
-    { src: "assets/shared_washroom_mirror.jpeg", alt: "Mirror and vanity area in the shared washroom" },
-    { src: "assets/shared_washtoom_shower.jpeg", alt: "Hot shower in the shared washroom facility" },
-    { src: "assets/shared_washroom_interior.jpeg", alt: "Interior of the shared washroom \u2014 tiled floor, warm lighting" },
-    { src: "assets/shared_washroom_exterior.jpeg", alt: "Exterior of the washroom building among the trees" }
-  ].map((img, i) => /* @__PURE__ */ React.createElement("div", { key: i, role: "img", "aria-label": img.alt, style: {
-    backgroundImage: `url(${img.src})`,
-    backgroundSize: "cover",
-    backgroundPosition: "center",
-    minHeight: 320
-  } }))))), /* @__PURE__ */ React.createElement("section", { className: "dark-section" }, /* @__PURE__ */ React.createElement("div", { className: "section-inner", style: { textAlign: "center" } }, /* @__PURE__ */ React.createElement(
-    SectionHead,
-    {
-      num: "\u2014 Stay",
-      title: /* @__PURE__ */ React.createElement(React.Fragment, null, "Find your cabin."),
-      intro: "Each one different. The Chapel is the only one with its own private washroom \u2014 book it if that matters to you."
-    }
-  ), /* @__PURE__ */ React.createElement("div", { style: { marginTop: 24 } }, /* @__PURE__ */ React.createElement("button", { className: "btn btn-ghost-light", onClick: () => go("stay") }, "See all cabins \u2192")))));
-}
-Object.assign(window, { Stay, CabinDetail, CabinRow, WashroomRow, WashroomDetail });
+Object.assign(window, { Stay, CabinDetail, CabinRow });
