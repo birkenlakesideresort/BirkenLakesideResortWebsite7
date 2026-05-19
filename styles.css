@@ -273,10 +273,10 @@ a { color: inherit; text-decoration: none; }
    ========================================================== */
 .hero {
   position: relative;
-  height: 100vh;
-  height: 100svh;
+  height: calc(100vh + var(--nav-h, 180px));
+  height: calc(100svh + var(--nav-h, 180px));
   min-height: 640px;
-  margin-top: calc(-1 * var(--nav-h, 140px)); /* slide flush under nav */
+  margin-top: calc(-1 * var(--nav-h, 180px)); /* slide flush under nav */
   overflow: hidden;
   color: var(--cream);
 }
