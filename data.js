@@ -63,7 +63,7 @@ window.CABINS = [
     name: 'The Library',
     eyebrow: "Reader's Paradise",
     tag: 'Hundreds of stories. One couch. Pages turning.',
-    blurb: 'A whole cabin built around the books. Real shelves, real pages, real silence except for the wood stove and your own breathing. Sleeps two: one queen, one small single pullout.',
+    blurb: 'A whole cabin built around the books. Real shelves, real pages, real silence except for the wood-burning fireplace and your own breathing. Sleeps three: one queen, one child pull-out.',
     type: 'Cabin',
     sleeps: 3,
     beds: '1 Queen + 1 Child Pull-out',
