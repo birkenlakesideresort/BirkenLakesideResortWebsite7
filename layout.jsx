@@ -153,7 +153,6 @@ function Footer({ go }) {
             <li onClick={() => go('grille')}>The Grille</li>
             <li onClick={() => go('area')}>The Area</li>
             <li onClick={() => go('about')}>About</li>
-            <li onClick={() => go('accessibility')} style={{ marginTop: 8, opacity: 0.65, fontSize: 14 }}>Accessibility</li>
           </ul>
         </div>
         <div className="footer-col">
