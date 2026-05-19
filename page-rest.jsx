@@ -3,16 +3,44 @@
 function Gatherings({ go }) {
   return (
     <div className="page-fade">
+
+      {/* Hero */}
       <section className="first-section" style={{ padding: '80px 40px', background: 'var(--cream)' }}>
         <div className="section-inner">
-          <span className="eyebrow">— 03 / Gatherings</span>
-          <h1 style={{ color: 'var(--forest)' }}>BRING THE<br/>WHOLE CREW.</h1>
+          <span className="eyebrow">GATHERINGS</span>
+          <h1 style={{ color: 'var(--forest)' }}>Bring twenty.<br/>Take over the whole place.</h1>
           <p className="italic-quote" style={{ fontSize: 20, marginTop: 28, maxWidth: 680 }}>
-            Whole-resort buyouts. Family reunions. Founder offsites that won't feel like one. The meeting hall, all the cabins, the dock, the firepit. Yours for as long as you book.
+            Birken was built for gatherings. For groups of sixteen to thirty-two, the whole property is yours — seven cabins, three glamping tents, the Meeting Hall, the dock, the Grille on Saturday night. Full property exclusive use. No other guests. No surprises. Most weekends through peak season hold first for full-site book-outs and open second — so early enquiry matters. We send full details by email and walk you through the rest on a call.
           </p>
         </div>
       </section>
 
+      {/* Policy fact block */}
+      <section style={{ padding: '0 40px 80px', background: 'var(--cream)' }}>
+        <div className="section-inner">
+          <ul style={{ listStyle: 'none', padding: 0, margin: 0, borderTop: '0.5px solid rgba(29,61,45,0.18)' }}>
+            {[
+              'Full property exclusive use. All seven cabins, three glamping tents, Meeting Hall, grounds, dock.',
+              'From $6,000. Final pricing depends on dates, numbers, and add-ons.',
+              '2-night minimum. 3-night minimum on long weekends.',
+              '16–32 guests. Online booking is capped at 3 cabins per booking entity.',
+              'The calendar typically books up by April 15. Early enquiry encouraged.',
+            ].map((item, i) => (
+              <li key={i} style={{
+                fontFamily: 'var(--ui)', fontSize: 15, letterSpacing: '0.04em',
+                color: 'var(--forest)', fontWeight: 500,
+                padding: '18px 0', borderBottom: '0.5px solid rgba(29,61,45,0.18)',
+                display: 'flex', alignItems: 'center', gap: 14,
+              }}>
+                <span style={{ width: 4, height: 4, background: 'var(--cedar)', borderRadius: '50%', flexShrink: 0 }} />
+                {item}
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
+
+      {/* Meeting Hall */}
       <section style={{ padding: '0 0 0', background: 'var(--cream)' }}>
         <div className="alt-block" style={{ maxWidth: 1440, margin: '0 auto' }}>
           <div className="alt-img" role="img" aria-label="Interior of the resort meeting hall — wood-panelled room with round tables, a piano, foosball table, and fairy lights" style={{ backgroundImage: 'url(assets/meeting-hall-int.jpeg)' }} />
@@ -29,34 +57,31 @@ function Gatherings({ go }) {
         </div>
       </section>
 
+      {/* Buyouts */}
       <section className="dark-section">
         <div className="section-inner">
           <SectionHead
             num="— Buyouts"
             title={<>Take the<br/>whole place.</>}
-            intro="The cabins, the bunkhouse, the meeting hall, the lake dock and the firepit. Your group, our property, no other guests. Three-night minimum on buyouts." />
+            intro="The cabins, the bunkhouse, the meeting hall, the lake dock and the firepit. Your group, our property, no other guests. 2-night minimum stay required for group bookings (3-night minimum on long weekends)." />
 
           <div className="threeup">
             <div className="threeup-col">
-              <span className="threeup-num">8–18</span>
-              <h3 className="threeup-title">Small group</h3>
-              <p className="threeup-body">A handful of cabins + the bunkhouse. Right-size for an offsite of 8 to 18 humans. Sleeping included in site buyout.</p>
+              <span className="threeup-num">16–32</span>
+              <h3 className="threeup-title">Exclusive use</h3>
+              <p className="threeup-body">Seven cabins, three glamping tents, the Meeting Hall, dock, and grounds. The whole property is yours — no other guests, no shared spaces, no surprises.</p>
             </div>
             <div className="threeup-col">
-              <span className="threeup-num">18–32</span>
-              <h3 className="threeup-title">Full property</h3>
-              <p className="threeup-body">Every cabin, every bed, every chair on the deck. We bring in extra cooks for The Grille if you want full meal service.</p>
-            </div>
-            <div className="threeup-col">
-              <span className="threeup-num">+</span>
-              <h3 className="threeup-title">Day-only events</h3>
-              <p className="threeup-body">Workshops, retreats, day-rate rentals of the meeting hall and the lakeside deck. Bring catering or use ours.</p>
+              <span className="threeup-num">33+</span>
+              <h3 className="threeup-title">Larger groups</h3>
+              <p className="threeup-body">We can accommodate larger groups with additional glamping and accommodation options. Get in touch and we'll work out what's possible.</p>
             </div>
           </div>
         </div>
       </section>
 
-      <section style={{ padding: '120px 40px', background: 'var(--cream)' }}>
+      {/* What's Included */}
+      <section style={{ padding: '120px 40px 64px', background: 'var(--cream)' }}>
         <div className="section-inner">
           <SectionHead
             num="— What's Included"
@@ -74,7 +99,7 @@ function Gatherings({ go }) {
               { l: 'Coffee',           d: 'Local beans ground each morning.' },
               { l: 'Linens + towels',  d: 'Crisp, white, fresh on arrival.' },
               { l: 'Catered meals',    d: 'Optional. Add The Grille team to your booking.' },
-              { l: 'A/V for talks',    d: 'Projector, screen, mics in the meeting hall.' },
+              { l: 'A/V for talks',    d: 'Projector, screen, A/V ready in the meeting hall.' },
               { l: 'A real human',     d: 'The crew is on site. Texts back fast.' },
             ].map((x, i) => (
               <div key={i} style={{
@@ -90,12 +115,23 @@ function Gatherings({ go }) {
               </div>
             ))}
           </div>
+        </div>
+      </section>
 
-          <div style={{ textAlign: 'center', marginTop: 56 }}>
-            <button className="btn btn-primary" onClick={() => go('book')}>Enquire about a buyout →</button>
+      {/* CTA */}
+      <section style={{ padding: '0 40px 120px', background: 'var(--cream)', textAlign: 'center' }}>
+        <div className="section-inner">
+          <p style={{ fontSize: 19, lineHeight: 1.8, color: 'var(--stone)', maxWidth: 600, margin: '0 auto 32px' }}>
+            Ready to talk? We don't run buyouts through a checkout. Email us with your dates and your numbers, and we'll send a full inquiry pack within twenty-four hours.
+          </p>
+          <div style={{ display: 'flex', gap: 14, justifyContent: 'center', flexWrap: 'wrap' }}>
+            <a className="btn btn-primary" href="mailto:hello@birkenlakesideresort.ca">Enquire — hello@birkenlakesideresort.ca →</a>
+            {/* PDF placeholder — awaiting upload, href to be updated when file is available */}
+            <a className="btn btn-ghost" href="#options-pdf-pending">See options →</a>
           </div>
         </div>
       </section>
+
     </div>
   );
 }
