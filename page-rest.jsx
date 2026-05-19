@@ -400,6 +400,32 @@ function About({ go }) {
         </div>
       </section>
 
+      {/* Owner photo */}
+      <section style={{ padding: '0 40px 80px', background: 'var(--cream)' }}>
+        <div className="section-inner">
+          <figure style={{ margin: 0 }}>
+            <img
+              src="assets/biken_dock_party.png"
+              alt="The owners and friends celebrating on the dock at Birken Lakeside Resort"
+              style={{
+                width: '100%',
+                maxHeight: 600,
+                objectFit: 'cover',
+                objectPosition: 'center 30%',
+                display: 'block',
+              }}
+            />
+            <figcaption style={{
+              fontFamily: 'var(--ui)', fontSize: 13, letterSpacing: '0.1em',
+              textTransform: 'uppercase', color: 'var(--stone)',
+              marginTop: 14, textAlign: 'right',
+            }}>
+              The crew — Gates Lake, BC
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
       <section style={{ padding: '120px 40px', background: 'var(--cream)' }}>
         <div className="section-inner">
           <SectionHead
