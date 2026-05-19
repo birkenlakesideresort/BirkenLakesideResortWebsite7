@@ -1,5 +1,6 @@
+const { useState, useEffect } = React;
 function App() {
-  const VALID_ROUTES = ["home", "stay", "cabin", "gatherings", "weddings", "grille", "area", "about", "book", "contact", "404"];
+  const VALID_ROUTES = ["home", "stay", "cabin", "gatherings", "weddings", "grille", "area", "about", "book", "contact", "accessibility", "404"];
   const parseHash = () => {
     const h = (window.location.hash || "").replace(/^#\/?/, "").trim();
     if (!h) return { route: "home", cabinId: null };
@@ -72,6 +73,9 @@ function App() {
       break;
     case "contact":
       page = /* @__PURE__ */ React.createElement(Contact, { go });
+      break;
+    case "accessibility":
+      page = /* @__PURE__ */ React.createElement(AccessibilityPage, { go });
       break;
     case "404":
       page = /* @__PURE__ */ React.createElement(NotFound, { go });
