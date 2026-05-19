@@ -68,18 +68,13 @@ function Gatherings({ go }) {
           <div className="threeup">
             <div className="threeup-col">
               <span className="threeup-num">16–32</span>
-              <h3 className="threeup-title">16–32 guests</h3>
-              <p className="threeup-body">All seven cabins, three glamping tents, the Meeting Hall, dock, and grounds. Sleeping included in site buyout.</p>
+              <h3 className="threeup-title">Exclusive use</h3>
+              <p className="threeup-body">Seven cabins, three glamping tents, the Meeting Hall, dock, and grounds. The whole property is yours — no other guests, no shared spaces, no surprises.</p>
             </div>
             <div className="threeup-col">
-              <span className="threeup-num">18–32</span>
-              <h3 className="threeup-title">Full property</h3>
-              <p className="threeup-body">Every cabin, every bed, every chair on the deck. We bring in extra cooks for The Grille if you want full meal service.</p>
-            </div>
-            <div className="threeup-col">
-              <span className="threeup-num">+</span>
-              <h3 className="threeup-title">Day-only events</h3>
-              <p className="threeup-body">Workshops, retreats, day-rate rentals of the meeting hall and the lakeside deck. Bring catering or use ours.</p>
+              <span className="threeup-num">33+</span>
+              <h3 className="threeup-title">Larger groups</h3>
+              <p className="threeup-body">We can accommodate larger groups with additional glamping and accommodation options. Get in touch and we'll work out what's possible.</p>
             </div>
           </div>
         </div>
