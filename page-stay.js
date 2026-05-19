@@ -111,7 +111,7 @@ function CabinDetail({ cabinId, go }) {
     backgroundSize: "cover",
     backgroundPosition: "center",
     minHeight: 640
-  } }))), /* @__PURE__ */ React.createElement("section", { style: { padding: "0 40px 80px", background: "var(--cream)" } }, /* @__PURE__ */ React.createElement("div", { className: "section-inner" }, /* @__PURE__ */ React.createElement("div", { style: { borderLeft: "2px solid rgba(29,61,45,0.22)", paddingLeft: 24, maxWidth: 620 } }, /* @__PURE__ */ React.createElement("span", { className: "eyebrow" }, "\u2014 Good to Know"), /* @__PURE__ */ React.createElement("p", { style: { fontSize: 16, lineHeight: 1.85, color: "var(--stone)", marginTop: 10 } }, "Birken's stone steps, forest paths, and century-old structures make parts of the property difficult to navigate for some guests. If mobility is a consideration, please get in touch before booking."), /* @__PURE__ */ React.createElement("button", { className: "btn-text", style: { marginTop: 14 }, onClick: () => go("accessibility") }, "Full accessibility information \u2192")))), /* @__PURE__ */ React.createElement("section", { className: "dark-section" }, /* @__PURE__ */ React.createElement("div", { className: "section-inner" }, /* @__PURE__ */ React.createElement(
+  } }))), /* @__PURE__ */ React.createElement("section", { className: "dark-section" }, /* @__PURE__ */ React.createElement("div", { className: "section-inner" }, /* @__PURE__ */ React.createElement(
     SectionHead,
     {
       num: "\u2014 More Cabins",

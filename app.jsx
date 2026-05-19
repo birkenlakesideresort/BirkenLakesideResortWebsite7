@@ -2,7 +2,7 @@
 const { useState, useEffect } = React;
 
 function App() {
-  const VALID_ROUTES = ['home','stay','cabin','gatherings','weddings','grille','area','about','book','contact','accessibility','404'];
+  const VALID_ROUTES = ['home','stay','cabin','gatherings','weddings','grille','area','about','book','contact','404'];
 
   const parseHash = () => {
     const h = (window.location.hash || '').replace(/^#\/?/, '').trim();
@@ -60,9 +60,8 @@ function App() {
     case 'area':       page = <Area go={go} />; break;
     case 'about':      page = <About go={go} />; break;
     case 'book':       page = <Book go={go} />; break;
-    case 'contact':       page = <Contact go={go} />; break;
-    case 'accessibility': page = <AccessibilityPage go={go} />; break;
-    case '404':           page = <NotFound go={go} />; break;
+    case 'contact':    page = <Contact go={go} />; break;
+    case '404':        page = <NotFound go={go} />; break;
     default:           page = <Home go={go} />;
   }
 

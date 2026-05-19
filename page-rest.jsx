@@ -528,31 +528,5 @@ function Contact({ go }) {
 }
 
 
-function AccessibilityPage({ go }) {
-  return (
-    <div className="page-fade">
-      <section className="first-section" style={{ padding: '80px 40px', background: 'var(--cream)' }}>
-        <div className="section-inner">
-          <span className="eyebrow">— Good to Know</span>
-          <h1 style={{ color: 'var(--forest)', maxWidth: 760 }}>Accessibility at Birken.</h1>
-        </div>
-      </section>
-      <section style={{ padding: '0 40px 120px', background: 'var(--cream)' }}>
-        <div className="section-inner">
-          <div style={{ maxWidth: 720, borderLeft: '2px solid rgba(29,61,45,0.2)', paddingLeft: 32 }}>
-            <p style={{ fontSize: 21, lineHeight: 1.9, color: 'var(--stone)' }}>
-              Birken's character — stone steps, forest paths, century-old structures — is part of its charm, and part of what makes it imperfect for every guest. The property isn't wheelchair-accessible, and stairs and uneven terrain are unavoidable. If mobility is a consideration, please call us before booking so we can talk through what'll work.
-            </p>
-            <div style={{ marginTop: 40, display: 'flex', gap: 14, flexWrap: 'wrap' }}>
-              <a href="tel:+16044523255" className="btn btn-ghost">(604) 452-3255 →</a>
-              <button className="btn btn-ghost" onClick={() => go('stay')}>See the cabins</button>
-            </div>
-          </div>
-        </div>
-      </section>
-    </div>
-  );
-}
-
-Object.assign(window, { Gatherings, Weddings, Grille, Area, About, Book, Contact, MenuItem, NotFound, AccessibilityPage });
+Object.assign(window, { Gatherings, Weddings, Grille, Area, About, Book, Contact, MenuItem, NotFound });
 
