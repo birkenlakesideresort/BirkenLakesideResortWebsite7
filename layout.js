@@ -12,9 +12,23 @@ function Nav({ route, go, transparent }) {
     setMobileOpen(false);
   }, [route]);
   useEffect(() => {
-    document.body.style.overflow = mobileOpen ? "hidden" : "";
-    return () => {
+    const el = document.documentElement;
+    if (mobileOpen) {
+      el.style.overflow = "hidden";
+      document.body.style.overflow = "hidden";
+      document.body.style.position = "fixed";
+      document.body.style.width = "100%";
+    } else {
+      el.style.overflow = "";
       document.body.style.overflow = "";
+      document.body.style.position = "";
+      document.body.style.width = "";
+    }
+    return () => {
+      el.style.overflow = "";
+      document.body.style.overflow = "";
+      document.body.style.position = "";
+      document.body.style.width = "";
     };
   }, [mobileOpen]);
   const overDark = transparent && !scrolled;
