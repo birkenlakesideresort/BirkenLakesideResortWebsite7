@@ -117,7 +117,7 @@ function Nav({ route, go, transparent }) {
           </div>
           <div className="mobile-menu-meta">
             (604) 452-3255<br/>
-            hello@birkenlakeside.ca<br/>
+            hello@birkenlakesideresort.ca<br/>
             9179 Pemberton Portage Rd<br/>
             Birken, BC V0N 2L0
           </div>
@@ -162,7 +162,7 @@ function Footer({ go }) {
           <ul>
             <li style={{ lineHeight: 1.5 }}>9179 Pemberton Portage Rd<br/>Birken, BC V0N 2L0</li>
             <li>(604) 452-3255</li>
-            <li>hello@birkenlakeside.ca</li>
+            <li>hello@birkenlakesideresort.ca</li>
             <li style={{ marginTop: 8, fontSize: 14, color: 'rgba(243,234,220,0.55)', letterSpacing: '0.06em', textTransform: 'uppercase' }}>55 min from Whistler · 2.5 hrs from Vancouver</li>
           </ul>
         </div>
