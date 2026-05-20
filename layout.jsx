@@ -15,8 +15,24 @@ function Nav({ route, go, transparent }) {
   // Close mobile menu on route change + lock body scroll while open
   useEffect(() => { setMobileOpen(false); }, [route]);
   useEffect(() => {
-    document.body.style.overflow = mobileOpen ? 'hidden' : '';
-    return () => { document.body.style.overflow = ''; };
+    const el = document.documentElement;
+    if (mobileOpen) {
+      el.style.overflow = 'hidden';
+      document.body.style.overflow = 'hidden';
+      document.body.style.position = 'fixed';
+      document.body.style.width = '100%';
+    } else {
+      el.style.overflow = '';
+      document.body.style.overflow = '';
+      document.body.style.position = '';
+      document.body.style.width = '';
+    }
+    return () => {
+      el.style.overflow = '';
+      document.body.style.overflow = '';
+      document.body.style.position = '';
+      document.body.style.width = '';
+    };
   }, [mobileOpen]);
 
   const overDark = transparent && !scrolled;
