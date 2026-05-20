@@ -482,7 +482,7 @@ function Book({ go }) {
             <button className="btn btn-primary" onClick={() => go('contact')}>Contact Us →</button>
           </div>
           <div style={{ marginTop: 32, fontSize: 14, color: 'rgba(243,234,220,0.55)', fontFamily: 'var(--ui)', letterSpacing: '0.14em', textTransform: 'uppercase' }}>
-            (604) 452-3255 · hello@birkenlakeside.ca
+            (604) 452-3255 · hello@birkenlakesideresort.ca
           </div>
         </div>
       </section>
@@ -535,8 +535,8 @@ function Contact({ go }) {
             </div>
             <div>
               <div className="eyebrow" style={{ marginBottom: 10 }}>— Email</div>
-              <a href="mailto:hello@birkenlakeside.ca" style={{ fontFamily: 'var(--serif)', fontSize: 26, color: 'var(--forest)', letterSpacing: '0.02em', display: 'block' }}>
-                hello@birkenlakeside.ca
+              <a href="mailto:hello@birkenlakesideresort.ca" style={{ fontFamily: 'var(--serif)', fontSize: 26, color: 'var(--forest)', letterSpacing: '0.02em', display: 'block' }}>
+                hello@birkenlakesideresort.ca
               </a>
               <div style={{ fontSize: 14, color: 'var(--stone)', marginTop: 6 }}>Replies usually within a day</div>
             </div>
