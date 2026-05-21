@@ -49,7 +49,7 @@ window.CABINS = [
     id: 'love-shack',
     name: 'The Love Shack',
     eyebrow: 'Romantic Suite',
-    tag: 'Two adirondacks, gerberas on the table, a fir door.',
+    tag: 'Two chairs, red lava lamp, cozy fun.',
     blurb: 'For the people who came here for one reason. A raised king bed by the wood stove, low light, and absolutely zero kid-friendliness.',
     type: 'Couples',
     sleeps: 2,
