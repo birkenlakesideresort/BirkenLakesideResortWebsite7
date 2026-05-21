@@ -131,7 +131,7 @@ window.CABINS = [
     beds: '2 Twins',
     bath: 'Shared bathhouse',
     price: 150,
-    ext: 'assets/glamping-tent-4.jpeg',
+    ext: 'assets/glamping_exterior.png',
     int: 'assets/glamping-2.jpeg',
     features: ['Bell tent', 'Real beds', 'Solar lights', 'Communal outdoor kitchen', 'Bathhouse 30s away'],
   },
