@@ -88,7 +88,7 @@ function CabinDetail({ cabinId, go }) {
     color: "var(--forest)",
     letterSpacing: "0.02em",
     marginTop: 14
-  } }, "What it feels like inside."), /* @__PURE__ */ React.createElement("p", { style: { fontSize: 19, lineHeight: 1.85, color: "var(--stone)", marginTop: 24 } }, cabin.blurb), /* @__PURE__ */ React.createElement("p", { style: { fontSize: 19, lineHeight: 1.85, color: "var(--stone)", marginTop: 16 } }, "You'll find fresh linens, a stocked kitchen kit, the kettle on the stove. The cabin sleeps ", cabin.sleeps, " in a ", cabin.beds.toLowerCase(), " configuration."), /* @__PURE__ */ React.createElement("ul", { className: "cabin-detail-features", style: {
+  } }, "What it feels like inside."), /* @__PURE__ */ React.createElement("p", { style: { fontSize: 19, lineHeight: 1.85, color: "var(--stone)", marginTop: 24 } }, cabin.blurb), /* @__PURE__ */ React.createElement("p", { style: { fontSize: 19, lineHeight: 1.85, color: "var(--stone)", marginTop: 16 } }, "You'll find fresh linens, the kettle on the stove and the feeling of a home away from home. The cabin sleeps ", cabin.sleeps, " in a ", cabin.beds.toLowerCase(), " configuration."), /* @__PURE__ */ React.createElement("ul", { className: "cabin-detail-features", style: {
     listStyle: "none",
     display: "grid",
     gridTemplateColumns: "1fr 1fr",

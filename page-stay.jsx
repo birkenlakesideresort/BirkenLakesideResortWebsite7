@@ -171,7 +171,7 @@ function CabinDetail({ cabinId, go }) {
               {cabin.blurb}
             </p>
             <p style={{ fontSize: 19, lineHeight: 1.85, color: 'var(--stone)', marginTop: 16 }}>
-              You'll find fresh linens, a stocked kitchen kit, the kettle on the stove. The cabin sleeps {cabin.sleeps} in a {cabin.beds.toLowerCase()} configuration.
+              You'll find fresh linens, the kettle on the stove and the feeling of a home away from home. The cabin sleeps {cabin.sleeps} in a {cabin.beds.toLowerCase()} configuration.
             </p>
             <ul className="cabin-detail-features" style={{
               listStyle: 'none', display: 'grid', gridTemplateColumns: '1fr 1fr',
