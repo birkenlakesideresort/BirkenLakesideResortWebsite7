@@ -88,7 +88,7 @@ function Home({ go }) {
             <div className="threeup-col">
               <span className="threeup-num">01</span>
               <h3 className="threeup-title">The Lake</h3>
-              <p className="threeup-body">Jump off the dock. Take out a kayak or the paddleboat. Float on a noodle until your toes prune. The water is pristine. That is also by design.</p>
+              <p className="threeup-body">Jump off the dock. Paddle a kayak. Float on a noodle until your toes prune. The water is pristine. That is also by design.</p>
             </div>
             <div className="threeup-col">
               <span className="threeup-num">02</span>
