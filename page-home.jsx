@@ -118,7 +118,7 @@ function Home({ go }) {
             </div>
           </div>
           <div className="alt-block reverse">
-            <div className="alt-img" role="img" aria-label="Outdoor forest wedding ceremony setup — rows of wooden chairs facing a fabric-draped arch, with a glimpse of the lake beyond" style={{ backgroundImage: 'url(assets/weddings-hero.png)' }} />
+            <div className="alt-img" role="img" aria-label="Outdoor forest wedding ceremony setup — rows of wooden chairs facing a fabric-draped arch, with a glimpse of the lake beyond" style={{ backgroundImage: 'url(assets/wedding_woods.png)' }} />
             <div className="alt-text">
               <span className="eyebrow">— Weddings</span>
               <h3>Get married<br/>in the woods.</h3>
