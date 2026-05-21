@@ -74,7 +74,7 @@ function Gatherings({ go }) {
           }}>
             {[
               { l: 'Lakeside firepit', d: 'Stocked, swept, lit on request.' },
-              { l: 'Canoes + kayaks',  d: 'Three of each. PFDs in the boathouse.' },
+              { l: '1 paddleboat + 4 kayaks', d: 'PFDs in the boathouse.' },
               { l: 'Sound system',     d: 'In the meeting hall. Bring the playlist.' },
               { l: 'Coffee',           d: 'Local beans ground each morning.' },
               { l: 'Linens + towels',  d: 'Crisp, white, fresh on arrival.' },
