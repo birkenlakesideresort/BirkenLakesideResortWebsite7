@@ -57,7 +57,7 @@ window.CABINS = [
     bath: 'Shared',
     price: 185,
     ext: 'assets/love-shack-new.jpeg',
-    int: 'assets/love-shack-new.jpeg',
+    int: 'assets/love-shack-interior-raised-king-bed.png',
     features: ['Raised king bed', 'Wood-burning fireplace', 'Adults only', 'Full kitchen', 'Private deck'],
   },
   {
