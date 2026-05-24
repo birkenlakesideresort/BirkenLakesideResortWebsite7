@@ -29,9 +29,17 @@ function Home({ go }) {
   ), /* @__PURE__ */ React.createElement("div", { className: "reviews" }, /* @__PURE__ */ React.createElement(
     ReviewCard,
     {
-      heading: "The Focus on Disconnecting",
-      quote: "The initial shock of not having cell phone reception or Wi-Fi was quickly replaced by absolute relaxation. We left feeling refreshed and connected.",
-      who: "Verified Guest",
+      heading: "The Starry Night & Romance Vibe",
+      quote: "We had campfires under a star-filled sky, went kayaking on the lake, and the bed was so comfortable. If you appreciate rustic charm and you're looking for a place to relax in peace, this is an absolute gem.",
+      who: "Long Weekend Guest",
+      stars: 5
+    }
+  ), /* @__PURE__ */ React.createElement(
+    ReviewCard,
+    {
+      heading: "The Unpretentious & Cozy Vibe",
+      quote: "The cabin was clean and cozy, the communal bathrooms were great, and the resort was extremely quiet and incredibly relaxing. Our son loved playing on the floating docks!",
+      who: "Family Vacation Review",
       stars: 5
     }
   ), /* @__PURE__ */ React.createElement(
@@ -40,14 +48,6 @@ function Home({ go }) {
       heading: "The Comfort & Hospitality",
       quote: "Very kind service and hot water in cabin and showers. Kitchen is well-stocked, beds, and loft were great.",
       who: "Pablo G. & Crystal C. (Compiled from Google Reviews)",
-      stars: 5
-    }
-  ), /* @__PURE__ */ React.createElement(
-    ReviewCard,
-    {
-      heading: "The Lakeside Experience",
-      quote: "The cabin was clean and cozy, extremely quiet, and incredibly relaxing. The lake was beautiful for swimming and our son loved playing on the floating docks!",
-      who: "Family Stay Review",
       stars: 5
     }
   )))), /* @__PURE__ */ React.createElement("section", { className: "dark-section", style: { padding: "120px 40px", textAlign: "center" } }, /* @__PURE__ */ React.createElement("div", { className: "section-inner" }, /* @__PURE__ */ React.createElement("span", { className: "eyebrow eyebrow-light", style: { color: "var(--cedar)" } }, "\u2014 Ready when you are"), /* @__PURE__ */ React.createElement("h2", { style: {
