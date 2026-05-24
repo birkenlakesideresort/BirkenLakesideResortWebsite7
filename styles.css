@@ -921,6 +921,14 @@ section { padding: 120px 40px; }
   letter-spacing: 4px;
   font-size: 16px;
 }
+.review-heading {
+  font-family: var(--ui);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--cedar);
+}
 .review-quote {
   font-family: var(--serif);
   font-size: 26px;

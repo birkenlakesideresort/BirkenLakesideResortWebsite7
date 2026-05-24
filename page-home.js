@@ -29,22 +29,25 @@ function Home({ go }) {
   ), /* @__PURE__ */ React.createElement("div", { className: "reviews" }, /* @__PURE__ */ React.createElement(
     ReviewCard,
     {
-      quote: "Stayed in the Library. Read three books, swam every morning, came back a different person.",
-      who: "Maya & Tom \xB7 Vancouver, BC",
+      heading: "The Focus on Disconnecting",
+      quote: "The initial shock of not having cell phone reception or Wi-Fi was quickly replaced by absolute relaxation. We left feeling refreshed and connected.",
+      who: "Verified Guest",
       stars: 5
     }
   ), /* @__PURE__ */ React.createElement(
     ReviewCard,
     {
-      quote: "The Bunkhouse fit our whole engineering team and the crew still found time to play piano badly.",
-      who: "Crew of 11 \xB7 Seattle, WA",
+      heading: "The Comfort & Hospitality",
+      quote: "Very kind service and hot water in cabin and showers. Kitchen is well-stocked, beds, and loft were great.",
+      who: "Pablo G. & Crystal C. (Compiled from Google Reviews)",
       stars: 5
     }
   ), /* @__PURE__ */ React.createElement(
     ReviewCard,
     {
-      quote: "My partner cried when we drove away. The cabin was called Morocco. The cat is called Steve.",
-      who: "Anna \xB7 Whistler, BC",
+      heading: "The Lakeside Experience",
+      quote: "The cabin was clean and cozy, extremely quiet, and incredibly relaxing. The lake was beautiful for swimming and our son loved playing on the floating docks!",
+      who: "Family Stay Review",
       stars: 5
     }
   )))), /* @__PURE__ */ React.createElement("section", { className: "dark-section", style: { padding: "120px 40px", textAlign: "center" } }, /* @__PURE__ */ React.createElement("div", { className: "section-inner" }, /* @__PURE__ */ React.createElement("span", { className: "eyebrow eyebrow-light", style: { color: "var(--cedar)" } }, "\u2014 Ready when you are"), /* @__PURE__ */ React.createElement("h2", { style: {
@@ -61,7 +64,7 @@ function Home({ go }) {
 function CabinCard({ cabin, num, className, go }) {
   return /* @__PURE__ */ React.createElement("article", { className: `cabin-card ${className || ""}`, onClick: () => go("cabin", cabin.id) }, /* @__PURE__ */ React.createElement("div", { className: "cc-img", role: "img", "aria-label": `Exterior of ${cabin.name} cabin at Birken Lakeside Resort`, style: { backgroundImage: `url(${cabin.ext})` } }), /* @__PURE__ */ React.createElement("div", { className: "cc-shade" }), /* @__PURE__ */ React.createElement("div", { className: "cc-body" }, /* @__PURE__ */ React.createElement("span", { className: "cc-num" }, "\u2014 ", cabin.eyebrow || cabin.type), /* @__PURE__ */ React.createElement("h3", { className: "cc-title" }, cabin.name), /* @__PURE__ */ React.createElement("p", { className: "cc-sub" }, cabin.tag), /* @__PURE__ */ React.createElement("div", { className: "cc-meta" }, /* @__PURE__ */ React.createElement("span", null, "Sleeps ", cabin.sleeps), /* @__PURE__ */ React.createElement("span", null, cabin.beds), /* @__PURE__ */ React.createElement("span", null, "From $", cabin.price, "/nt"))));
 }
-function ReviewCard({ quote, who, stars }) {
-  return /* @__PURE__ */ React.createElement("div", { className: "review-card" }, /* @__PURE__ */ React.createElement("div", { className: "review-stars" }, "\u2605".repeat(stars)), /* @__PURE__ */ React.createElement("p", { className: "review-quote" }, "\u201C", quote, "\u201D"), /* @__PURE__ */ React.createElement("div", { className: "review-meta" }, "\u2014 ", who));
+function ReviewCard({ heading, quote, who, stars }) {
+  return /* @__PURE__ */ React.createElement("div", { className: "review-card" }, /* @__PURE__ */ React.createElement("div", { className: "review-stars" }, "\u2605".repeat(stars)), heading && /* @__PURE__ */ React.createElement("div", { className: "review-heading" }, heading), /* @__PURE__ */ React.createElement("p", { className: "review-quote" }, '"', quote, '"'), /* @__PURE__ */ React.createElement("div", { className: "review-meta" }, "\u2014 ", who));
 }
 Object.assign(window, { Home, CabinCard, ReviewCard });

@@ -139,16 +139,19 @@ function Home({ go }) {
 
           <div className="reviews">
             <ReviewCard
-              quote="Stayed in the Library. Read three books, swam every morning, came back a different person."
-              who="Maya & Tom · Vancouver, BC"
+              heading="The Focus on Disconnecting"
+              quote="The initial shock of not having cell phone reception or Wi-Fi was quickly replaced by absolute relaxation. We left feeling refreshed and connected."
+              who="Verified Guest"
               stars={5} />
             <ReviewCard
-              quote="The Bunkhouse fit our whole engineering team and the crew still found time to play piano badly."
-              who="Crew of 11 · Seattle, WA"
+              heading="The Comfort & Hospitality"
+              quote="Very kind service and hot water in cabin and showers. Kitchen is well-stocked, beds, and loft were great."
+              who="Pablo G. & Crystal C. (Compiled from Google Reviews)"
               stars={5} />
             <ReviewCard
-              quote="My partner cried when we drove away. The cabin was called Morocco. The cat is called Steve."
-              who="Anna · Whistler, BC"
+              heading="The Lakeside Experience"
+              quote="The cabin was clean and cozy, extremely quiet, and incredibly relaxing. The lake was beautiful for swimming and our son loved playing on the floating docks!"
+              who="Family Stay Review"
               stars={5} />
           </div>
         </div>
@@ -196,11 +199,12 @@ function CabinCard({ cabin, num, className, go }) {
   );
 }
 
-function ReviewCard({ quote, who, stars }) {
+function ReviewCard({ heading, quote, who, stars }) {
   return (
     <div className="review-card">
       <div className="review-stars">{'★'.repeat(stars)}</div>
-      <p className="review-quote">“{quote}”</p>
+      {heading && <div className="review-heading">{heading}</div>}
+      <p className="review-quote">"{quote}"</p>
       <div className="review-meta">— {who}</div>
     </div>
   );
