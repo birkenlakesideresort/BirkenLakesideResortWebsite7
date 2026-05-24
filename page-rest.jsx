@@ -237,49 +237,164 @@ function Weddings({ go }) {
 function Grille({ go }) {
   return (
     <div className="page-fade">
+
+      {/* HERO */}
       <section className="first-section" style={{ padding: '80px 40px', background: 'var(--cream)' }}>
         <div className="section-inner">
           <span className="eyebrow">— 05 / The Grille</span>
           <h1 style={{ color: 'var(--forest)' }}>
-            LAKE-FACING.<br/>HONEST FOOD.
+            THE LAKESIDE<br/>GRILLE.
           </h1>
-          <p className="italic-quote" style={{ fontSize: 20, marginTop: 28, maxWidth: 680 }}>
-            On site, open to guests and walk-ins. Cedar deck, mismatched chairs, the chef shouting at the line through an open door. Eat with your hands. Don't dress up.
+          <p style={{ fontFamily: 'var(--ui)', fontWeight: 700, fontSize: 15, letterSpacing: '0.22em', textTransform: 'uppercase', color: 'var(--cedar)', marginTop: 20, maxWidth: 560 }}>
+            Fed by the Lake. Woodsmoke. Pristine water. Good people.
           </p>
-          <div style={{ display: 'flex', gap: 24, marginTop: 36, flexWrap: 'wrap' }}>
-            <span className="pill">Open Thu–Sun</span>
-            <span className="pill">5 PM – 10 PM</span>
-            <span className="pill">Walk-ins welcome</span>
-            <span className="pill">Kids welcome</span>
+          <p className="italic-quote" style={{ fontSize: 20, marginTop: 16, maxWidth: 640 }}>
+            Weekends only. Local chefs, Birken Bakery buns, beef from down the road. Order at the window, eat on the deck, and let the lake do the rest.
+          </p>
+          <div style={{ display: 'flex', gap: 12, marginTop: 36, flexWrap: 'wrap' }}>
+            <span className="pill">Weekends Only</span>
+            <span className="pill">Walk-ins Welcome</span>
+            <span className="pill">Kids Welcome</span>
+            <span className="pill">Order at the Window</span>
           </div>
         </div>
       </section>
 
-      <section style={{ padding: '40px 40px 160px', background: 'var(--cream)' }}>
+      {/* HOURS */}
+      <section style={{ padding: '80px 40px', background: 'var(--cream-2)' }}>
         <div className="section-inner">
-          <div style={{
-            border: '0.5px solid rgba(29,61,45,0.18)',
-            padding: '120px 40px',
-            textAlign: 'center',
-            background: 'var(--cream-2)',
-          }}>
-            <span className="eyebrow">— The Menu</span>
-            <h2 style={{
-              fontFamily: 'var(--serif)',
-              fontSize: 'clamp(56px, 7vw, 104px)',
-              lineHeight: 0.95,
-              color: 'var(--forest)',
-              letterSpacing: '0.02em',
-              marginTop: 18,
-            }}>
-              MENU<br/>COMING SOON.
-            </h2>
-            <p className="italic-quote" style={{ fontSize: 19, marginTop: 22, maxWidth: 520, marginLeft: 'auto', marginRight: 'auto' }}>
-              We're still finalising it. Check back closer to opening — or ask the crew what's on the fire that night.
-            </p>
+          <span className="eyebrow">— Hours of Operation</span>
+          <h2 style={{ fontFamily: 'var(--serif)', fontSize: 'clamp(40px, 5vw, 72px)', color: 'var(--forest)', lineHeight: 0.95, letterSpacing: '0.02em', marginTop: 18, marginBottom: 48 }}>
+            WHEN WE ARE OPEN.
+          </h2>
+          <div className="grille-hours">
+            <div className="grille-day">
+              <div className="grille-day-name">Friday</div>
+              <div className="grille-day-hours">5:00 PM – 8:00 PM</div>
+              <div className="grille-day-note">Dinner only</div>
+            </div>
+            <div className="grille-day">
+              <div className="grille-day-name">Saturday</div>
+              <div className="grille-day-hours">12:00 PM – 8:00 PM</div>
+              <div className="grille-day-note">Lunch through dinner</div>
+            </div>
+            <div className="grille-day">
+              <div className="grille-day-name">Sunday</div>
+              <div className="grille-day-hours">9:00 AM – 6:00 PM</div>
+              <div className="grille-day-note">Full Breakfast 9:00 AM – 11:30 AM &middot; Lunch from Noon – 6:00 PM</div>
+            </div>
+            <div className="grille-day grille-day--alt">
+              <div className="grille-day-name">Long-Weekend Mondays</div>
+              <div className="grille-day-hours">Sunday Hours</div>
+              <div className="grille-day-note">BC Day Aug 3 &amp; Labour Day Sep 7</div>
+            </div>
           </div>
         </div>
       </section>
+
+      {/* MENU */}
+      <section style={{ padding: '80px 40px', background: 'var(--cream)' }}>
+        <div className="section-inner">
+
+          {/* Menu header + PDF download */}
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end', flexWrap: 'wrap', gap: 24, marginBottom: 56 }}>
+            <div>
+              <span className="eyebrow">— The Menu</span>
+              <h2 style={{ fontFamily: 'var(--serif)', fontSize: 'clamp(40px, 5vw, 72px)', color: 'var(--forest)', lineHeight: 0.95, letterSpacing: '0.02em', marginTop: 18 }}>
+                WHAT IS ON.
+              </h2>
+            </div>
+            <a
+              href="/assets/Birken_Lakeside_Grille_Menu%20(2).pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn btn-primary"
+            >
+              Download Full Menu (PDF) &#8594;
+            </a>
+          </div>
+
+          {/* Lunch & Dinner */}
+          <div style={{ marginBottom: 64 }}>
+            <div className="menu-section-head">
+              <span className="eyebrow" style={{ color: 'var(--forest)' }}>Lunch &amp; Dinner</span>
+              <span className="menu-section-note">Homemade beef patties on Birken Bakery brioche buns with lettuce, tomato, and onion.</span>
+            </div>
+            <div className="menu-cols">
+              <div className="menu-list">
+                <MenuItem name="Lakeside Burger" price="18" desc="The house burger with mustard mayo." />
+                <MenuItem name="Nick the Greek Burger" price="20" desc="With feta and olives." />
+                <MenuItem name="Popeye Burger" price="20" desc="With mustard mayo, spinach, and a running fried egg." />
+                <MenuItem name="Veggie or Vegan Burger" price="18" desc="Same bun, same trimmings, no compromise." />
+              </div>
+              <div className="menu-list">
+                <MenuItem name="Gourmet Grilled Cheese" price="12" desc="Hot and melty with chutney or ketchup on the side." />
+                <MenuItem name="Smokie on a Bun" price="12" desc="Pemberton Meat Co. smokie with sauerkraut." />
+                <div className="menu-item">
+                  <div className="row"><span className="name">Add-ons</span></div>
+                  <div className="desc">Cheddar, feta, mushrooms, peppers, avocado, onion +$2 each &middot; Bacon +$3</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Sunday Breakfast */}
+          <div style={{ marginBottom: 64 }}>
+            <div className="menu-section-head">
+              <span className="eyebrow" style={{ color: 'var(--forest)' }}>Sunday Breakfast</span>
+              <span className="menu-section-note">9:00 AM – Noon</span>
+            </div>
+            <div className="menu-cols">
+              <div className="menu-list">
+                <MenuItem name="Fruit & Berry Cup" price="12" desc="Seasonal fruit, thick yogurt, and house granola." />
+                <MenuItem name="Waffles" price="16" desc="Berries & cream OR bacon with maple syrup." />
+                <MenuItem name="Deluxe Bacon & Egg Buttie" price="16" desc="Two slices of bacon and two eggs on Birken Bakery brioche." />
+              </div>
+              <div className="menu-list">
+                <MenuItem name="The Big Breakfast" price="18" desc="Two hashbrowns, sausages or bacon, and two fried eggs." />
+                <div className="menu-item">
+                  <div className="row"><span className="name">Add-ons</span></div>
+                  <div className="desc">Extra egg, bacon, tomato, cheese, avocado +$2 each</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Sweets & Drinks */}
+          <div>
+            <div className="menu-section-head">
+              <span className="eyebrow" style={{ color: 'var(--forest)' }}>Sweets &amp; Drinks</span>
+            </div>
+            <div className="menu-cols">
+              <div className="menu-list">
+                <MenuItem name="Smoothies & Milkshakes" price="8" desc="" />
+                <MenuItem name="German Iced Coffee" price="8" desc="Espresso, vanilla ice cream, and cold milk." />
+                <MenuItem name="Espresso, Cappuccino, or Latte" price="6" desc="" />
+              </div>
+              <div className="menu-list">
+                <MenuItem name="Black or Green Tea" price="3" desc="" />
+                <MenuItem name="Assorted Sodas" price="2.50" desc="" />
+                <MenuItem name="Water" price="2" desc="" />
+              </div>
+            </div>
+            <p style={{ fontFamily: 'var(--ui)', fontSize: 13, letterSpacing: '0.18em', textTransform: 'uppercase', color: 'var(--stone)', marginTop: 40 }}>
+              Prices exclude tax. Come as you are.
+            </p>
+          </div>
+
+        </div>
+      </section>
+
+      {/* GROUP BOOKINGS */}
+      <section className="dark-section">
+        <div className="section-inner">
+          <SectionHead
+            num="— Group Bookings & Special Events"
+            title={<>Bring the<br/>whole table.</>}
+            intro="We accommodate pre-arranged group lunches and small events (minimum 12 covers, maximum 30). Group bookings require a deposit-secured retainer at least 7 days out and feature a fixed three-option menu. Contact Sharon for availability and sign-off." />
+        </div>
+      </section>
+
     </div>
   );
 }

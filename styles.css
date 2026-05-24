@@ -1018,6 +1018,59 @@ section { padding: 120px 40px; }
   background: rgba(196,116,58,0.06);
 }
 
+/* ---------- Grille hours ---------- */
+.grille-hours {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border-top: 0.5px solid rgba(29,61,45,0.18);
+}
+.grille-day {
+  padding: 36px 24px 36px 0;
+  border-right: 0.5px solid rgba(29,61,45,0.18);
+}
+.grille-day:last-child { border-right: none; }
+.grille-day--alt { background: rgba(196,116,58,0.06); padding-left: 24px; }
+.grille-day-name {
+  font-family: var(--ui);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.26em;
+  text-transform: uppercase;
+  color: var(--cedar);
+  margin-bottom: 12px;
+}
+.grille-day-hours {
+  font-family: var(--serif);
+  font-size: clamp(22px, 2.5vw, 34px);
+  line-height: 1.05;
+  color: var(--forest);
+  letter-spacing: 0.01em;
+  margin-bottom: 10px;
+}
+.grille-day-note {
+  font-size: 14px;
+  color: var(--stone);
+  font-style: italic;
+  line-height: 1.5;
+}
+
+/* ---------- Grille menu section heads ---------- */
+.menu-section-head {
+  display: flex;
+  align-items: baseline;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding-bottom: 16px;
+  margin-bottom: 32px;
+  border-bottom: 0.5px solid rgba(29,61,45,0.18);
+}
+.menu-section-note {
+  font-family: var(--body);
+  font-style: italic;
+  color: var(--stone);
+  font-size: 16px;
+}
+
 /* ---------- Grille menu cards ---------- */
 .menu-cols {
   display: grid;
@@ -1114,6 +1167,10 @@ section { padding: 120px 40px; }
   .cabin-grid { grid-template-columns: 1fr; }
   .cabin-grid > * { grid-column: 1 / -1 !important; aspect-ratio: 4/5; }
   .threeup, .alt-block, .reviews, .menu-cols, .area-grid, .footer-inner { grid-template-columns: 1fr; }
+  .grille-hours { grid-template-columns: 1fr 1fr; }
+  .grille-day { border-right: none; border-bottom: 0.5px solid rgba(29,61,45,0.18); padding: 28px 20px; }
+  .grille-day--alt { padding-left: 20px; }
+  .grille-day:last-child { border-bottom: none; }
   .story-inner { grid-template-columns: 1fr; gap: 32px; }
   .about-principles { grid-template-columns: 1fr 1fr; }
   .alt-text { padding: 40px 28px; }
