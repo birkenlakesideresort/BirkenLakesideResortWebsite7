@@ -82,7 +82,27 @@ function MenuItem({ name, price, desc }) {
   return /* @__PURE__ */ React.createElement("div", { className: "menu-item" }, /* @__PURE__ */ React.createElement("div", { className: "row" }, /* @__PURE__ */ React.createElement("span", { className: "name" }, name), /* @__PURE__ */ React.createElement("span", { className: "price" }, "$", price)), /* @__PURE__ */ React.createElement("div", { className: "desc" }, desc));
 }
 function Area({ go }) {
-  return /* @__PURE__ */ React.createElement("div", { className: "page-fade" }, /* @__PURE__ */ React.createElement("section", { className: "first-section", style: { padding: "80px 40px", background: "var(--cream)" } }, /* @__PURE__ */ React.createElement("div", { className: "section-inner" }, /* @__PURE__ */ React.createElement("span", { className: "eyebrow" }, "\u2014 06 / The Area"), /* @__PURE__ */ React.createElement("h1", { style: { color: "var(--forest)" } }, "55 MINUTES", /* @__PURE__ */ React.createElement("br", null), "FROM WHISTLER.", /* @__PURE__ */ React.createElement("br", null), "A DIFFERENT", /* @__PURE__ */ React.createElement("br", null), "PLANET."), /* @__PURE__ */ React.createElement("p", { className: "italic-quote", style: { fontSize: 20, marginTop: 28, maxWidth: 680 } }, "The Sea-to-Sky doesn't end at Whistler. Push another fifty-five minutes north and the road climbs into Birken \u2014 old-growth fir, granite peaks, a turquoise lake the locals don't talk about much. This is the corridor's quiet side."))), /* @__PURE__ */ React.createElement("section", { style: { padding: "40px 40px 120px", background: "var(--cream)" } }, /* @__PURE__ */ React.createElement("div", { className: "section-inner" }, /* @__PURE__ */ React.createElement("div", { className: "area-grid", style: { gap: 64 } }, /* @__PURE__ */ React.createElement("div", { className: "area-list" }, AREA.map((a, i) => /* @__PURE__ */ React.createElement("article", { key: i, className: "area-item" }, /* @__PURE__ */ React.createElement("div", { className: "num" }, a.num), /* @__PURE__ */ React.createElement("div", null, /* @__PURE__ */ React.createElement("h4", null, a.name), /* @__PURE__ */ React.createElement("p", null, a.desc)), /* @__PURE__ */ React.createElement("div", { className: "dist" }, a.dist)))), /* @__PURE__ */ React.createElement("div", { className: "area-map" }, /* @__PURE__ */ React.createElement(AreaMap, null))))));
+  return /* @__PURE__ */ React.createElement("div", { className: "page-fade" }, /* @__PURE__ */ React.createElement("section", { className: "first-section", style: { padding: "80px 40px", background: "var(--cream)" } }, /* @__PURE__ */ React.createElement("div", { className: "section-inner" }, /* @__PURE__ */ React.createElement("span", { className: "eyebrow" }, "\u2014 06 / The Area"), /* @__PURE__ */ React.createElement("h1", { style: { color: "var(--forest)" } }, "55 MINUTES", /* @__PURE__ */ React.createElement("br", null), "FROM WHISTLER.", /* @__PURE__ */ React.createElement("br", null), "A DIFFERENT", /* @__PURE__ */ React.createElement("br", null), "PLANET."), /* @__PURE__ */ React.createElement("p", { className: "italic-quote", style: { fontSize: 20, marginTop: 28, maxWidth: 680 } }, "The Sea-to-Sky doesn't end at Whistler. Push another fifty-five minutes north and the road climbs into Birken \u2014 old-growth fir, granite peaks, a turquoise lake the locals don't talk about much. This is the corridor's quiet side."))), /* @__PURE__ */ React.createElement("section", { style: { padding: 0, background: "var(--cream)" } }, /* @__PURE__ */ React.createElement(
+    "div",
+    {
+      role: "img",
+      "aria-label": "Sunset over Gates Lake at Birken Lakeside Resort, BC",
+      style: {
+        width: "100%",
+        height: 520,
+        backgroundImage: "url(assets/lake-sunset-birken.jpeg)",
+        backgroundSize: "cover",
+        backgroundPosition: "center 60%"
+      }
+    }
+  ), /* @__PURE__ */ React.createElement("div", { style: {
+    display: "flex",
+    justifyContent: "space-between",
+    alignItems: "baseline",
+    padding: "14px 40px 80px",
+    borderBottom: "0.5px solid rgba(29,61,45,0.18)",
+    maxWidth: "100%"
+  } }, /* @__PURE__ */ React.createElement("span", { style: { fontFamily: "var(--ui)", fontSize: 12, letterSpacing: "0.16em", textTransform: "uppercase", color: "var(--stone)" } }, "Gates Lake, BC"), /* @__PURE__ */ React.createElement("span", { style: { fontFamily: "var(--ui)", fontSize: 12, letterSpacing: "0.16em", textTransform: "uppercase", color: "var(--stone)" } }, "The View"))), /* @__PURE__ */ React.createElement("section", { style: { padding: "40px 40px 120px", background: "var(--cream)" } }, /* @__PURE__ */ React.createElement("div", { className: "section-inner" }, /* @__PURE__ */ React.createElement("div", { className: "area-grid", style: { gap: 64 } }, /* @__PURE__ */ React.createElement("div", { className: "area-list" }, AREA.map((a, i) => /* @__PURE__ */ React.createElement("article", { key: i, className: "area-item" }, /* @__PURE__ */ React.createElement("div", { className: "num" }, a.num), /* @__PURE__ */ React.createElement("div", null, /* @__PURE__ */ React.createElement("h4", null, a.name), /* @__PURE__ */ React.createElement("p", null, a.desc)), /* @__PURE__ */ React.createElement("div", { className: "dist" }, a.dist)))), /* @__PURE__ */ React.createElement("div", { className: "area-map" }, /* @__PURE__ */ React.createElement(AreaMap, null))))));
 }
 function AreaMap() {
   const embedQ = "Birken+Lakeside+Resort,+Birken,+BC";

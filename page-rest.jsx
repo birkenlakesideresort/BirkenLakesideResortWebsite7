@@ -405,6 +405,30 @@ function Area({ go }) {
         </div>
       </section>
 
+      {/* Lake sunset — full bleed */}
+      <section style={{ padding: 0, background: 'var(--cream)' }}>
+        <div
+          role="img"
+          aria-label="Sunset over Gates Lake at Birken Lakeside Resort, BC"
+          style={{
+            width: '100%',
+            height: 520,
+            backgroundImage: 'url(assets/lake-sunset-birken.jpeg)',
+            backgroundSize: 'cover',
+            backgroundPosition: 'center 60%',
+          }}
+        />
+        <div style={{
+          display: 'flex', justifyContent: 'space-between', alignItems: 'baseline',
+          padding: '14px 40px 80px',
+          borderBottom: '0.5px solid rgba(29,61,45,0.18)',
+          maxWidth: '100%',
+        }}>
+          <span style={{ fontFamily: 'var(--ui)', fontSize: 12, letterSpacing: '0.16em', textTransform: 'uppercase', color: 'var(--stone)' }}>Gates Lake, BC</span>
+          <span style={{ fontFamily: 'var(--ui)', fontSize: 12, letterSpacing: '0.16em', textTransform: 'uppercase', color: 'var(--stone)' }}>The View</span>
+        </div>
+      </section>
+
       <section style={{ padding: '40px 40px 120px', background: 'var(--cream)' }}>
         <div className="section-inner">
           <div className="area-grid" style={{ gap: 64 }}>
