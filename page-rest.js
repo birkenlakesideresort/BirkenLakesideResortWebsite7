@@ -92,7 +92,7 @@ function Area({ go }) {
         height: 520,
         backgroundImage: "url(assets/lake-sunset-birken.jpeg)",
         backgroundSize: "cover",
-        backgroundPosition: "center 60%"
+        backgroundPosition: "center 42%"
       }
     }
   ), /* @__PURE__ */ React.createElement("div", { style: {
