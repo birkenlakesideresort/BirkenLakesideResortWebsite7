@@ -1029,6 +1029,65 @@ section { padding: 120px 40px; }
   background: rgba(196,116,58,0.06);
 }
 
+/* ---------- FAQ accordion ---------- */
+.faq-wrap {
+  margin-top: 56px;
+  border-top: 0.5px solid rgba(29,61,45,0.18);
+}
+.faq-category {
+  padding: 40px 0;
+  border-bottom: 0.5px solid rgba(29,61,45,0.18);
+}
+.faq-category-head {
+  font-family: var(--ui);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--cedar);
+  margin-bottom: 8px;
+}
+.faq-item {
+  border-bottom: 0.5px solid rgba(29,61,45,0.08);
+}
+.faq-item:last-child { border-bottom: none; }
+.faq-item--open .faq-q { color: var(--cabin); }
+.faq-q {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+  width: 100%;
+  padding: 18px 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  font-family: var(--body);
+  font-size: 17px;
+  font-weight: 600;
+  color: var(--forest);
+  letter-spacing: 0.01em;
+  transition: color 0.15s;
+}
+.faq-q:hover { color: var(--cabin); }
+.faq-icon {
+  font-size: 22px;
+  font-weight: 300;
+  color: var(--cedar);
+  flex-shrink: 0;
+  line-height: 1;
+  width: 20px;
+  text-align: center;
+}
+.faq-a {
+  padding: 0 48px 20px 0;
+  font-size: 16px;
+  line-height: 1.8;
+  color: var(--stone);
+  max-width: 760px;
+}
+
 /* ---------- Grille hours ---------- */
 .grille-hours {
   display: grid;
