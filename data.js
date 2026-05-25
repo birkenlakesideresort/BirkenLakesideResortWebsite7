@@ -87,7 +87,7 @@ window.CABINS = [
     bath: 'Private',
     price: 370,
     ext: 'assets/chapel-ext.jpeg',
-    int: 'assets/chapel-int.jpeg',
+    int: 'assets/chapel-indoor-bed.jpg',
     features: ['Cathedral window', 'Vaulted ceiling', 'Full kitchen', 'Electric heating', 'Small covered deck', 'Private washroom'],
   },
   {
