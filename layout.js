@@ -125,7 +125,16 @@ function Footer({ go }) {
     textTransform: "uppercase",
     color: "var(--cedar)",
     padding: "10px 0"
-  } }, "Send \u2192")))), /* @__PURE__ */ React.createElement("div", { className: "footer-bottom" }, /* @__PURE__ */ React.createElement("span", null, "\xA9 1906 \u2014 2026 \xB7 Birken Lakeside Resort"), /* @__PURE__ */ React.createElement("span", null, "Old enough to know better. Wild enough not to care.")));
+  } }, "Send \u2192")))), /* @__PURE__ */ React.createElement("div", { className: "footer-bottom" }, /* @__PURE__ */ React.createElement("span", { style: { display: "flex", gap: 28, alignItems: "center", flexWrap: "wrap" } }, /* @__PURE__ */ React.createElement("span", null, "\xA9 1906 \u2014 2026 \xB7 Birken Lakeside Resort"), /* @__PURE__ */ React.createElement(
+    "a",
+    {
+      href: "/assets/2026%20Birken%20Lakeside%20Resort_%20Guest%20Terms%20%26%20Conditions.pdf",
+      target: "_blank",
+      rel: "noopener noreferrer",
+      className: "footer-legal-link"
+    },
+    "Guest Terms & Conditions"
+  )), /* @__PURE__ */ React.createElement("span", null, "Old enough to know better. Wild enough not to care.")));
 }
 function BookingBar({ onBook }) {
   const [stay, setStay] = useState({ in: "Fri, Jul 24", out: "Mon, Jul 27" });

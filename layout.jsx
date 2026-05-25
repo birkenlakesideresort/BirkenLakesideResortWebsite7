@@ -205,7 +205,17 @@ function Footer({ go }) {
         </div>
       </div>
       <div className="footer-bottom">
-        <span>© 1906 — 2026 · Birken Lakeside Resort</span>
+        <span style={{ display: 'flex', gap: 28, alignItems: 'center', flexWrap: 'wrap' }}>
+          <span>© 1906 — 2026 · Birken Lakeside Resort</span>
+          <a
+            href="/assets/2026%20Birken%20Lakeside%20Resort_%20Guest%20Terms%20%26%20Conditions.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="footer-legal-link"
+          >
+            Guest Terms &amp; Conditions
+          </a>
+        </span>
         <span>Old enough to know better. Wild enough not to care.</span>
       </div>
     </footer>
