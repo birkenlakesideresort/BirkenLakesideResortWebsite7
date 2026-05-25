@@ -1071,6 +1071,76 @@ section { padding: 120px 40px; }
   font-size: 16px;
 }
 
+/* ---------- Grille compact menu ---------- */
+.grille-menu {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  border-top: 0.5px solid rgba(29,61,45,0.18);
+}
+.grille-menu-col {
+  padding: 32px 28px;
+  border-right: 0.5px solid rgba(29,61,45,0.18);
+}
+.grille-menu-col:last-child { border-right: none; }
+.grille-menu-col-head {
+  font-family: var(--ui);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--cedar);
+  padding-bottom: 14px;
+  margin-bottom: 8px;
+  border-bottom: 0.5px solid rgba(29,61,45,0.18);
+}
+.grille-menu-note {
+  font-style: italic;
+  font-size: 13px;
+  color: var(--stone);
+  margin-bottom: 16px;
+  line-height: 1.5;
+  min-height: 1.5em;
+}
+.grille-menu-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 12px;
+  padding-top: 10px;
+}
+.grille-menu-name {
+  font-family: var(--body);
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--forest);
+  letter-spacing: 0.01em;
+}
+.grille-menu-price {
+  font-family: var(--ui);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  color: var(--cedar);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.grille-menu-desc {
+  font-size: 13px;
+  color: var(--stone);
+  font-style: italic;
+  padding-bottom: 10px;
+  border-bottom: 0.5px solid rgba(29,61,45,0.08);
+}
+.grille-menu-addons {
+  font-size: 12px;
+  font-style: italic;
+  color: var(--stone);
+  line-height: 1.5;
+  margin-top: 16px;
+  padding-top: 12px;
+  border-top: 0.5px solid rgba(29,61,45,0.12);
+}
+
 /* ---------- Grille menu cards ---------- */
 .menu-cols {
   display: grid;
@@ -1171,6 +1241,9 @@ section { padding: 120px 40px; }
   .grille-day { border-right: none; border-bottom: 0.5px solid rgba(29,61,45,0.18); padding: 28px 20px; }
   .grille-day--alt { padding-left: 20px; }
   .grille-day:last-child { border-bottom: none; }
+  .grille-menu { grid-template-columns: 1fr; }
+  .grille-menu-col { border-right: none; border-bottom: 0.5px solid rgba(29,61,45,0.18); padding: 28px 0; }
+  .grille-menu-col:last-child { border-bottom: none; }
   .story-inner { grid-template-columns: 1fr; gap: 32px; }
   .about-principles { grid-template-columns: 1fr 1fr; }
   .alt-text { padding: 40px 28px; }

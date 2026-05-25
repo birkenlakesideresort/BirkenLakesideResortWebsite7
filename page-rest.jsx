@@ -234,6 +234,18 @@ function Weddings({ go }) {
   );
 }
 
+function GrilleMenuRow({ name, price, desc }) {
+  return (
+    <div>
+      <div className="grille-menu-row">
+        <span className="grille-menu-name">{name}</span>
+        <span className="grille-menu-price">{price}</span>
+      </div>
+      {desc ? <div className="grille-menu-desc">{desc}</div> : null}
+    </div>
+  );
+}
+
 function Grille({ go }) {
   return (
     <div className="page-fade">
@@ -256,6 +268,66 @@ function Grille({ go }) {
             <span className="pill">Walk-ins Welcome</span>
             <span className="pill">Kids Welcome</span>
             <span className="pill">Order at the Window</span>
+          </div>
+        </div>
+      </section>
+
+      {/* MENU */}
+      <section style={{ padding: '80px 40px', background: 'var(--cream)' }}>
+        <div className="section-inner">
+
+          {/* Menu header + PDF download */}
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end', flexWrap: 'wrap', gap: 24, marginBottom: 40 }}>
+            <div>
+              <span className="eyebrow">— The Menu</span>
+              <h2 style={{ fontFamily: 'var(--serif)', fontSize: 'clamp(40px, 5vw, 72px)', color: 'var(--forest)', lineHeight: 0.95, letterSpacing: '0.02em', marginTop: 18 }}>
+                WHAT IS ON.
+              </h2>
+            </div>
+            <a href="/assets/Birken_Lakeside_Grille_Menu%20(2).pdf" target="_blank" rel="noopener noreferrer" className="btn btn-primary">
+              Download Full Menu (PDF) &#8594;
+            </a>
+          </div>
+
+          <div className="grille-menu">
+
+            {/* Lunch & Dinner */}
+            <div className="grille-menu-col">
+              <div className="grille-menu-col-head">Lunch &amp; Dinner</div>
+              <p className="grille-menu-note">Beef patties on Birken Bakery brioche buns with lettuce, tomato, and onion.</p>
+              <GrilleMenuRow name="Lakeside Burger" price="$18" desc="The house burger with mustard mayo." />
+              <GrilleMenuRow name="Nick the Greek Burger" price="$20" desc="With feta and olives." />
+              <GrilleMenuRow name="Popeye Burger" price="$20" desc="Mustard mayo, spinach, running fried egg." />
+              <GrilleMenuRow name="Veggie or Vegan Burger" price="$18" desc="Same bun, same trimmings, no compromise." />
+              <GrilleMenuRow name="Gourmet Grilled Cheese" price="$12" desc="Hot and melty with chutney or ketchup." />
+              <GrilleMenuRow name="Smokie on a Bun" price="$12" desc="Pemberton Meat Co. smokie with sauerkraut." />
+              <p className="grille-menu-addons">Add-ons: Cheddar, feta, mushrooms, peppers, avocado, onion +$2 &middot; Bacon +$3</p>
+            </div>
+
+            {/* Sunday Breakfast */}
+            <div className="grille-menu-col">
+              <div className="grille-menu-col-head">Sunday Breakfast</div>
+              <p className="grille-menu-note">9:00 AM – Noon</p>
+              <GrilleMenuRow name="Fruit & Berry Cup" price="$12" desc="Seasonal fruit, thick yogurt, house granola." />
+              <GrilleMenuRow name="Waffles" price="$16" desc="Berries & cream OR bacon with maple syrup." />
+              <GrilleMenuRow name="Bacon & Egg Buttie" price="$16" desc="Two bacon, two eggs on Birken Bakery brioche." />
+              <GrilleMenuRow name="The Big Breakfast" price="$18" desc="Two hashbrowns, sausages or bacon, two fried eggs." />
+              <p className="grille-menu-addons">Add-ons: Extra egg, bacon, tomato, cheese, avocado +$2 each</p>
+            </div>
+
+            {/* Sweets & Drinks */}
+            <div className="grille-menu-col">
+              <div className="grille-menu-col-head">Sweets &amp; Drinks</div>
+              <p className="grille-menu-note">&nbsp;</p>
+              <GrilleMenuRow name="Smoothies & Milkshakes" price="$8" desc="" />
+              <GrilleMenuRow name="German Iced Coffee" price="$8" desc="Espresso, vanilla ice cream, cold milk." />
+              <GrilleMenuRow name="Espresso, Cappuccino, or Latte" price="$6" desc="" />
+              <GrilleMenuRow name="Black or Green Tea" price="$3" desc="" />
+              <GrilleMenuRow name="Assorted Sodas" price="$2.50" desc="" />
+              <GrilleMenuRow name="Water" price="$2" desc="" />
+              <p className="grille-menu-addons">Prices exclude tax. Come as you are.</p>
+            </div>
+
           </div>
         </div>
       </section>
@@ -289,99 +361,6 @@ function Grille({ go }) {
               <div className="grille-day-note">BC Day Aug 3 &amp; Labour Day Sep 7</div>
             </div>
           </div>
-        </div>
-      </section>
-
-      {/* MENU */}
-      <section style={{ padding: '80px 40px', background: 'var(--cream)' }}>
-        <div className="section-inner">
-
-          {/* Menu header + PDF download */}
-          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end', flexWrap: 'wrap', gap: 24, marginBottom: 56 }}>
-            <div>
-              <span className="eyebrow">— The Menu</span>
-              <h2 style={{ fontFamily: 'var(--serif)', fontSize: 'clamp(40px, 5vw, 72px)', color: 'var(--forest)', lineHeight: 0.95, letterSpacing: '0.02em', marginTop: 18 }}>
-                WHAT IS ON.
-              </h2>
-            </div>
-            <a
-              href="/assets/Birken_Lakeside_Grille_Menu%20(2).pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn btn-primary"
-            >
-              Download Full Menu (PDF) &#8594;
-            </a>
-          </div>
-
-          {/* Lunch & Dinner */}
-          <div style={{ marginBottom: 64 }}>
-            <div className="menu-section-head">
-              <span className="eyebrow" style={{ color: 'var(--forest)' }}>Lunch &amp; Dinner</span>
-              <span className="menu-section-note">Homemade beef patties on Birken Bakery brioche buns with lettuce, tomato, and onion.</span>
-            </div>
-            <div className="menu-cols">
-              <div className="menu-list">
-                <MenuItem name="Lakeside Burger" price="18" desc="The house burger with mustard mayo." />
-                <MenuItem name="Nick the Greek Burger" price="20" desc="With feta and olives." />
-                <MenuItem name="Popeye Burger" price="20" desc="With mustard mayo, spinach, and a running fried egg." />
-                <MenuItem name="Veggie or Vegan Burger" price="18" desc="Same bun, same trimmings, no compromise." />
-              </div>
-              <div className="menu-list">
-                <MenuItem name="Gourmet Grilled Cheese" price="12" desc="Hot and melty with chutney or ketchup on the side." />
-                <MenuItem name="Smokie on a Bun" price="12" desc="Pemberton Meat Co. smokie with sauerkraut." />
-                <div className="menu-item">
-                  <div className="row"><span className="name">Add-ons</span></div>
-                  <div className="desc">Cheddar, feta, mushrooms, peppers, avocado, onion +$2 each &middot; Bacon +$3</div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* Sunday Breakfast */}
-          <div style={{ marginBottom: 64 }}>
-            <div className="menu-section-head">
-              <span className="eyebrow" style={{ color: 'var(--forest)' }}>Sunday Breakfast</span>
-              <span className="menu-section-note">9:00 AM – Noon</span>
-            </div>
-            <div className="menu-cols">
-              <div className="menu-list">
-                <MenuItem name="Fruit & Berry Cup" price="12" desc="Seasonal fruit, thick yogurt, and house granola." />
-                <MenuItem name="Waffles" price="16" desc="Berries & cream OR bacon with maple syrup." />
-                <MenuItem name="Deluxe Bacon & Egg Buttie" price="16" desc="Two slices of bacon and two eggs on Birken Bakery brioche." />
-              </div>
-              <div className="menu-list">
-                <MenuItem name="The Big Breakfast" price="18" desc="Two hashbrowns, sausages or bacon, and two fried eggs." />
-                <div className="menu-item">
-                  <div className="row"><span className="name">Add-ons</span></div>
-                  <div className="desc">Extra egg, bacon, tomato, cheese, avocado +$2 each</div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* Sweets & Drinks */}
-          <div>
-            <div className="menu-section-head">
-              <span className="eyebrow" style={{ color: 'var(--forest)' }}>Sweets &amp; Drinks</span>
-            </div>
-            <div className="menu-cols">
-              <div className="menu-list">
-                <MenuItem name="Smoothies & Milkshakes" price="8" desc="" />
-                <MenuItem name="German Iced Coffee" price="8" desc="Espresso, vanilla ice cream, and cold milk." />
-                <MenuItem name="Espresso, Cappuccino, or Latte" price="6" desc="" />
-              </div>
-              <div className="menu-list">
-                <MenuItem name="Black or Green Tea" price="3" desc="" />
-                <MenuItem name="Assorted Sodas" price="2.50" desc="" />
-                <MenuItem name="Water" price="2" desc="" />
-              </div>
-            </div>
-            <p style={{ fontFamily: 'var(--ui)', fontSize: 13, letterSpacing: '0.18em', textTransform: 'uppercase', color: 'var(--stone)', marginTop: 40 }}>
-              Prices exclude tax. Come as you are.
-            </p>
-          </div>
-
         </div>
       </section>
 
