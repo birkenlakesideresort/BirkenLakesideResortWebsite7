@@ -182,27 +182,6 @@ function Footer({ go }) {
             <li style={{ marginTop: 8, fontSize: 14, color: 'rgba(243,234,220,0.55)', letterSpacing: '0.06em', textTransform: 'uppercase' }}>55 min from Whistler · 2.5 hrs from Vancouver</li>
           </ul>
         </div>
-        <div className="footer-col">
-          <h4>The Mailing List</h4>
-          <p style={{ fontSize: 15, color: 'rgba(243,234,220,0.7)', lineHeight: 1.7, marginBottom: 14 }}>
-            Quarterly. Sometimes a recipe. Never spam.
-          </p>
-          <div style={{ display: 'flex', borderBottom: '0.5px solid rgba(243,234,220,0.3)' }}>
-            <input
-              type="email"
-              placeholder="you@example.com"
-              style={{
-                flex: 1, background: 'transparent', border: 'none', outline: 'none',
-                color: 'var(--cream)', fontSize: 15, padding: '10px 0', fontFamily: 'var(--body)',
-              }}
-            />
-            <button className="footer-send-btn" style={{
-              fontFamily: 'var(--ui)', fontSize: 12, fontWeight: 700,
-              letterSpacing: '0.18em', textTransform: 'uppercase',
-              color: 'var(--cedar)', padding: '10px 0',
-            }}>Send →</button>
-          </div>
-        </div>
       </div>
       <div className="footer-bottom">
         <span style={{ display: 'flex', gap: 28, alignItems: 'center', flexWrap: 'wrap' }}>

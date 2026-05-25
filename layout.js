@@ -101,31 +101,7 @@ function Marquee({ items }) {
   return /* @__PURE__ */ React.createElement("div", { className: "marquee" }, /* @__PURE__ */ React.createElement("div", { className: "marquee-track" }, list.map((t, i) => /* @__PURE__ */ React.createElement("span", { key: i }, t))));
 }
 function Footer({ go }) {
-  return /* @__PURE__ */ React.createElement("footer", { className: "footer" }, /* @__PURE__ */ React.createElement("div", { className: "footer-inner" }, /* @__PURE__ */ React.createElement("div", null, /* @__PURE__ */ React.createElement("img", { src: "assets/Birken_Submark_Cream.png", alt: "Birken Lakeside Resort Logo \u2014 Since 1906", className: "footer-logo-img" }), /* @__PURE__ */ React.createElement("p", { className: "footer-tag italic-quote" }, "Woodsmoke. Pristine Water. Good People. Cabins with personalities, on a lake that's been here longer than any of us.")), /* @__PURE__ */ React.createElement("div", { className: "footer-col" }, /* @__PURE__ */ React.createElement("h4", null, "The Place"), /* @__PURE__ */ React.createElement("ul", null, /* @__PURE__ */ React.createElement("li", { onClick: () => go("stay") }, "Stay"), /* @__PURE__ */ React.createElement("li", { onClick: () => go("gatherings") }, "Gatherings"), /* @__PURE__ */ React.createElement("li", { onClick: () => go("weddings") }, "Weddings"), /* @__PURE__ */ React.createElement("li", { onClick: () => go("grille") }, "The Grille"), /* @__PURE__ */ React.createElement("li", { onClick: () => go("area") }, "The Area"), /* @__PURE__ */ React.createElement("li", { onClick: () => go("about") }, "About"))), /* @__PURE__ */ React.createElement("div", { className: "footer-col" }, /* @__PURE__ */ React.createElement("h4", null, "Find Us"), /* @__PURE__ */ React.createElement("ul", null, /* @__PURE__ */ React.createElement("li", { style: { lineHeight: 1.5 } }, "9179 Pemberton Portage Rd", /* @__PURE__ */ React.createElement("br", null), "Birken, BC V0N 2L0"), /* @__PURE__ */ React.createElement("li", null, "(604) 452-3255"), /* @__PURE__ */ React.createElement("li", null, "hello@birkenlakesideresort.ca"), /* @__PURE__ */ React.createElement("li", { style: { marginTop: 8, fontSize: 14, color: "rgba(243,234,220,0.55)", letterSpacing: "0.06em", textTransform: "uppercase" } }, "55 min from Whistler \xB7 2.5 hrs from Vancouver"))), /* @__PURE__ */ React.createElement("div", { className: "footer-col" }, /* @__PURE__ */ React.createElement("h4", null, "The Mailing List"), /* @__PURE__ */ React.createElement("p", { style: { fontSize: 15, color: "rgba(243,234,220,0.7)", lineHeight: 1.7, marginBottom: 14 } }, "Quarterly. Sometimes a recipe. Never spam."), /* @__PURE__ */ React.createElement("div", { style: { display: "flex", borderBottom: "0.5px solid rgba(243,234,220,0.3)" } }, /* @__PURE__ */ React.createElement(
-    "input",
-    {
-      type: "email",
-      placeholder: "you@example.com",
-      style: {
-        flex: 1,
-        background: "transparent",
-        border: "none",
-        outline: "none",
-        color: "var(--cream)",
-        fontSize: 15,
-        padding: "10px 0",
-        fontFamily: "var(--body)"
-      }
-    }
-  ), /* @__PURE__ */ React.createElement("button", { className: "footer-send-btn", style: {
-    fontFamily: "var(--ui)",
-    fontSize: 12,
-    fontWeight: 700,
-    letterSpacing: "0.18em",
-    textTransform: "uppercase",
-    color: "var(--cedar)",
-    padding: "10px 0"
-  } }, "Send \u2192")))), /* @__PURE__ */ React.createElement("div", { className: "footer-bottom" }, /* @__PURE__ */ React.createElement("span", { style: { display: "flex", gap: 28, alignItems: "center", flexWrap: "wrap" } }, /* @__PURE__ */ React.createElement("span", null, "\xA9 1906 \u2014 2026 \xB7 Birken Lakeside Resort"), /* @__PURE__ */ React.createElement(
+  return /* @__PURE__ */ React.createElement("footer", { className: "footer" }, /* @__PURE__ */ React.createElement("div", { className: "footer-inner" }, /* @__PURE__ */ React.createElement("div", null, /* @__PURE__ */ React.createElement("img", { src: "assets/Birken_Submark_Cream.png", alt: "Birken Lakeside Resort Logo \u2014 Since 1906", className: "footer-logo-img" }), /* @__PURE__ */ React.createElement("p", { className: "footer-tag italic-quote" }, "Woodsmoke. Pristine Water. Good People. Cabins with personalities, on a lake that's been here longer than any of us.")), /* @__PURE__ */ React.createElement("div", { className: "footer-col" }, /* @__PURE__ */ React.createElement("h4", null, "The Place"), /* @__PURE__ */ React.createElement("ul", null, /* @__PURE__ */ React.createElement("li", { onClick: () => go("stay") }, "Stay"), /* @__PURE__ */ React.createElement("li", { onClick: () => go("gatherings") }, "Gatherings"), /* @__PURE__ */ React.createElement("li", { onClick: () => go("weddings") }, "Weddings"), /* @__PURE__ */ React.createElement("li", { onClick: () => go("grille") }, "The Grille"), /* @__PURE__ */ React.createElement("li", { onClick: () => go("area") }, "The Area"), /* @__PURE__ */ React.createElement("li", { onClick: () => go("about") }, "About"))), /* @__PURE__ */ React.createElement("div", { className: "footer-col" }, /* @__PURE__ */ React.createElement("h4", null, "Find Us"), /* @__PURE__ */ React.createElement("ul", null, /* @__PURE__ */ React.createElement("li", { style: { lineHeight: 1.5 } }, "9179 Pemberton Portage Rd", /* @__PURE__ */ React.createElement("br", null), "Birken, BC V0N 2L0"), /* @__PURE__ */ React.createElement("li", null, "(604) 452-3255"), /* @__PURE__ */ React.createElement("li", null, "hello@birkenlakesideresort.ca"), /* @__PURE__ */ React.createElement("li", { style: { marginTop: 8, fontSize: 14, color: "rgba(243,234,220,0.55)", letterSpacing: "0.06em", textTransform: "uppercase" } }, "55 min from Whistler \xB7 2.5 hrs from Vancouver")))), /* @__PURE__ */ React.createElement("div", { className: "footer-bottom" }, /* @__PURE__ */ React.createElement("span", { style: { display: "flex", gap: 28, alignItems: "center", flexWrap: "wrap" } }, /* @__PURE__ */ React.createElement("span", null, "\xA9 1906 \u2014 2026 \xB7 Birken Lakeside Resort"), /* @__PURE__ */ React.createElement(
     "a",
     {
       href: "/assets/2026%20Birken%20Lakeside%20Resort_%20Guest%20Terms%20%26%20Conditions.pdf",
