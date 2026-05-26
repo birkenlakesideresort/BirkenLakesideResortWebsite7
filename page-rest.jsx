@@ -68,7 +68,7 @@ function Gatherings({ go }) {
             title={<>What's here<br/>for your group.</>}
             intro="It comes with the place. We don't charge extra for what was already going to be on." />
 
-          <div style={{
+          <div className="incl-grid" style={{
             display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)',
             borderTop: '0.5px solid rgba(29,61,45,0.18)',
           }}>

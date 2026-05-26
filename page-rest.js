@@ -13,7 +13,7 @@ function Gatherings({ go }) {
       title: /* @__PURE__ */ React.createElement(React.Fragment, null, "What's here", /* @__PURE__ */ React.createElement("br", null), "for your group."),
       intro: "It comes with the place. We don't charge extra for what was already going to be on."
     }
-  ), /* @__PURE__ */ React.createElement("div", { style: {
+  ), /* @__PURE__ */ React.createElement("div", { className: "incl-grid", style: {
     display: "grid",
     gridTemplateColumns: "repeat(4, 1fr)",
     borderTop: "0.5px solid rgba(29,61,45,0.18)"

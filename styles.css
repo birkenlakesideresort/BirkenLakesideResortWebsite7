@@ -1306,7 +1306,12 @@ section { padding: 120px 40px; }
   .section-head { grid-template-columns: 1fr; gap: 24px; }
   .cabin-grid { grid-template-columns: 1fr; }
   .cabin-grid > * { grid-column: 1 / -1 !important; aspect-ratio: 4/5; }
-  .threeup, .alt-block, .reviews, .menu-cols, .area-grid, .footer-inner { grid-template-columns: 1fr; }
+  .threeup, .alt-block, .reviews, .menu-cols, .area-grid, .footer-inner { grid-template-columns: 1fr !important; }
+  .incl-grid { grid-template-columns: 1fr 1fr !important; }
+  .incl-grid > *:nth-child(2n) { border-right: none !important; }
+  .incl-grid > *:nth-child(2n-1) { border-right: 0.5px solid rgba(29,61,45,0.18) !important; }
+  .footer-bottom { flex-wrap: wrap; gap: 12px; }
+  .first-section { padding-left: 20px !important; padding-right: 20px !important; }
   .grille-hours { grid-template-columns: 1fr 1fr; }
   .grille-day { border-right: none; border-bottom: 0.5px solid rgba(29,61,45,0.18); padding: 28px 20px; }
   .grille-day--alt { padding-left: 20px; }
@@ -1556,6 +1561,10 @@ h1, h2, h3 { text-align: left; }
 @media (max-width: 480px) {
   .nav-logo-img { height: 60px; }
   .nav-logo-img img { height: 60px; max-width: none; }
+  .about-principles { grid-template-columns: 1fr !important; }
+  .incl-grid { grid-template-columns: 1fr !important; }
+  .incl-grid > * { border-right: none !important; }
+  .faq-a { padding-right: 0; }
 }
 
 /* ============================================================
