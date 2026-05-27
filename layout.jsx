@@ -182,6 +182,14 @@ function Footer({ go }) {
             <li style={{ marginTop: 8, fontSize: 14, color: 'rgba(243,234,220,0.55)', letterSpacing: '0.06em', textTransform: 'uppercase' }}>55 min from Whistler · 2.5 hrs from Vancouver</li>
           </ul>
         </div>
+        <div className="footer-col">
+          <h4>More Information</h4>
+          <ul>
+            <li><a href="/What%20to%20Bring.pdf" target="_blank" rel="noopener noreferrer" className="footer-legal-link">What to Bring</a></li>
+            <li><a href="/The%20Local%20Guide.pdf" target="_blank" rel="noopener noreferrer" className="footer-legal-link">The Local Guide</a></li>
+            <li><a href="/assets/2026%20Birken%20Lakeside%20Resort_%20Guest%20Terms%20%26%20Conditions.pdf" target="_blank" rel="noopener noreferrer" className="footer-legal-link">Guest Terms &amp; Conditions</a></li>
+          </ul>
+        </div>
       </div>
       <div className="footer-bottom">
         <span style={{ display: 'flex', gap: 28, alignItems: 'center', flexWrap: 'wrap' }}>
