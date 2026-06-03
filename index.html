@@ -96,13 +96,13 @@
     }
     .bl-bar-fill {
       height: 100%; background: #C4743A;
-      animation: bl-load 2.2s cubic-bezier(0.25,0.46,0.45,0.94) forwards;
+      animation: bl-load 2.8s cubic-bezier(0.25,0.46,0.45,0.94) forwards;
     }
     @keyframes bl-load {
       0%   { width: 0; }
-      60%  { width: 70%; }
-      85%  { width: 88%; }
-      100% { width: 100%; }
+      60%  { width: 55%; }
+      85%  { width: 72%; }
+      100% { width: 82%; }
     }
     #loader-status {
       font-family: 'Bebas Neue', sans-serif;
@@ -119,13 +119,24 @@
     }
   </style>
 
-  <!-- FOUC guard -->
+  <!-- FOUC guard + loader fallback -->
   <script>
     document.addEventListener('DOMContentLoaded', function() {
       requestAnimationFrame(function() {
         document.documentElement.classList.add('loaded');
       });
     });
+    // Fallback: force-remove the loader after 10s in case React fails to mount
+    (function() {
+      var fallback = setTimeout(function() {
+        var loader = document.getElementById('loader');
+        if (loader) {
+          loader.classList.add('is-fading');
+          setTimeout(function() { if (loader.parentNode) loader.remove(); }, 500);
+        }
+      }, 10000);
+      window.__loaderFallbackTimer = fallback;
+    })();
   </script>
 </head>
 <body>

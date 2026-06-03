@@ -24,6 +24,7 @@ function App() {
     return () => window.removeEventListener("popstate", onPop);
   }, []);
   useEffect(() => {
+    if (window.__loaderFallbackTimer) clearTimeout(window.__loaderFallbackTimer);
     const loader = document.getElementById("loader");
     if (!loader) return;
     loader.classList.add("is-fading");
