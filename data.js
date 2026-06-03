@@ -57,7 +57,7 @@ window.CABINS = [
     bath: 'Shared',
     price: 185,
     ext: 'assets/love-shack-new.jpeg',
-    int: 'assets/love-shack-interior-raised-king-bed.png',
+    int: 'assets/love-shack-interior-raised-king-bed.jpg',
     features: ['Raised king bed', 'Wood-burning fireplace', 'Adults only', 'Full kitchen', 'Private deck'],
   },
   {
@@ -131,7 +131,7 @@ window.CABINS = [
     beds: '2 Twins',
     bath: 'Shared bathhouse',
     price: 150,
-    ext: 'assets/glamping_exterior.png',
+    ext: 'assets/glamping_exterior.jpg',
     int: 'assets/glamping-2.jpeg',
     features: ['Bell tent', 'Real beds', 'Solar lights', 'Communal outdoor kitchen', 'Bathhouse 30s away'],
   },
