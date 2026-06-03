@@ -1,6 +1,17 @@
 {
   "cleanUrls": true,
   "trailingSlash": false,
+  "redirects": [
+    { "source": "/index.php/rates-and-reservations-2", "destination": "/stay", "permanent": true },
+    { "source": "/index.php/our-resort/cabins",         "destination": "/stay", "permanent": true },
+    { "source": "/index.php/accommodations-all",        "destination": "/stay", "permanent": true },
+    { "source": "/index.php/your-wedding",              "destination": "/weddings", "permanent": true },
+    { "source": "/index.php/your-event",                "destination": "/gatherings", "permanent": true },
+    { "source": "/index.php/our-resort/birken-lakeside-grille", "destination": "/grille", "permanent": true },
+    { "source": "/index.php/contact",                   "destination": "/contact", "permanent": true },
+    { "source": "/index.php/our-resort/gallery",        "destination": "/stay", "permanent": true },
+    { "source": "/index.php/:path*",                    "destination": "/", "permanent": true }
+  ],
   "rewrites": [
     { "source": "/(.*)", "destination": "/" }
   ],
