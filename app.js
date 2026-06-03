@@ -1,27 +1,27 @@
 function App() {
   const VALID_ROUTES = ["home", "stay", "cabin", "gatherings", "weddings", "grille", "area", "about", "book", "contact", "404"];
-  const parseHash = () => {
-    const h = (window.location.hash || "").replace(/^#\/?/, "").trim();
-    if (!h) return { route: "home", cabinId: null };
-    const [r, id] = h.split("/");
+  const parsePath = () => {
+    const p = window.location.pathname.replace(/^\//, "").trim();
+    if (!p) return { route: "home", cabinId: null };
+    const [r, id] = p.split("/");
     if (r === "cabin" && id) return { route: "cabin", cabinId: id };
     if (VALID_ROUTES.includes(r)) return { route: r, cabinId: null };
     return { route: "404", cabinId: null };
   };
-  const initial = parseHash();
+  const initial = parsePath();
   const [route, setRoute] = useState(initial.route);
   const [cabinId, setCabinId] = useState(initial.cabinId);
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "instant" });
   }, [route, cabinId]);
   useEffect(() => {
-    const onHash = () => {
-      const next = parseHash();
+    const onPop = () => {
+      const next = parsePath();
       setRoute(next.route);
       setCabinId(next.cabinId);
     };
-    window.addEventListener("hashchange", onHash);
-    return () => window.removeEventListener("hashchange", onHash);
+    window.addEventListener("popstate", onPop);
+    return () => window.removeEventListener("popstate", onPop);
   }, []);
   useEffect(() => {
     const loader = document.getElementById("loader");
@@ -34,10 +34,10 @@ function App() {
     if (r === "cabin") {
       setCabinId(id);
       setRoute("cabin");
-      window.history.pushState(null, "", "#/cabin/" + id);
+      window.history.pushState(null, "", "/cabin/" + id);
     } else {
       setRoute(r);
-      window.history.pushState(null, "", r === "home" ? "#/" : "#/" + r);
+      window.history.pushState(null, "", r === "home" ? "/" : "/" + r);
     }
   };
   const transparent = route === "home" || route === "cabin" || route === "weddings";
