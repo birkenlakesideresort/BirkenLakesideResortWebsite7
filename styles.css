@@ -552,7 +552,7 @@ section { padding: 120px 40px; }
   height: 180px;
   background-image: url("assets/lake-clear-day..png");
   background-size: cover;
-  background-position: center 35%;
+  background-position: center 47%;
 }
 @media (max-width: 768px) {
   .lake-banner { height: 120px; }
