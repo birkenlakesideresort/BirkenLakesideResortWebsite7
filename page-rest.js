@@ -21,7 +21,7 @@ function Gatherings({ go }) {
     { l: "Lakeside firepit", d: "Stocked, swept, lit on request." },
     { l: "1 paddleboat + 4 kayaks", d: "PFDs in the boathouse." },
     { l: "Sound system", d: "In the meeting hall. Bring the playlist." },
-    { l: "Coffee", d: "Coffee." },
+    { l: "Coffee", d: "For additional charge." },
     { l: "Linens + towels", d: "Crisp, white, fresh on arrival." },
     { l: "Catered meals", d: "Optional. Add The Grille team to your booking." },
     { l: "A/V for talks", d: "Projector, screen, A/V ready in the meeting hall." },
