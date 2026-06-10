@@ -184,7 +184,7 @@ const FAQS = [
     category: "04 \xB7 What's on the Property",
     items: [
       { q: "Is there a beach? Can we swim?", a: "Yes. Private lakefront on Gates Lake, a designated swimming area, and a private dock that's earned every cannonball it's ever taken. The water is cold, clear, and worth it." },
-      { q: "What about boats and watercraft?", a: "Gates Lake is a quiet, non-motorized lake \u2014 no jet skis, no speedboats, no waterskiing. That's part of what makes it what it is. Canoe, kayak, and paddleboard rentals are being added to our booking system for 2026 \u2014 ask us when you book." },
+      { q: "What about boats and watercraft?", a: "Gates Lake is a quiet, non-motorized lake \u2014 no jet skis, no speedboats, no waterskiing. That's part of what makes it what it is." },
       { q: "Is there Wi-Fi?", a: "Solid Wi-Fi resort-wide. Use it sparingly. Great for checking an email, looking up a hike, sending a photo home. The rest of what's around you is more interesting." },
       { q: "What's there to do?", a: "Swim, paddle, fish, hike, read, eat, sleep. Birkenhead Provincial Park is 20 minutes away \u2014 lake hikes, old-growth forest, the trail to Place Glacier viewpoint. Whistler is 45 minutes south if you want a day in town. On the property: sports cupboard with basketball, badminton, volleyball, bocce; a Meeting Hall with a lake-view deck; porches built for sitting on." },
       { q: "Is the Meeting Hall available for guests?", a: "The Meeting Hall is primarily used for weddings, retreats, and full-property bookings. Individual cabin guests are welcome to use the outdoor common spaces and lake-view deck. If you have a specific need \u2014 a family birthday, a small workshop \u2014 ask us." }
